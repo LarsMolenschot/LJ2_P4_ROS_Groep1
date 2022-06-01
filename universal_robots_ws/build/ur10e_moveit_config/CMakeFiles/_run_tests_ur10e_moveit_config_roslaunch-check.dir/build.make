@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur10e_moveit_config
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur10e_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur10e_moveit_config
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur10e_moveit_config
 
 # Utility rule file for _run_tests_ur10e_moveit_config_roslaunch-check.
 
@@ -67,6 +67,6 @@ CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/clean:
 .PHONY : CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/clean
 
 CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur10e_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur10e_moveit_config /home/student/universal_robots_ws/src/universal_robot/ur10e_moveit_config /home/student/universal_robots_ws/build/ur10e_moveit_config /home/student/universal_robots_ws/build/ur10e_moveit_config /home/student/universal_robots_ws/build/ur10e_moveit_config/CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur10e_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur10e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur10e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur10e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur10e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur10e_moveit_config/CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_run_tests_ur10e_moveit_config_roslaunch-check.dir/depend
 

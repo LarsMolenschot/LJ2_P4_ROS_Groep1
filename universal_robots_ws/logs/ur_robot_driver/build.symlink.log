@@ -1,8 +1,25 @@
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.so, /home/student/universal_robots_ws/devel/lib/liburcl_log_handler.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/libur_robot_driver_plugin.so, /home/student/universal_robots_ws/devel/lib/libur_robot_driver_plugin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/pkgconfig/ur_robot_driver.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_robot_driver.pc)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/dashboard_client, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/dashboard_client)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/robot_state_helper, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/robot_state_helper)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/ur_robot_driver_node, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/ur_robot_driver_node)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake)
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/liburcl_log_handler.so
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/libur_robot_driver_plugin.so
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_robot_driver.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/dashboard_client
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/robot_state_helper
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/ur_robot_driver_node
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.so, /home/student/universal_robots_ws/devel/lib/liburcl_log_handler.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/libur_robot_driver_plugin.so, /home/student/universal_robots_ws/devel/lib/libur_robot_driver_plugin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/pkgconfig/ur_robot_driver.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_robot_driver.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/dashboard_client, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/dashboard_client)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/robot_state_helper, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/robot_state_helper)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/ur_robot_driver_node, /home/student/universal_robots_ws/devel/lib/ur_robot_driver/ur_robot_driver_node)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/liburcl_log_handler.so
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur_robot_driver_plugin.so
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_robot_driver.pc
+Unlinking: /home/student/universal_robots_ws/devel/lib/ur_robot_driver/dashboard_client
+Unlinking: /home/student/universal_robots_ws/devel/lib/ur_robot_driver/robot_state_helper
+Unlinking: /home/student/universal_robots_ws/devel/lib/ur_robot_driver/ur_robot_driver_node
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake

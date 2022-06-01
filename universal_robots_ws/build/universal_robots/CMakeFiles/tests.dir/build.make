@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/universal_robots
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/universal_robots
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/universal_robots
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/universal_robots
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/student/universal_robots_ws/build/universal_robots && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/universal_robots /home/student/universal_robots_ws/src/universal_robot/universal_robots /home/student/universal_robots_ws/build/universal_robots /home/student/universal_robots_ws/build/universal_robots /home/student/universal_robots_ws/build/universal_robots/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/universal_robots && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/universal_robots /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/universal_robots /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/universal_robots /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/universal_robots /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/universal_robots/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

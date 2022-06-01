@@ -67,14 +67,14 @@ set(manipulator_groep_1_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(manipulator_groep_1_SOURCE_PREFIX /home/student/universal_robots_ws/src/my_universal_robots/manipulator_groep_1)
-  set(manipulator_groep_1_DEVEL_PREFIX /home/student/universal_robots_ws/devel/.private/manipulator_groep_1)
+  set(manipulator_groep_1_SOURCE_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1)
+  set(manipulator_groep_1_DEVEL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1)
   set(manipulator_groep_1_INSTALL_PREFIX "")
   set(manipulator_groep_1_PREFIX ${manipulator_groep_1_DEVEL_PREFIX})
 else()
   set(manipulator_groep_1_SOURCE_PREFIX "")
   set(manipulator_groep_1_DEVEL_PREFIX "")
-  set(manipulator_groep_1_INSTALL_PREFIX /home/student/universal_robots_ws/install)
+  set(manipulator_groep_1_INSTALL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install)
   set(manipulator_groep_1_PREFIX ${manipulator_groep_1_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/student/universal_robots_ws/install/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/lib;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

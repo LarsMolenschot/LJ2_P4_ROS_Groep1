@@ -1,1 +1,1 @@
-/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py

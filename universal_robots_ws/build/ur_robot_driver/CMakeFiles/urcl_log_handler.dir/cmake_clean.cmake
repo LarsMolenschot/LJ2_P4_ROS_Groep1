@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/urcl_log_handler.dir/src/urcl_log_handler.cpp.o"
-  "/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.pdb"
-  "/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.so"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.pdb"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.so"
 )
 
 # Per-language clean rules from dependency scanning.

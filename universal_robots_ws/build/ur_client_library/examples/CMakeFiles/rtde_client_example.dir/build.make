@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_Client_Library
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_client_library
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/rtde_client_example.dir/depend.make
@@ -58,17 +58,17 @@ include examples/CMakeFiles/rtde_client_example.dir/progress.make
 include examples/CMakeFiles/rtde_client_example.dir/flags.make
 
 examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o: examples/CMakeFiles/rtde_client_example.dir/flags.make
-examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o: /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o -c /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp
+examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp
 
 examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rtde_client_example.dir/rtde_client.cpp.i"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp > CMakeFiles/rtde_client_example.dir/rtde_client.cpp.i
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp > CMakeFiles/rtde_client_example.dir/rtde_client.cpp.i
 
 examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rtde_client_example.dir/rtde_client.cpp.s"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp -o CMakeFiles/rtde_client_example.dir/rtde_client.cpp.s
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/rtde_client.cpp -o CMakeFiles/rtde_client_example.dir/rtde_client.cpp.s
 
 examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o.requires:
 
@@ -92,8 +92,8 @@ examples/rtde_client_example: examples/CMakeFiles/rtde_client_example.dir/rtde_c
 examples/rtde_client_example: examples/CMakeFiles/rtde_client_example.dir/build.make
 examples/rtde_client_example: liburcl.so
 examples/rtde_client_example: examples/CMakeFiles/rtde_client_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rtde_client_example"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rtde_client_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rtde_client_example"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rtde_client_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/rtde_client_example.dir/build: examples/rtde_client_example
@@ -105,10 +105,10 @@ examples/CMakeFiles/rtde_client_example.dir/requires: examples/CMakeFiles/rtde_c
 .PHONY : examples/CMakeFiles/rtde_client_example.dir/requires
 
 examples/CMakeFiles/rtde_client_example.dir/clean:
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/rtde_client_example.dir/cmake_clean.cmake
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/rtde_client_example.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/rtde_client_example.dir/clean
 
 examples/CMakeFiles/rtde_client_example.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/universal_robots_ws/build/ur_client_library /home/student/universal_robots_ws/build/ur_client_library/examples /home/student/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/rtde_client_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/rtde_client_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/rtde_client_example.dir/depend
 

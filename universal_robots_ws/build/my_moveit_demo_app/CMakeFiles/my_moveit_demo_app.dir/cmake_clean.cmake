@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_moveit_demo_app.dir/src/states/src/state_get_tf_transform.cpp.o"
   "CMakeFiles/my_moveit_demo_app.dir/src/states/src/state_template.cpp.o"
   "CMakeFiles/my_moveit_demo_app.dir/src/states/src/state_ik_get_joints_from_pose.cpp.o"
-  "/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/my_moveit_demo_app.pdb"
-  "/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/my_moveit_demo_app"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/my_moveit_demo_app.pdb"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/my_moveit_demo_app"
 )
 
 # Per-language clean rules from dependency scanning.

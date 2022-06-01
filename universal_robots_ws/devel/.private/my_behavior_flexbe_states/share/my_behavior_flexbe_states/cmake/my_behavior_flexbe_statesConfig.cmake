@@ -67,14 +67,14 @@ set(my_behavior_flexbe_states_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(my_behavior_flexbe_states_SOURCE_PREFIX /home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states)
-  set(my_behavior_flexbe_states_DEVEL_PREFIX /home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states)
+  set(my_behavior_flexbe_states_SOURCE_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states)
+  set(my_behavior_flexbe_states_DEVEL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states)
   set(my_behavior_flexbe_states_INSTALL_PREFIX "")
   set(my_behavior_flexbe_states_PREFIX ${my_behavior_flexbe_states_DEVEL_PREFIX})
 else()
   set(my_behavior_flexbe_states_SOURCE_PREFIX "")
   set(my_behavior_flexbe_states_DEVEL_PREFIX "")
-  set(my_behavior_flexbe_states_INSTALL_PREFIX /home/student/universal_robots_ws/install)
+  set(my_behavior_flexbe_states_INSTALL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install)
   set(my_behavior_flexbe_states_PREFIX ${my_behavior_flexbe_states_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(my_behavior_flexbe_states_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src " STREQUAL " ")
+if(NOT "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src " STREQUAL " ")
   set(my_behavior_flexbe_states_INCLUDE_DIRS "")
-  set(_include_dirs "/home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src")
+  set(_include_dirs "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors
         message(FATAL_ERROR "Project 'my_behavior_flexbe_states' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'my_behavior_flexbe_states' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'my_behavior_flexbe_states' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/${idir}'.  ${_report}")
     endif()
     _list_append_unique(my_behavior_flexbe_states_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

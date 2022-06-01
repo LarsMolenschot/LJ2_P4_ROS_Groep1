@@ -1,4 +1,4 @@
-prefix=/home/student/universal_robots_ws/devel/.private/my_ur_description
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description
 
 Name: my_ur_description
 Description: Description of my_ur_description
