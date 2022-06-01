@@ -1,0 +1,33 @@
+PC:
+	student@ubuntu:~/universal_robots_ws$ ifconfig | grep broadcast
+	inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255
+	Het getal achter inet is het IP-adres van de development-computer
+
+Universal Robot 5:
+	Gedetailleerde instellingen netwerk:
+		IP-adres: 192.168.0.22
+
+	External Control:
+		chiron:
+		Host IP: 192.168.0.134
+
+		Mijn computer:
+		Host IP: 192.168.0.71
+		Custom port: 50002
+		Host name: Development
+
+	opslaan
+
+PC:
+	$HOME/universal_robots_ws/src/my_universal_robots/my_universal_robot_controllers/launch/ur5_bringup.launch
+
+	Wijzig in regel 4 het argument robot_ip in de waarde van het ip-adres van de UR-robot
+	van name="robot_ip" default="192.168.10.124"
+	naar name="robot_ip" default="192.168.022"
+
+
+
+
+
+
+

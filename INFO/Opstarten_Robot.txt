@@ -1,0 +1,13 @@
+
+Verbinden robot:
+roslaunch my_universal_robot_controllers ur5_bringup.launch
+
+RVIZ:
+roslaunch my_demo environment_ur5.launch
+
+Robot MoveIt-configuratie:
+roslaunch my_ur5_moveit_config setup_assistant.launch
+
+
+
+
