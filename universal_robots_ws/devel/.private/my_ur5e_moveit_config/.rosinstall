@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/student/universal_robots_ws/devel/.private/my_ur5e_moveit_config/setup.sh

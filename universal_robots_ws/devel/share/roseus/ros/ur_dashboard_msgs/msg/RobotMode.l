@@ -1,0 +1,1 @@
+/home/student/universal_robots_ws/devel/.private/ur_dashboard_msgs/share/roseus/ros/ur_dashboard_msgs/msg/RobotMode.l

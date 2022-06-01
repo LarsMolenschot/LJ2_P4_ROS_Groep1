@@ -1,0 +1,8 @@
+prefix=/home/student/universal_robots_ws/install
+
+Name: my_behavior_flexbe_states
+Description: Description of my_behavior_flexbe_states
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmy_behavior_flexbe_states
+Requires: 

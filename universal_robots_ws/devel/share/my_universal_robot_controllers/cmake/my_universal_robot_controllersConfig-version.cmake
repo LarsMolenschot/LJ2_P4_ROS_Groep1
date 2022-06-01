@@ -1,0 +1,1 @@
+/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/student/universal_robots_ws/devel/.private/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg

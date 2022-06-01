@@ -1,0 +1,1 @@
+/home/student/universal_robots_ws/devel/.private/my_ur5_moveit_config/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig-version.cmake

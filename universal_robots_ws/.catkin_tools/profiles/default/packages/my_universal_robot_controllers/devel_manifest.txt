@@ -1,0 +1,5 @@
+my_universal_robots/my_universal_robot_controllers
+/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/cmake.lock /home/student/universal_robots_ws/devel/./cmake.lock
+/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/lib/pkgconfig/my_universal_robot_controllers.pc /home/student/universal_robots_ws/devel/lib/pkgconfig/my_universal_robot_controllers.pc
+/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake
+/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake

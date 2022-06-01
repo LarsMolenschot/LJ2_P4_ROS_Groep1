@@ -1,0 +1,7 @@
+set(my_behavior_flexbe_states_SETUP_PY_SETUP_MODULE "distutils.core")
+set(my_behavior_flexbe_states_SETUP_PY_VERSION "1.0.0")
+set(my_behavior_flexbe_states_SETUP_PY_SCRIPTS "")
+set(my_behavior_flexbe_states_SETUP_PY_PACKAGES "my_behavior_flexbe_states")
+set(my_behavior_flexbe_states_SETUP_PY_PACKAGE_DIRS "src/my_behavior_flexbe_states")
+set(my_behavior_flexbe_states_SETUP_PY_MODULES "")
+set(my_behavior_flexbe_states_SETUP_PY_MODULE_DIRS "")

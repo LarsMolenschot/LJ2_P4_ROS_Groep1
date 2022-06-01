@@ -1,0 +1,8 @@
+prefix=/home/student/universal_robots_ws/install
+
+Name: my_moveit_demo_behaviors
+Description: Description of my_moveit_demo_behaviors
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lmy_moveit_demo_behaviors
+Requires: 

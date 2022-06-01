@@ -1,0 +1,5 @@
+my_universal_robots/my_demo
+/home/student/universal_robots_ws/devel/.private/my_demo/cmake.lock /home/student/universal_robots_ws/devel/./cmake.lock
+/home/student/universal_robots_ws/devel/.private/my_demo/lib/pkgconfig/my_demo.pc /home/student/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc
+/home/student/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig-version.cmake /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake
+/home/student/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig.cmake /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake

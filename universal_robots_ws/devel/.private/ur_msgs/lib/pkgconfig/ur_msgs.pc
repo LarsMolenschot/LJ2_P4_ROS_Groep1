@@ -1,0 +1,8 @@
+prefix=/home/student/universal_robots_ws/devel/.private/ur_msgs
+
+Name: ur_msgs
+Description: Description of ur_msgs
+Version: 1.3.4
+Cflags: -I/home/student/universal_robots_ws/devel/.private/ur_msgs/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime std_msgs

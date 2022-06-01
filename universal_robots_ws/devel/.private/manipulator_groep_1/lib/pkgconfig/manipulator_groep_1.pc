@@ -1,0 +1,8 @@
+prefix=/home/student/universal_robots_ws/devel/.private/manipulator_groep_1
+
+Name: manipulator_groep_1
+Description: Description of manipulator_groep_1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
