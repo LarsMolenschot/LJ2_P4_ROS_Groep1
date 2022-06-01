@@ -1,0 +1,13 @@
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_calibration/calibration_correction
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/lib/ur_calibration/calibration_correction, /home/student/universal_robots_ws/devel/lib/ur_calibration/calibration_correction)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/lib/pkgconfig/ur_calibration.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/ur_calibration/calibration_correction
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
