@@ -1,4 +1,4 @@
-Linked: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_behaviors/lib/python2.7/dist-packages/my_moveit_demo_behaviors/__init__.py, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_moveit_demo_behaviors/__init__.py)
-Linked: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_behaviors/lib/pkgconfig/my_moveit_demo_behaviors.pc, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_behaviors.pc)
-Linked: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_behaviors/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig-version.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig-version.cmake)
-Linked: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_behaviors/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig.cmake)
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_moveit_demo_behaviors/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_behaviors.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_behaviors/cmake/my_moveit_demo_behaviorsConfig.cmake

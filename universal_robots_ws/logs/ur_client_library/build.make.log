@@ -34,9 +34,9 @@
 [ 88%] Built target primary_pipeline_example
 [35m[1mScanning dependencies of target driver_example[0m
 [ 91%] [32mBuilding CXX object examples/CMakeFiles/driver_example.dir/full_driver.cpp.o[0m
-[ 94%] [32m[1mLinking CXX executable driver_example[0m
-[ 94%] Built target driver_example
 [35m[1mScanning dependencies of target rtde_client_example[0m
-[ 97%] [32mBuilding CXX object examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o[0m
-[100%] [32m[1mLinking CXX executable rtde_client_example[0m
-[100%] Built target rtde_client_example
+[ 94%] [32mBuilding CXX object examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o[0m
+[ 97%] [32m[1mLinking CXX executable rtde_client_example[0m
+[ 97%] Built target rtde_client_example
+[100%] [32m[1mLinking CXX executable driver_example[0m
+[100%] Built target driver_example
