@@ -9,10 +9,10 @@ rospy.init_node('moveit_python_tutorial', anonymous=True)
 
 move_group = MoveGroupInterface("arm", "base_link")
 
-gripper_frame = 'gripper_link'
+gripper_frame = 'tcp_link'
 
-gripper_poses = [Pose(Point(0.0, 0.0, 1), Quaternion(0.00, 0.0, 0.0, 1.0)),
-                 Pose(Point(0.0, 0.0, 2), Quaternion(0.00, 0.0, 0.0, 1.0))]
+gripper_poses = [Pose(Point(1.0, 0.0, 0), Quaternion(0.0, 0.0, 0.0, 1.0)),
+                 Pose(Point(2.0, 0.0, 0), Quaternion(0.0, 0.0, 0.0, 1.0))]
 
 gripper_pose_stamped = PoseStamped()
 gripper_pose_stamped.header.frame_id = 'base_link'
