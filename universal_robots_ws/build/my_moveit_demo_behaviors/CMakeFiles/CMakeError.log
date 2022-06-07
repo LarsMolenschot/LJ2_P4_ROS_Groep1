@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9c643/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9c643.dir/build.make CMakeFiles/cmTC_9c643.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1a4f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a4f9.dir/build.make CMakeFiles/cmTC_1a4f9.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9c643.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_9c643.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_9c643
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c643.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9c643.dir/CheckSymbolExists.c.o  -o cmTC_9c643 
-CMakeFiles/cmTC_9c643.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_1a4f9.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1a4f9.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1a4f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a4f9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1a4f9.dir/CheckSymbolExists.c.o  -o cmTC_1a4f9 
+CMakeFiles/cmTC_1a4f9.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_9c643.dir/build.make:97: recipe for target 'cmTC_9c643' failed
-make[1]: *** [cmTC_9c643] Error 1
+CMakeFiles/cmTC_1a4f9.dir/build.make:97: recipe for target 'cmTC_1a4f9' failed
+make[1]: *** [cmTC_1a4f9] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_9c643/fast' failed
-make: *** [cmTC_9c643/fast] Error 2
+Makefile:126: recipe for target 'cmTC_1a4f9/fast' failed
+make: *** [cmTC_1a4f9/fast] Error 2
 
 File /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f565a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f565a.dir/build.make CMakeFiles/cmTC_f565a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ed633/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed633.dir/build.make CMakeFiles/cmTC_ed633.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f565a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f565a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f565a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f565a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_f565a.dir/CheckFunctionExists.c.o  -o cmTC_f565a -lpthreads 
+Building C object CMakeFiles/cmTC_ed633.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ed633.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ed633
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed633.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ed633.dir/CheckFunctionExists.c.o  -o cmTC_ed633 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f565a.dir/build.make:97: recipe for target 'cmTC_f565a' failed
-make[1]: *** [cmTC_f565a] Error 1
+CMakeFiles/cmTC_ed633.dir/build.make:97: recipe for target 'cmTC_ed633' failed
+make[1]: *** [cmTC_ed633] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_behaviors/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f565a/fast' failed
-make: *** [cmTC_f565a/fast] Error 2
+Makefile:126: recipe for target 'cmTC_ed633/fast' failed
+make: *** [cmTC_ed633/fast] Error 2
 
 

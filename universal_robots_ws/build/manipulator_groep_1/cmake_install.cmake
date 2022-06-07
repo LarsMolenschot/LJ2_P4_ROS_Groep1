@@ -129,7 +129,55 @@ file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/in
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_groep_1/action" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1/action/control_robot.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_groep_1/msg" TYPE FILE FILES
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotAction.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotActionGoal.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotActionResult.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotActionFeedback.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotGoal.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotResult.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/manipulator_groep_1/msg/control_robotFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_groep_1/cmake" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/catkin_generated/installspace/manipulator_groep_1-msg-paths.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/include/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/roseus/ros/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/common-lisp/ros/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/share/gennodejs/ros/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/lib/python2.7/dist-packages/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/lib/python2.7/dist-packages/manipulator_groep_1")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/catkin_generated/installspace/manipulator_groep_1.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_groep_1/cmake" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/catkin_generated/installspace/manipulator_groep_1-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
