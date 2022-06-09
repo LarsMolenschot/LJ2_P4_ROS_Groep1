@@ -8,4 +8,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Felix Exner
     author_email: felix@fexner.de
-    generated_timestamp: 1654608573
+    generated_timestamp: 1654765405

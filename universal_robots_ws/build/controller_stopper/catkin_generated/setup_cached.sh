@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/controller_stopper'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/controller_stopper:$ROS_PACKAGE_PATH"
