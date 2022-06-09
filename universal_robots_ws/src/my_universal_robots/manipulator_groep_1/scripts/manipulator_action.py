@@ -56,6 +56,8 @@ class controlUR5Class():
             dest = bak2
         elif poserequested == "mag":
             dest = mag
+        elif poserequested == "vision":
+            dest = vision
 
         result = move_group.moveToJointPosition(joints, dest, 0.02)
         if result:
