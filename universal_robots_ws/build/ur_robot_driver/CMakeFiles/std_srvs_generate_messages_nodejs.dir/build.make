@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_robot_driver
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_robot_driver
 
 # Utility rule file for std_srvs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_robot_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver /home/student/universal_robots_ws/build/ur_robot_driver /home/student/universal_robots_ws/build/ur_robot_driver /home/student/universal_robots_ws/build/ur_robot_driver/CMakeFiles/std_srvs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_robot_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_robot_driver /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_robot_driver /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_robot_driver/CMakeFiles/std_srvs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend
 

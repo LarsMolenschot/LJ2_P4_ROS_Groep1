@@ -1,8 +1,8 @@
-prefix=/home/student/universal_robots_ws/install
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
 
 Name: ur_calibration
 Description: Description of ur_calibration
 Version: 2.0.0
-Cflags: -I/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include -I/home/student/universal_robots_ws/devel/include -I/usr/include
-Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2 /home/student/universal_robots_ws/devel/lib/liburcl.so
+Cflags: -I/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include -I/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include -I/usr/include
+Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/liburcl.so
 Requires: roscpp ur_robot_driver

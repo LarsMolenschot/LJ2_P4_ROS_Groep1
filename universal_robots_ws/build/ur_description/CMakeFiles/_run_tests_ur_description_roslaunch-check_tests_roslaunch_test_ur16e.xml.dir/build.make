@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur_description
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_description
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description
 
 # Utility rule file for _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_description
 include CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/progress.make
 
 CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/student/universal_robots_ws/build/ur_description/test_results/ur_description/roslaunch-check_tests_roslaunch_test_ur16e.xml.xml "/usr/bin/cmake -E make_directory /home/student/universal_robots_ws/build/ur_description/test_results/ur_description" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/student/universal_robots_ws/build/ur_description/test_results/ur_description/roslaunch-check_tests_roslaunch_test_ur16e.xml.xml\" \"/home/student/universal_robots_ws/src/universal_robot/ur_description/tests/roslaunch_test_ur16e.xml\" "
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/test_results/ur_description/roslaunch-check_tests_roslaunch_test_ur16e.xml.xml "/usr/bin/cmake -E make_directory /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/test_results/ur_description" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/test_results/ur_description/roslaunch-check_tests_roslaunch_test_ur16e.xml.xml\" \"/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description/tests/roslaunch_test_ur16e.xml\" "
 
 _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml: CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml
 _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml: CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.
 .PHONY : CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/clean
 
 CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur_description /home/student/universal_robots_ws/src/universal_robot/ur_description /home/student/universal_robots_ws/build/ur_description /home/student/universal_robots_ws/build/ur_description /home/student/universal_robots_ws/build/ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/depend
 

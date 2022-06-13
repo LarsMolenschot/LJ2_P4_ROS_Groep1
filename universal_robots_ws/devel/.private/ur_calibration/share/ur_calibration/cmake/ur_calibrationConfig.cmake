@@ -67,14 +67,14 @@ set(ur_calibration_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ur_calibration_SOURCE_PREFIX /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration)
-  set(ur_calibration_DEVEL_PREFIX /home/student/universal_robots_ws/devel/.private/ur_calibration)
+  set(ur_calibration_SOURCE_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration)
+  set(ur_calibration_DEVEL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration)
   set(ur_calibration_INSTALL_PREFIX "")
   set(ur_calibration_PREFIX ${ur_calibration_DEVEL_PREFIX})
 else()
   set(ur_calibration_SOURCE_PREFIX "")
   set(ur_calibration_DEVEL_PREFIX "")
-  set(ur_calibration_INSTALL_PREFIX /home/student/universal_robots_ws/install)
+  set(ur_calibration_INSTALL_PREFIX /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install)
   set(ur_calibration_PREFIX ${ur_calibration_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ur_calibration_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/home/student/universal_robots_ws/devel/include;/usr/include " STREQUAL " ")
+if(NOT "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include;/usr/include " STREQUAL " ")
   set(ur_calibration_INCLUDE_DIRS "")
-  set(_include_dirs "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/home/student/universal_robots_ws/devel/include;/usr/include")
+  set(_include_dirs "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include;/usr/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,13 +110,13 @@ if(NOT "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/home/stude
         message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ur_calibration_INCLUDE_DIRS ${include})
   endforeach()
 endif()
 
-set(libraries "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2;/home/student/universal_robots_ws/devel/lib/liburcl.so")
+set(libraries "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/liburcl.so")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/student/universal_robots_ws/devel/.private/ur_calibration/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration/lib;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib;/home/student/universal_robots_ws/devel/lib;/home/student/rospackages_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

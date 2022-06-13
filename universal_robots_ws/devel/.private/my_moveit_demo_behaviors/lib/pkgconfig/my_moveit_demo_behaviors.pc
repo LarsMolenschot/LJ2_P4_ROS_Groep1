@@ -1,4 +1,4 @@
-prefix=/home/student/universal_robots_ws/devel/.private/my_moveit_demo_behaviors
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_behaviors
 
 Name: my_moveit_demo_behaviors
 Description: Description of my_moveit_demo_behaviors

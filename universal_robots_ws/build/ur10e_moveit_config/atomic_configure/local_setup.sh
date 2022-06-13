@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config}
+: ${_CATKIN_SETUP_DIR:=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur10e_moveit_config}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

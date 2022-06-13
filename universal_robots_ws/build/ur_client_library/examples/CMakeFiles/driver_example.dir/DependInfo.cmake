@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp" "/home/student/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/driver_example.dir/full_driver.cpp.o"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp" "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/driver_example.dir/full_driver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/include"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles/urcl.dir/DependInfo.cmake"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles/urcl.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

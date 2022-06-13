@@ -1,1 +1,1 @@
-/home/student/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake

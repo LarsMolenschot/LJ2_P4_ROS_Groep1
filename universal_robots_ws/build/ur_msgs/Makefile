@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/ur_msgs
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_msgs
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,17 +102,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -123,6 +112,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/ur_msgs/CMakeFiles /home/student/universal_robots_ws/build/ur_msgs/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/ur_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -441,45 +441,6 @@ _ur_msgs_generate_messages_check_deps_IOStates/fast:
 .PHONY : _ur_msgs_generate_messages_check_deps_IOStates/fast
 
 #=============================================================================
-# Target rules for targets named _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
-
-# Build rule for target.
-_ur_msgs_generate_messages_check_deps_RobotStateRTMsg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
-.PHONY : _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
-
-# fast build rule for target.
-_ur_msgs_generate_messages_check_deps_RobotStateRTMsg/fast:
-	$(MAKE) -f CMakeFiles/_ur_msgs_generate_messages_check_deps_RobotStateRTMsg.dir/build.make CMakeFiles/_ur_msgs_generate_messages_check_deps_RobotStateRTMsg.dir/build
-.PHONY : _ur_msgs_generate_messages_check_deps_RobotStateRTMsg/fast
-
-#=============================================================================
-# Target rules for targets named _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
-
-# Build rule for target.
-_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
-.PHONY : _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
-
-# fast build rule for target.
-_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction/fast:
-	$(MAKE) -f CMakeFiles/_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction.dir/build.make CMakeFiles/_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction.dir/build
-.PHONY : _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction/fast
-
-#=============================================================================
-# Target rules for targets named ur_msgs_geneus
-
-# Build rule for target.
-ur_msgs_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ur_msgs_geneus
-.PHONY : ur_msgs_geneus
-
-# fast build rule for target.
-ur_msgs_geneus/fast:
-	$(MAKE) -f CMakeFiles/ur_msgs_geneus.dir/build.make CMakeFiles/ur_msgs_geneus.dir/build
-.PHONY : ur_msgs_geneus/fast
-
-#=============================================================================
 # Target rules for targets named _ur_msgs_generate_messages_check_deps_SetIO
 
 # Build rule for target.
@@ -519,6 +480,32 @@ _ur_msgs_generate_messages_check_deps_MasterboardDataMsg/fast:
 .PHONY : _ur_msgs_generate_messages_check_deps_MasterboardDataMsg/fast
 
 #=============================================================================
+# Target rules for targets named _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
+
+# Build rule for target.
+_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
+.PHONY : _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction
+
+# fast build rule for target.
+_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction/fast:
+	$(MAKE) -f CMakeFiles/_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction.dir/build.make CMakeFiles/_ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction.dir/build
+.PHONY : _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction/fast
+
+#=============================================================================
+# Target rules for targets named ur_msgs_geneus
+
+# Build rule for target.
+ur_msgs_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_msgs_geneus
+.PHONY : ur_msgs_geneus
+
+# fast build rule for target.
+ur_msgs_geneus/fast:
+	$(MAKE) -f CMakeFiles/ur_msgs_geneus.dir/build.make CMakeFiles/ur_msgs_geneus.dir/build
+.PHONY : ur_msgs_geneus/fast
+
+#=============================================================================
 # Target rules for targets named _ur_msgs_generate_messages_check_deps_Digital
 
 # Build rule for target.
@@ -556,6 +543,19 @@ ur_msgs_genlisp: cmake_check_build_system
 ur_msgs_genlisp/fast:
 	$(MAKE) -f CMakeFiles/ur_msgs_genlisp.dir/build.make CMakeFiles/ur_msgs_genlisp.dir/build
 .PHONY : ur_msgs_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+
+# Build rule for target.
+_ur_msgs_generate_messages_check_deps_RobotStateRTMsg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+.PHONY : _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+
+# fast build rule for target.
+_ur_msgs_generate_messages_check_deps_RobotStateRTMsg/fast:
+	$(MAKE) -f CMakeFiles/_ur_msgs_generate_messages_check_deps_RobotStateRTMsg.dir/build.make CMakeFiles/_ur_msgs_generate_messages_check_deps_RobotStateRTMsg.dir/build
+.PHONY : _ur_msgs_generate_messages_check_deps_RobotStateRTMsg/fast
 
 #=============================================================================
 # Target rules for targets named _ur_msgs_generate_messages_check_deps_ToolDataMsg
@@ -718,17 +718,17 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... _ur_msgs_generate_messages_check_deps_IOStates"
-	@echo "... rebuild_cache"
-	@echo "... _ur_msgs_generate_messages_check_deps_RobotStateRTMsg"
-	@echo "... _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction"
-	@echo "... ur_msgs_geneus"
 	@echo "... _ur_msgs_generate_messages_check_deps_SetIO"
 	@echo "... run_tests"
 	@echo "... _ur_msgs_generate_messages_check_deps_MasterboardDataMsg"
+	@echo "... _ur_msgs_generate_messages_check_deps_SetSpeedSliderFraction"
+	@echo "... ur_msgs_geneus"
 	@echo "... test"
 	@echo "... _ur_msgs_generate_messages_check_deps_Digital"
 	@echo "... _ur_msgs_generate_messages_check_deps_Analog"
 	@echo "... ur_msgs_genlisp"
+	@echo "... rebuild_cache"
+	@echo "... _ur_msgs_generate_messages_check_deps_RobotStateRTMsg"
 	@echo "... _ur_msgs_generate_messages_check_deps_ToolDataMsg"
 	@echo "... ur_msgs_generate_messages_cpp"
 	@echo "... _ur_msgs_generate_messages_check_deps_SetPayload"
