@@ -1,0 +1,8 @@
+<launch
+    name="robotAction" 
+    pkg="manipulator_groep_1" 
+    type="manipulator_action.py"
+    output="screen">
+</launch>
+
+<!--<param name = "default_poses" textfile = "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1/config/default_poses.xml" /> -->

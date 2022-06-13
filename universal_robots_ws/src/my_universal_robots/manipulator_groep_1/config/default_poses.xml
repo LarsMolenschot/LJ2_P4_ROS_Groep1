@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<tables>
+    <table name = "poses">
+      <positie name = "bak1_1">
+        <shoulder_pan>   0.0000 <shoulder_pan/>
+        <shoulder_lift>  0.0000 <shoulder_lift/>
+        <elbow>          0.0000 <elbow/>
+        <wrist_1>        0.0000 <wrist_1/>
+        <wrist_1>        0.0000 <wrist_1/>
+        <wrist_1>        0.0000 <wrist_1/>
+      </positie>
+
+      <positie name = "bak1_2">
+        <shoulder_pan value = 0.0000 />
+        <shoulder_lift value = 0.0000 />
+        <elbow value = 0.0000 />
+        <wrist_1 value = 0.0000 />
+        <wrist_2 value = 0.0000 />
+        <wrist_3 value = 0.0000 />
+      </positie>
+    </table>
+</tables>

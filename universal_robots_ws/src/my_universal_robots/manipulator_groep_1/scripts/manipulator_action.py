@@ -5,6 +5,7 @@ import copy
 import rospy
 import moveit_commander
 import moveit_msgs.msg
+import xml.etree.ElementTree as ET
 
 from moveit_python import MoveGroupInterface
 from moveit_msgs.msg import MoveItErrorCodes
@@ -43,21 +44,25 @@ class controlUR5Class():
         joints = ["shoulder_pan_joint", "shoulder_lift_joint", "elbow_joint",
                   "wrist_1_joint", "wrist_2_joint", "wrist_3_joint"]
 
-        bak1 = [-0.1010, -2.1760, -0.9014, -1.6304, 1.5711, -0.1034]
-        bak2 = [-0.1757, -1.6311, -1.6720, -1.4296, 1.5767, -0.1748]
-        mag = [0.4328, -1.8104, -1.4624, -1.4597, 1.5894, 0.4328]
-        vision = [-0.4414, -1.0941, -2.1131, -1.5163, 1.6127, -0.4760]
-
         poserequested = robotgoal.position.data
+        
+        #get parameter data
+        tree = ET.parse("default_poses.xml")
+        root = tree.getroot()
 
-        if poserequested == "bak1":
-            dest = bak1
-        elif poserequested == "bak2":
-            dest = bak2
-        elif poserequested == "mag":
-            dest = mag
-        elif poserequested == "vision":
-            dest = vision
+        joints_2 = ["shoulder_pan", "shoulder_lift", "elbow",
+                        "wrist_1", "wrist_2", "wrist_3"]
+
+        dest = [-0.4414, -1.0941, -2.1131, -1.5163, 1.6127, -0.4760]
+
+        for pos in root.findall("positie"):
+            name = pos.get('name')
+            
+            if name == poserequested:
+                for i in range(6):
+                    value = pos.find(joints_2[i]).text
+                    dest[i] = float(value)
+                    rospy.loginfo(value)
 
         result = move_group.moveToJointPosition(joints, dest, 0.02)
         if result:
@@ -70,7 +75,7 @@ class controlUR5Class():
             rospy.logerr("MoveIt failure! No result returned.")
 
         move_group.get_move_action().cancel_all_goals()
-
+        
         self._success = True
         self.UR5_action.set_succeeded(self._success)
 
