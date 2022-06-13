@@ -53,6 +53,18 @@ opencv2/core.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/opencv2/core.hpp
 opencv2/imgproc.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/opencv2/imgproc.hpp
+opencv2/highgui.hpp
+-
+vector
+-
+opencv2/features2d.hpp
+-
+opencv2/calib3d/calib3d.hpp
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/opencv2/calib3d/calib3d.hpp
+opencv2/highgui.hpp
+-
+opencv2/videoio.hpp
+-
 
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp
 image_processor/image_processor_node.h

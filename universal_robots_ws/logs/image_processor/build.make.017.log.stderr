@@ -1,0 +1,11 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage[m[K’ was not declared in this scope
+ cv_mat_out_=[01;31m[Kimage[m[K(crop_region);
+             [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktimegm[m[K’
+ cv_mat_out_=[01;36m[Kimage[m[K(crop_region);
+             [01;36m[K^~~~~[m[K
+             [32m[Ktimegm[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

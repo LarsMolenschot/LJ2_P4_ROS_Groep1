@@ -1,5 +1,5 @@
 /home/student/universal_robots_ws/devel/./cmake.lock 98
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock 32
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock 371
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc 2
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/controller_stopper/node 2
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake 2
