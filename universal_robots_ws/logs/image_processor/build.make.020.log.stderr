@@ -1,0 +1,73 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat3b[m[K’ was not declared in this scope
+     [01;31m[KMat3b[m[K cv_mat_out_;
+     [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:67:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:2195:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat3b[m[K’
+ typedef Mat_<Vec3b> [01;36m[KMat3b[m[K;
+                     [01;36m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:68:40:[m[K [01;31m[Kerror: [m[K‘[01m[KCOLOR_BGR2HSV[m[K’ was not declared in this scope
+     cvtColor(cv_mat_out_, cv_mat_out_, [01;31m[KCOLOR_BGR2HSV[m[K);
+                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:68:40:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/opencv.hpp:71:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/imgproc.hpp:581:5:[m[K [01;36m[Knote: [m[K  ‘[01m[KCOLOR_BGR2HSV[m[K’
+     [01;36m[KCOLOR_BGR2HSV[m[K      = 40, //!< convert RGB/BGR to HSV (hue saturation value), @ref color_convert_rgb_hsv "color conversions"
+     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat1b[m[K’ was not declared in this scope
+     [01;31m[KMat1b[m[K mask1, mask2;
+     [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:70:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:2193:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat1b[m[K’
+ typedef Mat_<uchar> [01;36m[KMat1b[m[K;
+                     [01;36m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:13:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+     inRange([01;31m[Khsv[m[K, Scalar(0, 70, 50), Scalar(10, 255, 255), mask1);
+             [01;31m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:18:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope
+     inRange(hsv, [01;31m[KScalar[m[K(0, 70, 50), Scalar(10, 255, 255), mask1);
+                  [01;31m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:18:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/types.hpp:606:25:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Scalar[m[K’
+ typedef Scalar_<double> [01;36m[KScalar[m[K;
+                         [01;36m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask1[m[K’ was not declared in this scope
+     inRange(hsv, Scalar(0, 70, 50), Scalar(10, 255, 255), [01;31m[Kmask1[m[K);
+                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:5:[m[K [01;31m[Kerror: [m[K‘[01m[KinRange[m[K’ was not declared in this scope
+     [01;31m[KinRange[m[K(hsv, Scalar(0, 70, 50), Scalar(10, 255, 255), mask1);
+     [01;31m[K^~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:71:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/opencv.hpp:52:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core.hpp:1338:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::inRange[m[K’
+ CV_EXPORTS_W void [01;36m[KinRange[m[K(InputArray src, InputArray lowerb,
+                   [01;36m[K^~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:72:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask2[m[K’ was not declared in this scope
+     inRange(hsv, Scalar(170, 70, 50), Scalar(180, 255, 255), [01;31m[Kmask2[m[K);
+                                                              [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:72:62:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfmaf32[m[K’
+     inRange(hsv, Scalar(170, 70, 50), Scalar(180, 255, 255), [01;36m[Kmask2[m[K);
+                                                              [01;36m[K^~~~~[m[K
+                                                              [32m[Kfmaf32[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:74:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcv_mat_out_[m[K’
+     Mat1b [01;31m[Kcv_mat_out_[m[K = mask1 | mask2;
+           [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:83:56:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kcv::OutputArray {aka const cv::_OutputArray&}[m[K’ from expression of type ‘[01m[Kcv::ColorConversionCodes[m[K’
+     cv_mat_out_ = cv::cvtColor(mask, cv::COLOR_GRAY2RGB[01;31m[K)[m[K * 255
+                                                        [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/opencv.hpp:71:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/imgproc.hpp:3571:19:[m[K [01;36m[Knote: [m[Kin passing argument 2 of ‘[01m[Kvoid cv::cvtColor(cv::InputArray, cv::OutputArray, int, int)[m[K’
+ CV_EXPORTS_W void [01;36m[KcvtColor[m[K( InputArray src, OutputArray dst, int code, int dstCn = 0 );
+                   [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

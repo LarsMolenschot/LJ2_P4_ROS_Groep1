@@ -1,0 +1,28 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_mask1[m[K’ was not declared in this scope
+     findContours( [01;31m[K_mask1[m[K, contours, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                   [01;31m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:19:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kmask1[m[K’
+     findContours( [01;36m[K_mask1[m[K, contours, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                   [01;36m[K^~~~~~[m[K
+                   [32m[Kmask1[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontours[m[K’ was not declared in this scope
+     findContours( _mask1, [01;31m[Kcontours[m[K, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KCvContour[m[K’
+     findContours( _mask1, [01;36m[Kcontours[m[K, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                           [01;36m[K^~~~~~~~[m[K
+                           [32m[KCvContour[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:37:[m[K [01;31m[Kerror: [m[K‘[01m[Khierarchy[m[K’ was not declared in this scope
+     findContours( _mask1, contours, [01;31m[Khierarchy[m[K, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kbsearch[m[K’
+     findContours( _mask1, contours, [01;36m[Khierarchy[m[K, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+                                     [01;36m[K^~~~~~~~~[m[K
+                                     [32m[Kbsearch[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:82:36:[m[K [01;31m[Kerror: [m[K‘[01m[Krng[m[K’ was not declared in this scope
+     cv::Scalar color = cv::Scalar( [01;31m[Krng[m[K.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
+                                    [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
