@@ -1,0 +1,13 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:117:73:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst Scalar& {aka const cv::Scalar_<double>&}[m[K’ from expression of type ‘[01m[Kcv::Mat[m[K’
+     drawContours(imgWithContours, contours, i, color, 1, 8, hierarchy, 0[01;31m[K)[m[K;
+                                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/opencv.hpp:71:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/imgproc.hpp:4400:19:[m[K [01;36m[Knote: [m[Kin passing argument 4 of ‘[01m[Kvoid cv::drawContours(cv::InputOutputArray, cv::InputArrayOfArrays, int, const Scalar&, int, int, cv::InputArray, int, cv::Point)[m[K’
+ CV_EXPORTS_W void [01;36m[KdrawContours[m[K( InputOutputArray image, InputArrayOfArrays contours,
+                   [01;36m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

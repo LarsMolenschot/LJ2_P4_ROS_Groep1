@@ -1,0 +1,21 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:90:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kret[m[K’ was not declared in this scope
+   [01;31m[Kret[m[K, thresh = cv.threshold(mask, 127, 255, 0)
+   [01;31m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:90:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kdrem[m[K’
+   [01;36m[Kret[m[K, thresh = cv.threshold(mask, 127, 255, 0)
+   [01;36m[K^~~[m[K
+   [32m[Kdrem[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:90:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kthresh[m[K’ was not declared in this scope
+   ret, [01;31m[Kthresh[m[K = cv.threshold(mask, 127, 255, 0)
+        [01;31m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:90:8:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kthis[m[K’
+   ret, [01;36m[Kthresh[m[K = cv.threshold(mask, 127, 255, 0)
+        [01;36m[K^~~~~~[m[K
+        [32m[Kthis[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:90:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+   ret, thresh = cv[01;31m[K.[m[Kthreshold(mask, 127, 255, 0)
+                   [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

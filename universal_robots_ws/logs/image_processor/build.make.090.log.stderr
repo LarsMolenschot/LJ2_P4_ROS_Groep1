@@ -1,0 +1,415 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:127:36:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kstd::vector<cv::Mat> cv_mat_out_[m[K’
+    std::vector<cv::Mat> cv_mat_out_[01;31m[K([m[K3);
+                                    [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:77:13:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcv::Mat cv_mat_out_[m[K’
+     cv::Mat [01;36m[Kcv_mat_out_[m[K = mask1 | mask2;
+             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at(int)[m[K’
+    cv_mat_out_.at(0[01;31m[K)[m[K = blue;
+                    [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(const int*)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(const int*) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)
+     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const
+     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(cv::Point)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(cv::Point) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:130:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(0[01;36m[K)[m[K = blue;
+                    [01;36m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at(int)[m[K’
+    cv_mat_out_.at(1[01;31m[K)[m[K = green;
+                    [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(const int*)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(const int*) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)
+     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const
+     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(cv::Point)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(cv::Point) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:131:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(1[01;36m[K)[m[K = green;
+                    [01;36m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at(int)[m[K’
+    cv_mat_out_.at(2[01;31m[K)[m[K = red;
+                    [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1782:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1786:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1791:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1796:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(int, int, int)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1803:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(int, int, int) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1809:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(const int*)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1814:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(const int*) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1818:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)
+     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1821:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const
+     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1823:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> _Tp& cv::Mat::at(cv::Point)
+     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1829:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> const _Tp& cv::Mat::at(cv::Point) const
+     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv2/core/mat.hpp:1834:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:132:20:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[K_Tp[m[K’
+    cv_mat_out_.at(2[01;36m[K)[m[K = red;
+                    [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

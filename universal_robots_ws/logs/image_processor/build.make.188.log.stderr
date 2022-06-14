@@ -1,0 +1,58 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:67:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope
+ [01;31m[KMat[m[K iGray { cv_mat_out_ };
+ [01;31m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:67:1:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:740:18:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’
+ class CV_EXPORTS [01;36m[KMat[m[K
+                  [01;36m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[KiGray[m[K’ was not declared in this scope
+ if ([01;31m[KiGray[m[K.channels() == 3 || iGray.channels() == 4)
+     [01;31m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/cassert:44:0[m[K,
+                 from [01m[K/usr/include/opencv2/flann/index_testing.h:35[m[K,
+                 from [01m[K/usr/include/opencv2/flann/autotuned_index.h:36[m[K,
+                 from [01m[K/usr/include/opencv2/flann/all_indices.h:43[m[K,
+                 from [01m[K/usr/include/opencv2/flann/flann_base.hpp:43[m[K,
+                 from [01m[K/usr/include/opencv2/flann.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:62[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:70:8:[m[K [01;31m[Kerror: [m[K‘[01m[KiGray[m[K’ was not declared in this scope
+ assert([01;31m[Ki[m[KGray.type() == CV_8UC1);
+        [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:72:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KiBin[m[K’
+ Mat [01;31m[KiBin[m[K(iGray.size(), iGray.type());
+     [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:18:[m[K [01;31m[Kerror: [m[K‘[01m[KiBin[m[K’ was not declared in this scope
+ threshold(iGray, [01;31m[KiBin[m[K, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+                  [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:18:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksin[m[K’
+ threshold(iGray, [01;36m[KiBin[m[K, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+                  [01;36m[K^~~~[m[K
+                  [32m[Ksin[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kthreshold[m[K’ was not declared in this scope
+ [01;31m[Kthreshold[m[K(iGray, iBin, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+ [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:75:1:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/opencv.hpp:71:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/imgproc.hpp:2733:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::threshold[m[K’
+ CV_EXPORTS_W double [01;36m[Kthreshold[m[K( InputArray src, OutputArray dst,
+                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K At global scope:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:185:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_mat_ptr_in_[m[K’ does not name a type; did you mean ‘[01m[KcvReadString[m[K’?
+     [01;31m[Kcv_mat_ptr_in_[m[K = nullptr;
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+     [32m[KcvReadString[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:186:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

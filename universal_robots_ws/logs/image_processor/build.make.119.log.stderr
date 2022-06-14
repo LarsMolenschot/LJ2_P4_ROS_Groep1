@@ -1,0 +1,18 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:73:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask[m[K’ was not declared in this scope
+     inRange(cv_mat_out_, cv::Scalar(0, 40, 70), cv::Scalar(10, 90, 130), [01;31m[Kmask[m[K);
+                                                                          [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:73:74:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kmask2[m[K’
+     inRange(cv_mat_out_, cv::Scalar(0, 40, 70), cv::Scalar(10, 90, 130), [01;36m[Kmask[m[K);
+                                                                          [01;36m[K^~~~[m[K
+                                                                          [32m[Kmask2[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[KnRange[m[K’ was not declared in this scope
+     [01;31m[KnRange[m[K(cv_mat_out_, cv::Scalar(170, 70, 50), cv::Scalar(180, 255, 255), mask2);
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:74:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KcvRange[m[K’
+     [01;36m[KnRange[m[K(cv_mat_out_, cv::Scalar(170, 70, 50), cv::Scalar(180, 255, 255), mask2);
+     [01;36m[K^~~~~~[m[K
+     [32m[KcvRange[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
