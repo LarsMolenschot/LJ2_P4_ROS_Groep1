@@ -17,27 +17,59 @@ import actionlib
 
 class controlUR5Class():
 
-    _success = control_robotResult
-
     def __init__(self):
             self.UR5_action = actionlib.SimpleActionServer('control_robot', control_robotAction, self.moverobot ,False)
             self.UR5_action.start()
 
-            self.defaultposition = Pose()
-            self.defaultposition.orientation.w = 1.000000
-            self.defaultposition.orientation.x = 0.000000
-            self.defaultposition.orientation.z = 0.000000
-            self.defaultposition.orientation.y = 0.000000
-            self.defaultposition.position.x = 0.28
-            self.defaultposition.position.y = -0.11
-            self.defaultposition.position.z = 0.46
+            self._success = control_robotResult()
+
+            self._controlPose = Pose()
 
             rospy.loginfo("actionserver running!")
+    
+    def checkfinalpose(self):
+        reached = True
+        moveit_commander.roscpp_initialize(sys.argv)
+
+        robot3 = moveit_commander.RobotCommander()
+        scene3 = moveit_commander.PlanningSceneInterface()
+        group3 = moveit_commander.MoveGroupCommander("arm")
+        display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=20)
+
+        #get the current position
+        curr_pose = Pose()
+        curr_pose = group3.get_current_pose()
+
+        marge = 0.01
+
+        if self._controlPose.position.x > curr_pose.pose.position.x + marge or self._controlPose.position.x < curr_pose.pose.position.x - marge:
+            reached = False
+        elif self._controlPose.position.y > curr_pose.pose.position.y + marge or self._controlPose.position.y < curr_pose.pose.position.y - marge:
+            reached = False
+        elif self._controlPose.position.z > curr_pose.pose.position.z + marge or self._controlPose.position.z < curr_pose.pose.position.z - marge:
+            reached = False
+        elif self._controlPose.orientation.x > curr_pose.pose.orientation.x + marge or self._controlPose.orientation.x < curr_pose.pose.orientation.x - marge:
+            reached = False
+        elif self._controlPose.orientation.y > curr_pose.pose.orientation.y + marge or self._controlPose.orientation.y < curr_pose.pose.orientation.y - marge:
+            reached = False
+        elif self._controlPose.orientation.z > curr_pose.pose.orientation.z + marge or self._controlPose.orientation.z < curr_pose.pose.orientation.z - marge:
+            reached = False
+        elif self._controlPose.orientation.w > curr_pose.pose.orientation.w + marge or self._controlPose.orientation.w < curr_pose.pose.orientation.w - marge:
+            reached = False
+        
+        if reached == False:
+            rospy.logerr("desired position not reached correctly!")
+        else:
+            rospy.loginfo("desired position reached!")
 
     def movepredefined(self, robotgoal):
+        #mode for moving to predefined positions
         rospy.loginfo("mode = 0")
         rospy.loginfo("moving to predefined position %s", robotgoal.position.data)
-        #mode for moving to predefined positions
+
+        #set the success variable to true
+        self._success = True
+        
 
         #create moveitcommander
         moveit_commander.roscpp_initialize(sys.argv)
@@ -58,46 +90,71 @@ class controlUR5Class():
 
         for pos in root.findall("positie"):
             name = pos.get('name')
-            print(str(name))
-            rospy.loginfo(str(robotgoal.position.data))
 
+            #set the desired position and the control position
             if str(name) == str(robotgoal.position.data):
                 value = pos.find("w").text 
-                pose.orientation.w = float(value)        
+                pose.orientation.w = float(value)
+                self._controlPose.orientation.w  = float(value)
+
                 value = pos.find("x").text 
                 pose.position.x = float(value)
+                self._controlPose.position.x = float(value)
+
                 value = pos.find("y").text 
                 pose.position.y = float(value)
+                self._controlPose.position.y = float(value)
+
                 value = pos.find("z").text 
                 pose.position.z = float(value)
+                self._controlPose.position.z = float(value)
+
                 value = pos.find("Rx").text 
                 pose.orientation.x = float(value)
+                self._controlPose.orientation.x = float(value)
+
                 value = pos.find("Ry").text 
                 pose.orientation.y = float(value)
+                self._controlPose.orientation.y = float(value)
+
                 value = pos.find("Rz").text 
                 pose.orientation.z = float(value)
+                self._controlPose.orientation.z = float(value)
 
-        rospy.loginfo("moving to: \n")
-        rospy.loginfo(pose)
+                self._success = True
+                
+                break
+            self._success = False
 
-        #set planning settings
-        group2.set_planner_id("RRTConnectkConfigDefault")
-        group2.set_planning_time(10)
-        group2.set_num_planning_attempts(20)
-        group2.set_end_effector_link("tcp_link")
-        group2.set_goal_tolerance(0.01)
 
-        #set the destination
-        group2.set_pose_target(pose)
-
-        #plan the route and move the robot
-        plan2 = group2.plan()
-        group2.go(wait=True)
+        if self._success == False:
+            rospy.logerr("position not defined, please pass a defined position")
+            self.UR5_action.set_preempted()
         
-        self._success = True
-        self.UR5_action.set_succeeded(self._success)
+        if self._success == True:
+            rospy.loginfo("moving to: \n")
+            rospy.loginfo(pose)
+
+            #set planning settings
+            group2.set_planner_id("RRTConnectkConfigDefault")
+            group2.set_planning_time(10)
+            group2.set_num_planning_attempts(20)
+            group2.set_end_effector_link("tcp_link")
+            group2.set_goal_tolerance(0.01)
+
+            #set the destination
+            group2.set_pose_target(pose)
+
+            #plan the route and move the robot
+            plan2 = group2.plan()
+            group2.go(wait=True)
+        
+        if self._success == True:
+            self.UR5_action.set_succeeded(self._success)
 
     def movelineair(self, robotgoal):
+        self._success = True
+
         moveit_commander.roscpp_initialize(sys.argv)
 
         robot = moveit_commander.RobotCommander()
@@ -110,6 +167,7 @@ class controlUR5Class():
         curr_pose = Pose()
         curr_pose = group.get_current_pose()
 
+        #set the desired position
         pose_target = Pose()
         pose_target.orientation.w = curr_pose.pose.orientation.w + robotgoal.lineairpose.orientation.w
         pose_target.orientation.x = curr_pose.pose.orientation.x + robotgoal.lineairpose.orientation.x
@@ -119,6 +177,16 @@ class controlUR5Class():
         pose_target.position.y = curr_pose.pose.position.y + robotgoal.lineairpose.position.y
         pose_target.position.z = curr_pose.pose.position.z + robotgoal.lineairpose.position.z
 
+        #set the controlpose to the desired position for error checking later
+        self._controlPose.orientation.w = curr_pose.pose.orientation.w + robotgoal.lineairpose.orientation.w
+        self._controlPose.orientation.x = curr_pose.pose.orientation.x + robotgoal.lineairpose.orientation.x
+        self._controlPose.orientation.z = curr_pose.pose.orientation.z + robotgoal.lineairpose.orientation.z
+        self._controlPose.orientation.y = curr_pose.pose.orientation.y + robotgoal.lineairpose.orientation.y
+        self._controlPose.position.x = curr_pose.pose.position.x + robotgoal.lineairpose.position.x
+        self._controlPose.position.y = curr_pose.pose.position.y + robotgoal.lineairpose.position.y
+        self._controlPose.position.z = curr_pose.pose.position.z + robotgoal.lineairpose.position.z
+
+        #set the planner settings
         group.set_planner_id("RRTConnectkConfigDefault")
         group.set_planning_time(5)
         group.set_num_planning_attempts(10)
@@ -128,17 +196,19 @@ class controlUR5Class():
 
         #move robot to the position
         plan1 = group.plan()
-
         group.go(wait=True)
 
-        self._success = True
-        self.UR5_action.set_succeeded(self._success)
+        #set the action server as completed
+        if self._success == True:
+            self.UR5_action.set_succeeded(self._success)
 
     def moverobot(self, robotgoal):
         if robotgoal.mode.data == 0:
             self.movepredefined(robotgoal)
         elif robotgoal.mode.data == 1:
             self.movelineair(robotgoal)
+
+        self.checkfinalpose()
 
 
 
