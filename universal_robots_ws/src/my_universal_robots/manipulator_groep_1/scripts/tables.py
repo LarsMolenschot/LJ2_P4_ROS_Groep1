@@ -3,27 +3,40 @@
 import rospy
 import xml.etree.ElementTree as ET
 
+from geometry_msgs.msg import Pose
+
 param_name = "/default_poses"
 
 rospy.loginfo("program started!")
 print("program started!")
 
-if rospy.has_param(param_name):
-    tables_param = rospy.get_param(param_name)
+#get parameter data
+pose = Pose()
 
-tree = ET.parse("default_poses.xml")
+tree = ET.parse("../config/default_poses.xml")
 root = tree.getroot()
 
-joints_2 = ["shoulder_pan", "shoulder_lift", "elbow",
-                  "wrist_1", "wrist_2", "wrist_3"]
-
 for pos in root.findall("positie"):
-    #value = pos.find("shoulder_pan").text
     name = pos.get('name')
-    
-    if name == "bak1_1":
-        for i in range(6):
-            value = pos.find(joints_2[i]).text
-            print(value)
+
+    print(name)
+
+    value = pos.find("w").text 
+    pose.orientation.w = float(value)        
+    value = pos.find("x").text 
+    pose.position.x = float(value)
+    value = pos.find("y").text 
+    pose.position.y = float(value)
+    value = pos.find("z").text 
+    pose.position.z = float(value)
+    value = pos.find("Rx").text 
+    pose.orientation.x = float(value)
+    value = pos.find("Ry").text 
+    pose.orientation.y = float(value)
+    value = pos.find("Rz").text 
+    pose.orientation.z = float(value)
+
+    print("position is:\n")
+    print(pose)
 
 

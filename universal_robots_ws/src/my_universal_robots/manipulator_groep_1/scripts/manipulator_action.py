@@ -39,42 +39,60 @@ class controlUR5Class():
         rospy.loginfo("moving to predefined position %s", robotgoal.position.data)
         #mode for moving to predefined positions
 
-        move_group = MoveGroupInterface("arm", "base_link")
+        #create moveitcommander
+        moveit_commander.roscpp_initialize(sys.argv)
 
-        joints = ["shoulder_pan_joint", "shoulder_lift_joint", "elbow_joint",
-                  "wrist_1_joint", "wrist_2_joint", "wrist_3_joint"]
+        robot2 = moveit_commander.RobotCommander()
+        scene2 = moveit_commander.PlanningSceneInterface()
+        group2 = moveit_commander.MoveGroupCommander("arm")
+        display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=20)
 
-        poserequested = robotgoal.position.data
-        
-        #get parameter data
-        tree = ET.parse("default_poses.xml")
+        #get the positions from default_poses.xml
+        pose = Pose()
+
+        tree = ET.parse("../config/default_poses.xml")
         root = tree.getroot()
 
-        joints_2 = ["shoulder_pan", "shoulder_lift", "elbow",
-                        "wrist_1", "wrist_2", "wrist_3"]
-
-        dest = [-0.4414, -1.0941, -2.1131, -1.5163, 1.6127, -0.4760]
+        curr_pose = Pose()
+        curr_pose = group2.get_current_pose()
 
         for pos in root.findall("positie"):
             name = pos.get('name')
-            
-            if name == poserequested:
-                for i in range(6):
-                    value = pos.find(joints_2[i]).text
-                    dest[i] = float(value)
-                    rospy.loginfo(value)
+            print(str(name))
+            rospy.loginfo(str(robotgoal.position.data))
 
-        result = move_group.moveToJointPosition(joints, dest, 0.02)
-        if result:
-            if result.error_code.val == MoveItErrorCodes.SUCCESS:
-                rospy.loginfo("Trajectory successfully executed!")
-            else:
-                rospy.logerr("Arm goal in state: %s",
-                move_group.get_move_action().get_state())
-        else:
-            rospy.logerr("MoveIt failure! No result returned.")
+            if str(name) == str(robotgoal.position.data):
+                value = pos.find("w").text 
+                pose.orientation.w = float(value)        
+                value = pos.find("x").text 
+                pose.position.x = float(value)
+                value = pos.find("y").text 
+                pose.position.y = float(value)
+                value = pos.find("z").text 
+                pose.position.z = float(value)
+                value = pos.find("Rx").text 
+                pose.orientation.x = float(value)
+                value = pos.find("Ry").text 
+                pose.orientation.y = float(value)
+                value = pos.find("Rz").text 
+                pose.orientation.z = float(value)
 
-        move_group.get_move_action().cancel_all_goals()
+        rospy.loginfo("moving to: \n")
+        rospy.loginfo(pose)
+
+        #set planning settings
+        group2.set_planner_id("RRTConnectkConfigDefault")
+        group2.set_planning_time(10)
+        group2.set_num_planning_attempts(20)
+        group2.set_end_effector_link("tcp_link")
+        group2.set_goal_tolerance(0.01)
+
+        #set the destination
+        group2.set_pose_target(pose)
+
+        #plan the route and move the robot
+        plan2 = group2.plan()
+        group2.go(wait=True)
         
         self._success = True
         self.UR5_action.set_succeeded(self._success)
@@ -108,6 +126,7 @@ class controlUR5Class():
         group.set_goal_tolerance(0.01)
         group.set_pose_target(pose_target)
 
+        #move robot to the position
         plan1 = group.plan()
 
         group.go(wait=True)
