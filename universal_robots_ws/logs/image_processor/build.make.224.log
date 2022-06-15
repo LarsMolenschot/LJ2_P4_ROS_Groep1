@@ -1,0 +1,57 @@
+[35m[1mScanning dependencies of target image_processor_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o[0m
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:240:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(float&, float&)[m[K’
+         print( x0, y0[01;31m[K)[m[K;
+                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:3214:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/operations.hpp:377:5:[m[K [01;36m[Knote: [m[Kcandidate: int cv::print(cv::Ptr<cv::Formatted>, FILE*)
+ int [01;36m[Kprint[m[K(Ptr<Formatted> fmtd, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:377:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kcv::Ptr<cv::Formatted>[m[K’
+[01m[K/usr/include/opencv2/core/operations.hpp:388:5:[m[K [01;36m[Knote: [m[Kcandidate: int cv::print(const cv::Mat&, FILE*)
+ int [01;36m[Kprint[m[K(const Mat& mtx, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:388:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+[01m[K/usr/include/opencv2/core/operations.hpp:394:5:[m[K [01;36m[Knote: [m[Kcandidate: int cv::print(const cv::UMat&, FILE*)
+ int [01;36m[Kprint[m[K(const UMat& mtx, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:394:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst cv::UMat&[m[K’
+[01m[K/usr/include/opencv2/core/operations.hpp:400:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> int cv::print(const std::vector<cv::Point_<_Tp> >&, FILE*)
+ int [01;36m[Kprint[m[K(const std::vector<Point_<_Tp> >& vec, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:400:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:240:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::vector<cv::Point_<_Tp> >[m[K’ and ‘[01m[Kfloat[m[K’
+         print( x0, y0[01;36m[K)[m[K;
+                      [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:3214:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/operations.hpp:406:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> int cv::print(const std::vector<cv::Point3_<_Tp> >&, FILE*)
+ int [01;36m[Kprint[m[K(const std::vector<Point3_<_Tp> >& vec, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:240:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::vector<cv::Point3_<_Tp> >[m[K’ and ‘[01m[Kfloat[m[K’
+         print( x0, y0[01;36m[K)[m[K;
+                      [01;36m[K^[m[K
+In file included from [01m[K/usr/include/opencv2/core.hpp:3214:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/core/operations.hpp:412:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, int m, int n> int cv::print(const cv::Matx<_Tp, m, n>&, FILE*)
+ int [01;36m[Kprint[m[K(const Matx<_Tp, m, n>& matx, FILE* stream = stdout)
+     [01;36m[K^~~~~[m[K
+[01m[K/usr/include/opencv2/core/operations.hpp:412:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:240:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’ and ‘[01m[Kfloat[m[K’
+         print( x0, y0[01;36m[K)[m[K;
+                      [01;36m[K^[m[K
+CMakeFiles/image_processor_node.dir/build.make:62: recipe for target 'CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o' failed
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+CMakeFiles/Makefile2:995: recipe for target 'CMakeFiles/image_processor_node.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,40 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:172:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleBlobDetector[m[K’ has not been declared
+     [01;31m[KSimpleBlobDetector[m[K::Params params;
+     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:176:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparams[m[K’ was not declared in this scope
+     [01;31m[Kparams[m[K.minThreshold = 1;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:205:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSet[m[K’ was not declared in this scope
+     [01;31m[KSet[m[K up detector with params
+     [01;31m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:205:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KcvSet[m[K’
+     [01;36m[KSet[m[K up detector with params
+     [01;36m[K^~~[m[K
+     [32m[KcvSet[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:207:17:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleBlobDetector[m[K’ was not declared in this scope
+         cv::Ptr<[01;31m[KSimpleBlobDetector[m[K> detector { SimpleBlobDetector::create(params) };
+                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:207:17:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/calib3d.hpp:48:0[m[K,
+                 from [01m[K/usr/include/opencv2/opencv.hpp:56[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:4[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1[m[K:
+[01m[K/usr/include/opencv2/features2d.hpp:553:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::SimpleBlobDetector[m[K’
+ class CV_EXPORTS_W [01;36m[KSimpleBlobDetector[m[K : public Feature2D
+                    [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:207:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+         cv::Ptr<SimpleBlobDetector[01;31m[K>[m[K detector { SimpleBlobDetector::create(params) };
+                                   [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:207:48:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleBlobDetector[m[K’ is not a class, namespace, or enumeration
+         cv::Ptr<SimpleBlobDetector> detector { [01;31m[KSimpleBlobDetector[m[K::create(params) };
+                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:210:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+         detector[01;31m[K->[m[Kdetect(mask, keypoints);
+                 [01;31m[K^~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:210:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeypoints[m[K’ was not declared in this scope
+         detector->detect(mask, [01;31m[Kkeypoints[m[K);
+                                [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
