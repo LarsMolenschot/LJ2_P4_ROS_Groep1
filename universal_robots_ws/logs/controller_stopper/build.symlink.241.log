@@ -1,0 +1,14 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib/pkgconfig/controller_stopper.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc
+Warning: Source hash: f70be594149095c39246f98fcd028a59
+Warning: Dest hash: 96e044f5a2d7a124c9107cc5fa7130ad
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib/controller_stopper/node to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/controller_stopper/node
+Warning: Source hash: eb31b0fa1490042f4e94147523bb8621
+Warning: Dest hash: f203f548a95df271abfa5cded2ff877a
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake
+Warning: Source hash: 0692ce29e4c544d089bbde598df12826
+Warning: Dest hash: 5155282ba55b80feebc53f52bc6491be
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/cmake.lock, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib/pkgconfig/controller_stopper.pc, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/lib/controller_stopper/node, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/controller_stopper/node)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig-version.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake)

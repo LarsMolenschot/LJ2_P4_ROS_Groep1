@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app:/home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app:$ROS_PACKAGE_PATH"

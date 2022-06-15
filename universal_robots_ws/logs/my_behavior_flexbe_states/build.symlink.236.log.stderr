@@ -1,0 +1,9 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py
+Warning: Source hash: 88edd41437ac1f8ef66fc69a5ffca00d
+Warning: Dest hash: 10d36df684dca6ca7b1876c865878363
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/pkgconfig/my_behavior_flexbe_states.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_behavior_flexbe_states.pc
+Warning: Source hash: 216a0ad0c0f2bb55dd9946282c527a16
+Warning: Dest hash: 6c5ad3e19c04b03c6d48d5664a01df0d
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake
+Warning: Source hash: 8a42015685733f0589e4040ef9ceb3f8
+Warning: Dest hash: a4bf174d68784d3118001c59d5120f13

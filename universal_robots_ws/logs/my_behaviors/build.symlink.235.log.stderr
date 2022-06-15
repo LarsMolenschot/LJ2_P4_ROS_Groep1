@@ -1,0 +1,9 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/lib/python2.7/dist-packages/my_behaviors/__init__.py to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
+Warning: Source hash: efe8d2d91d8008b828d9628d3d7cc6da
+Warning: Dest hash: cd6fb433e5eca47088c3672cfa139585
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/lib/pkgconfig/my_behaviors.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
+Warning: Source hash: 6065723c558b1f38678ad79783bcda0a
+Warning: Dest hash: 149c1658961020e7e1d3ce63c5632169
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+Warning: Source hash: 837812672377b707a2ec0fe2993b839c
+Warning: Dest hash: ff4f776ee27d01c12087297de6ce9b68

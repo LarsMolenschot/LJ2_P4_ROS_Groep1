@@ -9,7 +9,8 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics'
 export PYTHONPATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics:/home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics:$ROS_PACKAGE_PATH"

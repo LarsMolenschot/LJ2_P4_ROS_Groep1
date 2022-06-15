@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_universal_robot_controllers/lib/pkgconfig/my_universal_robot_controllers.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_universal_robot_controllers.pc
+Warning: Source hash: 226cb2dffe72e4ff630382a4843251d9
+Warning: Dest hash: 037bbb228429c1acb4cd5abd620fe1ec
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake
+Warning: Source hash: 785c76f2ebddeb21ba543b0e7452c449
+Warning: Dest hash: c194e92d37fdf8cab9075d4030656843

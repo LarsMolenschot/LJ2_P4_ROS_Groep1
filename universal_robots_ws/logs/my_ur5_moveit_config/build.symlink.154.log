@@ -1,0 +1,13 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/lib/pkgconfig/my_ur5_moveit_config.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_ur5_moveit_config.pc
+Warning: Source hash: 105f5e02afc6a19a8cfd2ca169a07714
+Warning: Dest hash: 8c899b9bd77858bd972da15bab3746bc
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig.cmake
+Warning: Source hash: 6f128c2f3d3361e2827977dee7b7ee76
+Warning: Dest hash: 1057028eb0d7ae7eec3737647d00f8d2
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/cmake.lock, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/lib/pkgconfig/my_ur5_moveit_config.pc, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_ur5_moveit_config.pc)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig.cmake)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur5_moveit_config/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig-version.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig-version.cmake)
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_ur5_moveit_config.pc
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig.cmake
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur5_moveit_config/cmake/my_ur5_moveit_configConfig-version.cmake

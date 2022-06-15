@@ -1,0 +1,18 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/image_processor/image_processor_node to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/image_processor/image_processor_node
+Warning: Source hash: e193908e4c11ace90a6c798d476f184b
+Warning: Dest hash: 728c28452582f478de4c5da8362b0f37
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/pkgconfig/image_processor.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/image_processor.pc
+Warning: Source hash: 31190fb2b15a2d00d4f781d253958ab8
+Warning: Dest hash: 9dbb532e173345760e9a7540788cc75a
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/share/image_processor/cmake/image_processorConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/image_processor/cmake/image_processorConfig.cmake
+Warning: Source hash: 19d49ac06fabb269b00b8f69c5bfbf2c
+Warning: Dest hash: ac365968db73b346abb034697beeb6fe
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/cmake.lock, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/image_processor/image_processor_node, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/image_processor/image_processor_node)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/pkgconfig/image_processor.pc, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/image_processor.pc)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/share/image_processor/cmake/image_processorConfig-version.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/image_processor/cmake/image_processorConfig-version.cmake)
+Cleaning: (/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/share/image_processor/cmake/image_processorConfig.cmake, /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/image_processor/cmake/image_processorConfig.cmake)
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/image_processor/image_processor_node
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/image_processor.pc
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/image_processor/cmake/image_processorConfig-version.cmake
+Unlinking: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/image_processor/cmake/image_processorConfig.cmake

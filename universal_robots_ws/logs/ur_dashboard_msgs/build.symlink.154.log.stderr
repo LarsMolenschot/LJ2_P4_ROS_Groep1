@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_dashboard_msgs/lib/pkgconfig/ur_dashboard_msgs.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_dashboard_msgs.pc
+Warning: Source hash: f090d72dd7be3e3d9e416a972938b521
+Warning: Dest hash: 2103bd1e1dd9ff2dddd0532a28e1fba7
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgsConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_dashboard_msgs/cmake/ur_dashboard_msgsConfig.cmake
+Warning: Source hash: 7ffe9f9aaba394e8ae2942d1c5554634
+Warning: Dest hash: d698800f6b901b2b8c543474f232829b
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs-msg-extras.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs-msg-extras.cmake
+Warning: Source hash: 693c8da9f19a90a1aee7cb13456de4c0
+Warning: Dest hash: d319f7ddab6f6fbbfcf2a77ed22fcd81
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs-msg-paths.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs-msg-paths.cmake
+Warning: Source hash: b2d726789e75f306109e36d79df56889
+Warning: Dest hash: fc6749933ad97f47430b67a3ebdd76e5

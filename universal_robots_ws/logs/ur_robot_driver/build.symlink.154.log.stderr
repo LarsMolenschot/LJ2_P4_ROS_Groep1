@@ -1,0 +1,21 @@
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/liburcl_log_handler.so to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/liburcl_log_handler.so
+Warning: Source hash: b508488b442550a3096a4a5e5362d803
+Warning: Dest hash: a3a24a5372d4c6e359694a08dde4a62b
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/libur_robot_driver_plugin.so to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/libur_robot_driver_plugin.so
+Warning: Source hash: 984a9f5e7f88effe2e3f5e0e4d757f26
+Warning: Dest hash: e423eefd62a6eb49aeda2bcb676d1b61
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/pkgconfig/ur_robot_driver.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_robot_driver.pc
+Warning: Source hash: c257b95753fe64dd918920537ea20e85
+Warning: Dest hash: 686b5479211942208c165d5eaa2cb94b
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/dashboard_client to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/dashboard_client
+Warning: Source hash: 2e877518af1622d0e049b1385d0980ca
+Warning: Dest hash: 42251c367436bb1730d0df6da376cb0a
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/robot_state_helper to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/robot_state_helper
+Warning: Source hash: e6b8d418c30151930903dbffd8387caa
+Warning: Dest hash: b9140493e5281e0f7f29ccd97dc0ec5c
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/lib/ur_robot_driver/ur_robot_driver_node to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_robot_driver/ur_robot_driver_node
+Warning: Source hash: b79ef7c3245cca8f8bbe09d697c20907
+Warning: Dest hash: 67f5d20bbfc6bae5072fa978e44d2dcc
+Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+Warning: Source hash: 84b35d91d43f6b1c6103f6e375f44bd7
+Warning: Dest hash: d09e45354d2ab0a57ea5caefc3a68aad
