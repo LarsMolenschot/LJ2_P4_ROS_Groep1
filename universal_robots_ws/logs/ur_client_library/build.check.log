@@ -1,6 +1,0 @@
-ur_client_library: You did not request a specific build type: selecting 'RelWithDebInfo'.
-[36m--[0m Boost version: 1.65.1
-[36m--[0m Building tests disabled.
-[36m--[0m Configuring done
-[36m--[0m Generating done
-[36m--[0m Build files have been written to: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library

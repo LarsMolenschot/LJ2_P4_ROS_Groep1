@@ -1,0 +1,23 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:224:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ [01;31m[K{[m[K
+ [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:243:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kpts[m[K’ was not declared in this scope
+     int sz = static_cast<int>([01;31m[Kpts[m[K.size());
+                               [01;31m[K^~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:243:31:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kputs[m[K’
+     int sz = static_cast<int>([01;36m[Kpts[m[K.size());
+                               [01;36m[K^~~[m[K
+                               [32m[Kputs[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:273:5:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawAxis[m[K’ was not declared in this scope
+     [01;31m[KdrawAxis[m[K(cv_mat_out_, cntr, p1, Scalar(0, 255, 0), 1);
+     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:283:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble angle[m[K’
+     double [01;31m[Kangle[m[K;
+            [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:275:12:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble angle[m[K’ previously declared here
+     double [01;36m[Kangle[m[K = atan2(eigen_vecs[0].y, eigen_vecs[0].x); // orientation in radians
+            [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

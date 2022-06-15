@@ -1,6 +1,8 @@
 #include "image_processor/image_processor.h"
 #include "image_processor/circle_detector.h"
 #include "image_processor/camera.h"
+#include "image_processor/color_detector.h"
+
 
 //OpenCV
 #include "opencv2/opencv.hpp"
@@ -11,6 +13,8 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/features2d.hpp>
 #include "opencv2/calib3d/calib3d.hpp"
+
+#include <iostream>
 
 using namespace std;
 using namespace cv;
@@ -37,6 +41,65 @@ void ImageProcessor::setCameraInfo(cv::Mat matrixP, cv::Mat matrixK){
   matrixK_ = matrixK;
 }
 
+void drawAxis(Mat& img, Point p, Point q, Scalar colour, const float scale = 0.2)
+{
+    double angle = atan2( (double) p.y - q.y, (double) p.x - q.x ); // angle in radians
+    double hypotenuse = sqrt( (double) (p.y - q.y) * (p.y - q.y) + (p.x - q.x) * (p.x - q.x));
+    // Here we lengthen the arrow by a factor of scale
+    q.x = (int) (p.x - scale * hypotenuse * cos(angle));
+    q.y = (int) (p.y - scale * hypotenuse * sin(angle));
+    line(img, p, q, colour, 1, LINE_AA);
+    // create the arrow hooks
+    p.x = (int) (q.x + 9 * cos(angle + CV_PI / 4));
+    p.y = (int) (q.y + 9 * sin(angle + CV_PI / 4));
+    line(img, p, q, colour, 1, LINE_AA);
+    p.x = (int) (q.x + 9 * cos(angle - CV_PI / 4));
+    p.y = (int) (q.y + 9 * sin(angle - CV_PI / 4));
+    line(img, p, q, colour, 1, LINE_AA);
+}
+
+double getOrientation(const vector<Point> &pts, Mat imagecrop)
+{
+    //Construct a buffer used by the pca analysis
+    int sz = static_cast<int>(pts.size());
+    Mat data_pts = Mat(sz, 2, CV_64F);
+    for (int i = 0; i < data_pts.rows; i++)
+    {
+        data_pts.at<double>(i, 0) = pts[i].x;
+        data_pts.at<double>(i, 1) = pts[i].y;
+    }
+
+
+    //Perform PCA analysis
+    PCA pca_analysis(data_pts, Mat(), PCA::DATA_AS_ROW);
+
+    //Store the center of the object
+    Point cntr = Point(static_cast<int>(pca_analysis.mean.at<double>(0, 0)),
+                       static_cast<int>(pca_analysis.mean.at<double>(0, 1)));
+
+    //Store the eigenvalues and eigenvectors
+    vector<Point2d> eigen_vecs(2);
+    vector<double> eigen_val(2);
+    for (int i = 0; i < 2; i++)
+    {
+        eigen_vecs[i] = Point2d(pca_analysis.eigenvectors.at<double>(i, 0),
+                                pca_analysis.eigenvectors.at<double>(i, 1));
+        eigen_val[i] = pca_analysis.eigenvalues.at<double>(i);
+    }
+
+    // Draw the principal components
+    circle(imagecrop, cntr, 3, Scalar(255, 0, 255), 2);
+    Point p1 = cntr + 0.02 * Point(static_cast<int>(eigen_vecs[0].x * eigen_val[0]), static_cast<int>(eigen_vecs[0].y * eigen_val[0]));
+    Point p2 = cntr - 0.02 * Point(static_cast<int>(eigen_vecs[1].x * eigen_val[1]), static_cast<int>(eigen_vecs[1].y * eigen_val[1]));
+    drawAxis(imagecrop, cntr, p1, Scalar(0, 255, 0), 1);
+    drawAxis(imagecrop, cntr, p2, Scalar(255, 255, 0), 5);
+    double angle = atan2(eigen_vecs[0].y, eigen_vecs[0].x); // orientation in radians
+
+    //double angle = 2.0;
+    return angle;
+}
+
+
 void ImageProcessor::process()
 {
     cv::Rect_<int> box;
@@ -48,6 +111,15 @@ void ImageProcessor::process()
 
 // =========================================================================
 
+
+//Call function filterimage.
+//This function is used to make modifications to the image.
+//to be able to detect the bolts and nuts.
+
+// color_detector color_detector1 {cv_mat_out_};
+// cv::Mat colorreturnedimage {color_detector1.returnimage()};
+
+// =========================================================================
 //  //crop
 // //(a,b,c,d)
 // //a,b : Coordinates of the top-left corner (X,Y)
@@ -125,7 +197,10 @@ void ImageProcessor::process()
 
     cv::Mat mask1 , mask2;
     inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), mask1);
-    inRange(cv_mat_out_, cv::Scalar(40, 90, 70), cv::Scalar(100, 255, 255), mask2);
+    inRange(cv_mat_out_, cv::Scalar(80, 90, 70), cv::Scalar(105, 255, 255), mask2);
+
+    // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), mask1);
+    // inRange(cv_mat_out_, cv::Scalar(40, 90, 70), cv::Scalar(100, 255, 255), mask2);
 
     cv::Mat mask = mask1 | mask2;
 
@@ -146,28 +221,6 @@ void ImageProcessor::process()
      cv::merge(images, color);
      cv_mat_out_ = color;
 // =========================================================================
-
-// // find contours:
-//   std::vector<std::vector<cv::Point> > contours;
-//   std::vector<cv::Vec4i> hierarchy;
-//   findContours(mask, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE,cv::Point(0, 0));
-//
-//   // draw contours:
-//   cv::Mat imgWithContours = cv::Mat::zeros(mask.rows, mask.cols, CV_8UC3);
-//   cv::RNG rng(12345);
-//   for (int i = 0; i < contours.size(); i++)
-//   {
-//     cv::Scalar colorcon = cv::Scalar(rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255));
-//     drawContours(imgWithContours, contours, i, colorcon, 1, 8, hierarchy, 0);
-//   }
-//
-//   cv_mat_out_= imgWithContours;
-
-
-
-// =========================================================================
-//std::vector<KeyPoint> head::KeyPoints()
-
 
     // Setup SimpleBlobDetector parameters.
     SimpleBlobDetector::Params params;
@@ -202,7 +255,6 @@ void ImageProcessor::process()
     params.filterByColor = false;
 
 
-
     //Set up detector with params
         std::vector<KeyPoint> keypoints { };
         cv::Ptr<SimpleBlobDetector> detector { SimpleBlobDetector::create(params) };
@@ -213,10 +265,7 @@ void ImageProcessor::process()
         //return _keypoints;
 // =========================================================================
 
-//head h1 { image };
-//std::vector<KeyPoint> vectorhead { };
-//vectorhead = h1.KeyPoints();
-
+//draw circle and find x , y
 cv::Mat pictureUpdateHead { cv_mat_out_ };
     std::vector<KeyPoint> h { };
 
@@ -228,17 +277,44 @@ cv::Mat pictureUpdateHead { cv_mat_out_ };
 
         float x0 = keypoints[0].pt.x;
         float y0 = keypoints[0].pt.y;
-    
 
-        std::cout << x0 << "\t" << y0;
+
+        std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\n";
+
 
     cv_mat_out_ = pictureUpdateHead;
-
- //ihead ->writeRGB8(pictureUpdateHead);
 
 
 // =========================================================================
 
+Mat src = cv_mat_out_;
+double angle;
+// Convert image to grayscale
+Mat gray;
+cvtColor(src, gray, COLOR_BGR2GRAY);
+// Convert image to binary
+Mat bw;
+threshold(gray, bw, 50, 255, THRESH_BINARY | THRESH_OTSU);
+// Find all the contours in the thresholded image
+vector<vector<Point> > contours;
+findContours(bw, contours, RETR_LIST, CHAIN_APPROX_NONE);
+for (size_t i = 0; i < contours.size(); i++)
+{
+    // Calculate the area of each contour
+    double area = contourArea(contours[i]);
+    // Ignore contours that are too small or too large
+    if (area < 1e2 || 1e5 < area) continue;
+    // Draw each contour only for visualisation purposes
+    drawContours(src, contours, static_cast<int>(i), Scalar(0, 0, 255), 2);
+    // Find the orientation of each shape
+    angle = getOrientation(contours[i], src);
+}
+
+cv_mat_out_ = src;
+
+
+// =========================================================================
+// =========================================================================
 // =========================================================================
 }
 

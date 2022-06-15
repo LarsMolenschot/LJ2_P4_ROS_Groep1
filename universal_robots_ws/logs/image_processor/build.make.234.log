@@ -1,5 +1,0 @@
-[35m[1mScanning dependencies of target image_processor_node[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/image_processor/image_processor_node[0m
-[100%] Built target image_processor_node

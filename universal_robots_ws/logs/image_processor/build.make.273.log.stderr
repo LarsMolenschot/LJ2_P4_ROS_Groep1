@@ -1,0 +1,14 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:201:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KinRange[m[K’
+     [01;31m[KinRange[m[K(cv_mat_out_, cv::Scalar(20, 100, 100), cv::Scalar(30, 200, 200), mask);
+     [01;31m[K^~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:210:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask[m[K’ was not declared in this scope
+      int rows = [01;31m[Kmask[m[K.rows;
+                 [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:210:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kmask2[m[K’
+      int rows = [01;36m[Kmask[m[K.rows;
+                 [01;36m[K^~~~[m[K
+                 [32m[Kmask2[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

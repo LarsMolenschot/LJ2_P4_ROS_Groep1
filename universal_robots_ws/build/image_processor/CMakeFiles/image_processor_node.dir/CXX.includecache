@@ -18,6 +18,8 @@ opencv2/opencv.hpp
 opencv2/core.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/opencv2/core.hpp
 
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/color_detector.h
+
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h
 opencv2/opencv.hpp
 -
@@ -47,6 +49,8 @@ image_processor/circle_detector.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor/circle_detector.h
 image_processor/camera.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor/camera.h
+image_processor/color_detector.h
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor/color_detector.h
 opencv2/opencv.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/opencv2/opencv.hpp
 opencv2/videoio.hpp
@@ -63,6 +67,8 @@ opencv2/features2d.hpp
 -
 opencv2/calib3d/calib3d.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/opencv2/calib3d/calib3d.hpp
+iostream
+-
 
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp
 image_processor/image_processor_node.h
