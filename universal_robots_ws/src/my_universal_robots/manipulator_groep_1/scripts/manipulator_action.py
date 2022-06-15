@@ -82,7 +82,7 @@ class controlUR5Class():
         #get the positions from default_poses.xml
         pose = Pose()
 
-        tree = ET.parse("../config/default_poses.xml")
+        tree = ET.parse("/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1/config/default_poses.xml")
         root = tree.getroot()
 
         curr_pose = Pose()

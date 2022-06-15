@@ -1,8 +1,12 @@
-<launch
-    name="robotAction" 
+<launch>
+    <node 
     pkg="manipulator_groep_1" 
-    type="manipulator_action.py"
-    output="screen">
+    type="manipulator_action.py" 
+    name="robotAction"  
+    output="screen">  
+    </node>
 
-    <param name = "default_poses" textfile = "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1/config/default_poses.xml" />
+    <include file="$(find my_universal_robot_controllers)/launch/ur5_bringup.launch"/>
+    <include file="$(find my_demo)/launch/environment_ur5.launch"/>
+
 </launch>
