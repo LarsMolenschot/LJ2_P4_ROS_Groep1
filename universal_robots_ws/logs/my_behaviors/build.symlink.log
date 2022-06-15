@@ -1,4 +1,22 @@
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/python2.7/dist-packages/my_behaviors/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/pkgconfig/my_behaviors.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake)
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/lib/python2.7/dist-packages/my_behaviors/__init__.py to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
+Warning: Source hash: cd6fb433e5eca47088c3672cfa139585
+Warning: Dest hash: 2978ae4be69f018cc673491ec5eaf1ef
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/lib/pkgconfig/my_behaviors.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
+Warning: Source hash: 149c1658961020e7e1d3ce63c5632169
+Warning: Dest hash: c94eb7310bf8f8cd01b1e6ca7fea8c2c
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+Warning: Source hash: 1a1e6d7aea3b3b2b9d43fc41cee6595e
+Warning: Dest hash: f2d097b696b71a295bceb9a65b9ed222
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/python2.7/dist-packages/my_behaviors/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/pkgconfig/my_behaviors.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake
+Already unlinked: {}

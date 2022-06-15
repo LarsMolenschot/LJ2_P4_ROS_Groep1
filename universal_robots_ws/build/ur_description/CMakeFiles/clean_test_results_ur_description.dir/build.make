@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur_description
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_description
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description
 
 # Utility rule file for clean_test_results_ur_description.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_description
 include CMakeFiles/clean_test_results_ur_description.dir/progress.make
 
 CMakeFiles/clean_test_results_ur_description:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/student/universal_robots_ws/build/ur_description/test_results/ur_description
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/test_results/ur_description
 
 clean_test_results_ur_description: CMakeFiles/clean_test_results_ur_description
 clean_test_results_ur_description: CMakeFiles/clean_test_results_ur_description.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results_ur_description.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_ur_description.dir/clean
 
 CMakeFiles/clean_test_results_ur_description.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur_description /home/student/universal_robots_ws/src/universal_robot/ur_description /home/student/universal_robots_ws/build/ur_description /home/student/universal_robots_ws/build/ur_description /home/student/universal_robots_ws/build/ur_description/CMakeFiles/clean_test_results_ur_description.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_description/CMakeFiles/clean_test_results_ur_description.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results_ur_description.dir/depend
 

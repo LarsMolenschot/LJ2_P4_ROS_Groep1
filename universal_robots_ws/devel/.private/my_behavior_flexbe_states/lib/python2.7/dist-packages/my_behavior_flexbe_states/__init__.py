@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src'.split(';')
+__extended_path = '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behavior_flexbe_states/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

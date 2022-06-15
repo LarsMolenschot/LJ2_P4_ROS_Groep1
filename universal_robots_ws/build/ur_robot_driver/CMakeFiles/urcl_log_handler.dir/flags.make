@@ -6,5 +6,5 @@ CXX_FLAGS = -O2 -g -DNDEBUG -fPIC   -std=c++11 -Wall -Wextra -Wno-unused-paramet
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ur_robot_driver\" -Durcl_log_handler_EXPORTS
 
-CXX_INCLUDES = -I/home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver/include -I/home/student/universal_robots_ws/devel/.private/ur_dashboard_msgs/include -I/home/student/universal_robots_ws/devel/.private/ur_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -isystem /home/student/universal_robots_ws/devel/include 
+CXX_INCLUDES = -I/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_robot_driver/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/home/student/universal_robots_ws/devel/.private/ur_dashboard_msgs/include -I/home/student/universal_robots_ws/devel/.private/ur_msgs/include -isystem /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include 
 

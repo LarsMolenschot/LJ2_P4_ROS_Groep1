@@ -1,10 +1,49 @@
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur3_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur3_moveit_plugin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur10_kin.so, /home/student/universal_robots_ws/devel/lib/libur10_kin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur5_kin.so, /home/student/universal_robots_ws/devel/lib/libur5_kin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur3_kin.so, /home/student/universal_robots_ws/devel/lib/libur3_kin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur5_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur5_moveit_plugin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur10_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur10_moveit_plugin.so)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/ur_kinematics/__init__.py)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/pkgconfig/ur_kinematics.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_kinematics.pc)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake)
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/libur3_moveit_plugin.so to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/libur3_moveit_plugin.so
+Warning: Source hash: 7c8cdf2b7bbfd0477e7ebb4a1efb1906
+Warning: Dest hash: 6be0f7bc27782c6518f0aeb7caf68d26
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/libur5_moveit_plugin.so to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/libur5_moveit_plugin.so
+Warning: Source hash: a517a386facd969b611d3454097accba
+Warning: Dest hash: c0beed2e0dc4d91a7e09a1d378d6f9b3
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/libur10_moveit_plugin.so to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/libur10_moveit_plugin.so
+Warning: Source hash: 9d1b5e34aba0765d776e3c55b30766fc
+Warning: Dest hash: 7f335dfea549becadaa2463729e3d9c9
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/ur_kinematics/__init__.py
+Warning: Source hash: de2a3e7882bded7be3b0e4ce52650af8
+Warning: Dest hash: 6643d9fe3b952850ff0d435f4a491796
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/lib/pkgconfig/ur_kinematics.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_kinematics.pc
+Warning: Source hash: c74f13cec6d55f798ef2749c9dedfc15
+Warning: Dest hash: 1a1c9d4dfcaafad0ac25613128a5ed53
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake
+Warning: Source hash: 6792e8722ae9de29d8b37fa3df706368
+Warning: Dest hash: 12c0442a323c0f7cf5b1e60e9394b819
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur3_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur3_moveit_plugin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur10_kin.so, /home/student/universal_robots_ws/devel/lib/libur10_kin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur5_kin.so, /home/student/universal_robots_ws/devel/lib/libur5_kin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur3_kin.so, /home/student/universal_robots_ws/devel/lib/libur3_kin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur5_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur5_moveit_plugin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/libur10_moveit_plugin.so, /home/student/universal_robots_ws/devel/lib/libur10_moveit_plugin.so)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/python2.7/dist-packages/ur_kinematics/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/ur_kinematics/__init__.py)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/lib/pkgconfig/ur_kinematics.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_kinematics.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur3_moveit_plugin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur10_kin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur5_kin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur3_kin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur5_moveit_plugin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/libur10_moveit_plugin.so
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/ur_kinematics/__init__.py
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_kinematics.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake
+Already unlinked: {}

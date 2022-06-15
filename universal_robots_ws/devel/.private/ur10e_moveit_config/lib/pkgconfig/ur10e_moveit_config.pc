@@ -1,4 +1,4 @@
-prefix=/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur10e_moveit_config
 
 Name: ur10e_moveit_config
 Description: Description of ur10e_moveit_config

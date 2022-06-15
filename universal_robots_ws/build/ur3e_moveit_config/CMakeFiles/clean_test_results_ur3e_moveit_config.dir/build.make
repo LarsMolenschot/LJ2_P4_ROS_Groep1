@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur3e_moveit_config
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur3e_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur3e_moveit_config
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config
 
 # Utility rule file for clean_test_results_ur3e_moveit_config.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur3e_moveit_config
 include CMakeFiles/clean_test_results_ur3e_moveit_config.dir/progress.make
 
 CMakeFiles/clean_test_results_ur3e_moveit_config:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/student/universal_robots_ws/build/ur3e_moveit_config/test_results/ur3e_moveit_config
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config/test_results/ur3e_moveit_config
 
 clean_test_results_ur3e_moveit_config: CMakeFiles/clean_test_results_ur3e_moveit_config
 clean_test_results_ur3e_moveit_config: CMakeFiles/clean_test_results_ur3e_moveit_config.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results_ur3e_moveit_config.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_ur3e_moveit_config.dir/clean
 
 CMakeFiles/clean_test_results_ur3e_moveit_config.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur3e_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur3e_moveit_config /home/student/universal_robots_ws/src/universal_robot/ur3e_moveit_config /home/student/universal_robots_ws/build/ur3e_moveit_config /home/student/universal_robots_ws/build/ur3e_moveit_config /home/student/universal_robots_ws/build/ur3e_moveit_config/CMakeFiles/clean_test_results_ur3e_moveit_config.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur3e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur3e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur3e_moveit_config/CMakeFiles/clean_test_results_ur3e_moveit_config.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results_ur3e_moveit_config.dir/depend
 

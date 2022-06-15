@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur_gazebo
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_gazebo
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo
 
 # Utility rule file for _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_gazebo
 include CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/progress.make
 
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/student/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo/roslaunch-check_tests_roslaunch_test_ur3e.xml.xml "/usr/bin/cmake -E make_directory /home/student/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/student/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo/roslaunch-check_tests_roslaunch_test_ur3e.xml.xml\" \"/home/student/universal_robots_ws/src/universal_robot/ur_gazebo/tests/roslaunch_test_ur3e.xml\" "
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo/roslaunch-check_tests_roslaunch_test_ur3e.xml.xml "/usr/bin/cmake -E make_directory /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo/test_results/ur_gazebo/roslaunch-check_tests_roslaunch_test_ur3e.xml.xml\" \"/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_gazebo/tests/roslaunch_test_ur3e.xml\" "
 
 _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml
 _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.di
 .PHONY : CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/clean
 
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur_gazebo /home/student/universal_robots_ws/src/universal_robot/ur_gazebo /home/student/universal_robots_ws/build/ur_gazebo /home/student/universal_robots_ws/build/ur_gazebo /home/student/universal_robots_ws/build/ur_gazebo/CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_gazebo /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_gazebo /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo/CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/depend
 

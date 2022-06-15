@@ -1,3 +1,16 @@
-Linked: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/lib/pkgconfig/ur5_moveit_config.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur5_moveit_config.pc)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake, /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake)
-Linked: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake)
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur5_moveit_config/lib/pkgconfig/ur5_moveit_config.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur5_moveit_config.pc
+Warning: Source hash: 2c7ee0f1ddd61bc9b0907cbaea13996d
+Warning: Dest hash: 47b2f59fd1249d426a4ed3387fac9a30
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake
+Warning: Source hash: 25bf2734117064915cb68041d476b909
+Warning: Dest hash: d35ad5f2790607098f543c41b1209872
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/lib/pkgconfig/ur5_moveit_config.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur5_moveit_config.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake, /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur5_moveit_config.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake
+Already unlinked: {}

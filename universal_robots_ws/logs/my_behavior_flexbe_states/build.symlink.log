@@ -1,4 +1,22 @@
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/pkgconfig/my_behavior_flexbe_states.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behavior_flexbe_states.pc)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig-version.cmake)
-Linked: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake, /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake)
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py
+Warning: Source hash: 10d36df684dca6ca7b1876c865878363
+Warning: Dest hash: e0d820d96f76355e9367794636711fe5
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/pkgconfig/my_behavior_flexbe_states.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_behavior_flexbe_states.pc
+Warning: Source hash: 6c5ad3e19c04b03c6d48d5664a01df0d
+Warning: Dest hash: cceae712717d20afd0c647c9993e6766
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake
+Warning: Source hash: d0e0509cc241bb6e942dee4b76f0ba69
+Warning: Dest hash: cadc996f2249d29e4d9ecb6c07116d94
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/lib/pkgconfig/my_behavior_flexbe_states.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behavior_flexbe_states.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behavior_flexbe_states/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake, /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behavior_flexbe_states/__init__.py
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behavior_flexbe_states.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behavior_flexbe_states/cmake/my_behavior_flexbe_statesConfig.cmake
+Already unlinked: {}

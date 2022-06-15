@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/student/universal_robots_ws/src/universal_robot/ur_kinematics/src/ur_moveit_plugin.cpp" "/home/student/universal_robots_ws/build/ur_kinematics/CMakeFiles/ur3_moveit_plugin.dir/src/ur_moveit_plugin.cpp.o"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics/src/ur_moveit_plugin.cpp" "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics/CMakeFiles/ur3_moveit_plugin.dir/src/ur_moveit_plugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/student/universal_robots_ws/src/universal_robot/ur_kinematics/include"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
@@ -27,7 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/student/universal_robots_ws/build/ur_kinematics/CMakeFiles/ur3_kin.dir/DependInfo.cmake"
+  "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics/CMakeFiles/ur3_kin.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/my_behaviors
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_behaviors
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/student/universal_robots_ws/build/my_behaviors && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors /home/student/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors /home/student/universal_robots_ws/build/my_behaviors /home/student/universal_robots_ws/build/my_behaviors /home/student/universal_robots_ws/build/my_behaviors/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_behaviors && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_flexbe_behaviors/my_behaviors /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_behaviors /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_behaviors /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_behaviors/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 
