@@ -1,0 +1,31 @@
+cd HMI_ws
+
+catkin b
+
+source devel/setup.bash
+
+Arduino starten in ROS omgeving
+
+De Arduino werkt samen met ROS-serial. ROS-serial zorgt er voor dat via USB de topics van de Arduino beschikbaar komen op de development-computer.
+
+Je kunt ROS-serial opstarten door:
+roslaunch avans_arduino_shield launch_avans_arduino_shield.launch
+
+Opvragen beschikbare Arduino topics:
+rostopic list | grep avans
+
+Subscriben op een Arduino topic:
+rostopic echo /avans/buttons/state
+
+Test deze functie door op één van de knoppen te drukken. Probeer dit ook voor de potentiometers (ADC’s)
+
+Publiceren op een Arduino Topic:
+rostopic pub /avans/leds/state std_msgs/UInt8 3
+
+Bij deze functie zullen de LED’s van D0 en D1 aan gaan.
+
+· Wat is de relatie tussen getal 3 en LED’s D0 en D1? Hint: denk aan talstelsels.
+
+· Hoe kun je het rostype std_msgs/UInt8 bepalen?
+
+rostopic echo /avans/leds/state
