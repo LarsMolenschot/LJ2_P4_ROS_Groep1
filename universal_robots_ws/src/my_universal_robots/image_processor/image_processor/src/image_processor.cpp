@@ -111,8 +111,6 @@ void ImageProcessor::process()
     {
         cv_mat_out_ = *cv_mat_ptr_in_;
 
-// =========================================================================
-
 
 // =========================================================================
 //  //crop
@@ -125,103 +123,14 @@ void ImageProcessor::process()
 // cv_mat_out_=cv_mat_out_(crop_region);
 
 // =========================================================================
-
-    // // wit
-    // //Convert origional image to grayscale.
-    // cv::Mat grayscale { cv_mat_out_ };
-    // if (grayscale.channels() == 3 || grayscale.channels() == 4)
-    //     cvtColor(grayscale, grayscale, cv::COLOR_BGR2GRAY);
-    // assert(grayscale.type() == CV_8UC1);
-    //
-    //
-    // //Convert grayscale image to binary.
-    // int th { 230 };
-    // cv::Mat binary { };
-    // cv::threshold(grayscale, binary, th, 255, cv::THRESH_BINARY);
-    //
-    // cv::Mat whit = binary;
-
-
-
-     // int rows = mask.rows;
-     // int cols = mask.cols;
-     //
-     // cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
-     //
-     //
-     // std::vector<cv::Mat> images(3);
-     //
-     // // OpenCV works natively with RGB ordering
-     // images.at(0) = mask;
-     // images.at(1) = mask;
-     // images.at(2) = mask;
-     //
-     // cv::Mat color;
-     // cv::merge(images, color);
-     // cv_mat_out_ = color;
-
-// =========================================================================
-    // // rood
-    // cvtColor(cv_mat_out_,cv_mat_out_,CV_BGR2HSV);
-    //
-    // cv::Mat mask1 , mask2;
-    // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), mask1);
-    // inRange(cv_mat_out_, cv::Scalar(100, 90, 70), cv::Scalar(120, 255, 255), mask2);
-    //
-    // cv::Mat red = mask1 | mask2;
-    // int rows = mask.rows;
-    // int cols = mask.cols;
-    //
-    // cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
-    //
-    //
-    // std::vector<cv::Mat> images(3);
-    //
-    // // OpenCV works natively with RGB ordering
-    // images.at(0) = mask;
-    // images.at(1) = mask;
-    // images.at(2) = mask;
-    //
-    // cv::Mat color;
-    // cv::merge(images, color);
-    // cv_mat_out_ = color;
-// =========================================================================
-
-    // //geel
-    // cvtColor(cv_mat_out_,cv_mat_out_,CV_BGR2HSV);
-    //
-    // cv::Mat mask1 , mask2;
-    // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), mask1);
-    // inRange(cv_mat_out_, cv::Scalar(80, 90, 70), cv::Scalar(105, 255, 255), mask2);
-    //
-    //
-    //
-    // cv::Mat yellow = mask1 | mask2;
-
-    //  int rows = mask.rows;
-    //  int cols = mask.cols;
-    //
-    //  cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
-    //
-    //
-    //  std::vector<cv::Mat> images(3);
-    //
-    //  // OpenCV works natively with RGB ordering
-    //  images.at(0) = mask;
-    //  images.at(1) = mask;
-    //  images.at(2) = black;
-    //
-    //  cv::Mat color;
-    //  cv::merge(images, color);
-    //  cv_mat_out_ = color;
-// =========================================================================
 int rows = cv_mat_out_.rows;
 int cols = cv_mat_out_.cols;
 
-cv::Mat whiteim(rows, cols, CV_8U, cv::Scalar(255, 255, 255));
-cv::Mat mask = whiteim;
+cv::Mat blackim(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
+cv::Mat mask = blackim;
 
 for (int i = 0; i < 1; i++) {
+          // =========================================================================
           // wit
           //Convert origional image to grayscale.
           cv::Mat grayscale { cv_mat_out_ };
@@ -258,16 +167,21 @@ for (int i = 0; i < 1; i++) {
           // =========================================================================
 
           cv::Mat bw1;
-
+          string color;
+          string part;
+          //for loop for every color
           for (int j = 0; j < 3; j++) {
                     if (j == 1) {
                       bw1 = white;
+                      color = "white";
                     }
                     else if (j == 2) {
                       bw1= red;
+                      color = "red";
                     }
                     else if (j == 3) {
                       bw1 = yellow;
+                      color = "yellow";
                     }
                     vector<vector<Point> > contours1;
                     findContours(bw1, contours1, RETR_LIST, CHAIN_APPROX_NONE);
@@ -276,25 +190,48 @@ for (int i = 0; i < 1; i++) {
                         // Calculate the area of each contour
                         double area = contourArea(contours1[i]);
                         // Ignore contours that are too small or too large
-                        if (area < 1e2 || 1e5 < area){
+                        part = "nothing found";
+                        if (area > 1e2){
+                          if ((area < 1e2 || 1e3 < area)&&(color == "white")){
+                            part = "pants small";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e3 || 1e5 < area)&&(color == "white")){
+                            part = "pants big";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e2 || 1e3 < area)&&(color == "red")){
+                            part = "shirt small";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e3 || 1e5 < area)&&(color == "red")){
+                            part = "shirt big";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e2 || 1e3 < area)&&(color == "yellow")){
+                            part = "hands small";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e3 || 1e4 < area)&&(color == "yellow")){
+                            part = "hands big";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e4 || 1e5 < area)&&(color == "yellow")){
+                            part = "head small";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
+                          else if ((area < 1e4 || 1e5 < area)&&(color == "yellow")){
+                            part = "head big";
+                            std::cout << part<<"\t"<< color <<"\n";
+                          }
 
-                            mask = bw1;
-                        }
-                        // else{
-                        //     mask = whiteim;
-                        // }
-
+                        mask = bw1;
+                       }
                     }
               }
           // =========================================================================
-
-
 }
-
-
-
-    // int rows = mask.rows;
-    // int cols = mask.cols;
+// =========================================================================
 
     cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
 
@@ -311,103 +248,103 @@ for (int i = 0; i < 1; i++) {
     cv_mat_out_ = color;
 // // =========================================================================
 //
-//     // Setup SimpleBlobDetector parameters.
-//     SimpleBlobDetector::Params params;
-//
-//     // Change thresholds
-//     //params.thresholdStep = 100;
-//     params.minThreshold = 1;
-//     params.maxThreshold = 255;
-//
-//     // Filter by Area.
-//     params.filterByArea = true;
-//     params.minArea = 1200;
-//     params.maxArea = 85000000;
-//
-//     // Filter by Circularity
-//     params.filterByCircularity = false;
-//     params.minCircularity = 0.1;
-//     params.maxCircularity = 1;
-//
-//     // Filter by Convexity
-//     params.filterByConvexity = false;
-//     params.minConvexity = 0.1;
-//     params.maxConvexity = 1;
-//
-//     // Filter by Inertia
-//     params.filterByInertia = false;
-//     params.minInertiaRatio = 0.01;
-//     params.maxInertiaRatio = 0.7;
-//
-//     //params.minRepeatability = 2;
-//     params.filterByColor = false;
-//
-//
-//     //Set up detector with params
-//         std::vector<KeyPoint> keypoints { };
-//         cv::Ptr<SimpleBlobDetector> detector { SimpleBlobDetector::create(params) };
-//
-//         // Detect blobs
-//         detector->detect(cv_mat_out_, keypoints);
-//         //_keypoints = keypoints;
-//         //return _keypoints;
-// // =========================================================================
-//
-// //draw circle and find x , y
-// cv::Mat pictureUpdateHead { cv_mat_out_ };
-//     std::vector<KeyPoint> h { };
-//
-//     for (auto l: keypoints)
-//     {
-//         h.push_back(l);
-//         drawKeypoints(pictureUpdateHead, h, pictureUpdateHead, Scalar(200, 80, 20), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
-//         h.erase(h.begin());
-//
-//         float x0 = keypoints[0].pt.x;
-//         float y0 = keypoints[0].pt.y;
-//
-//
-//         //std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\n";
-//
-//
-//     cv_mat_out_ = pictureUpdateHead;
-//
-//
-// // =========================================================================
-//
-// Mat src = cv_mat_out_;
-// double angle;
-// // Convert image to grayscale
-// Mat gray;
-// cvtColor(src, gray, COLOR_BGR2GRAY);
-// // Convert image to binary
-// Mat bw;
-// threshold(gray, bw, 50, 255, THRESH_BINARY | THRESH_OTSU);
-// // Find all the contours in the thresholded image
-// vector<vector<Point> > contours;
-// findContours(bw, contours, RETR_LIST, CHAIN_APPROX_NONE);
-// for (size_t i = 0; i < contours.size(); i++)
-// {
-//     // Calculate the area of each contour
-//     double area = contourArea(contours[i]);
-//     // Ignore contours that are too small or too large
-//     if (area < 1e2 || 1e5 < area) continue;
-//     // Draw each contour only for visualisation purposes
-//     drawContours(src, contours, static_cast<int>(i), Scalar(0, 0, 255), 2);
-//     // Find the orientation of each shape
-//     angle = getOrientation(contours[i], src);
-//
-//
-//     std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\t" << "Rotation" << " "<< angle <<"\n";
-// }
-//
-// cv_mat_out_ = src;
+    // Setup SimpleBlobDetector parameters.
+    SimpleBlobDetector::Params params;
+
+    // Change thresholds
+    //params.thresholdStep = 100;
+    params.minThreshold = 1;
+    params.maxThreshold = 255;
+
+    // Filter by Area.
+    params.filterByArea = true;
+    params.minArea = 5200;
+    params.maxArea = 85000000;
+
+    // Filter by Circularity
+    params.filterByCircularity = false;
+    params.minCircularity = 0.1;
+    params.maxCircularity = 1;
+
+    // Filter by Convexity
+    params.filterByConvexity = false;
+    params.minConvexity = 0.1;
+    params.maxConvexity = 1;
+
+    // Filter by Inertia
+    params.filterByInertia = false;
+    params.minInertiaRatio = 0.01;
+    params.maxInertiaRatio = 0.7;
+
+    //params.minRepeatability = 2;
+    params.filterByColor = false;
+
+
+    //Set up detector with params
+        std::vector<KeyPoint> keypoints { };
+        cv::Ptr<SimpleBlobDetector> detector { SimpleBlobDetector::create(params) };
+
+        // Detect blobs
+        detector->detect(cv_mat_out_, keypoints);
+        //_keypoints = keypoints;
+        //return _keypoints;
+// =========================================================================
+
+//draw circle and find x , y
+cv::Mat pictureUpdateHead { cv_mat_out_ };
+    std::vector<KeyPoint> h { };
+
+    for (auto l: keypoints)
+    {
+        h.push_back(l);
+        drawKeypoints(pictureUpdateHead, h, pictureUpdateHead, Scalar(200, 80, 20), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        h.erase(h.begin());
+
+        float x0 = keypoints[0].pt.x;
+        float y0 = keypoints[0].pt.y;
+
+
+        //std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\n";
+
+
+    cv_mat_out_ = pictureUpdateHead;
+
+
+// =========================================================================
+
+Mat src = cv_mat_out_;
+double angle;
+// Convert image to grayscale
+Mat gray;
+cvtColor(src, gray, COLOR_BGR2GRAY);
+// Convert image to binary
+Mat bw;
+threshold(gray, bw, 50, 255, THRESH_BINARY | THRESH_OTSU);
+// Find all the contours in the thresholded image
+vector<vector<Point> > contours;
+findContours(bw, contours, RETR_LIST, CHAIN_APPROX_NONE);
+for (size_t i = 0; i < contours.size(); i++)
+{
+    // Calculate the area of each contour
+    double area = contourArea(contours[i]);
+    // Ignore contours that are too small or too large
+    if (area < 1e2 || 1e5 < area) continue;
+    // Draw each contour only for visualisation purposes
+    drawContours(src, contours, static_cast<int>(i), Scalar(0, 0, 255), 2);
+    // Find the orientation of each shape
+    angle = getOrientation(contours[i], src);
+
+
+    std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\t" << "Rotation" << " "<< angle <<"\n";
+}
+
+cv_mat_out_ = src;
 
 
 // =========================================================================
 // =========================================================================
 // =========================================================================
-//}
+}
 
 }
     //reset input image
