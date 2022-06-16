@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target image_processor_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o[0m
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:220:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krows[m[K’ was not declared in this scope
+ cv::Mat whiteim([01;31m[Krows[m[K, cols, CV_8U, cv::Scalar(255, 255, 255));
+                 [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:220:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kpowl[m[K’
+ cv::Mat whiteim([01;36m[Krows[m[K, cols, CV_8U, cv::Scalar(255, 255, 255));
+                 [01;36m[K^~~~[m[K
+                 [32m[Kpowl[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:220:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcols[m[K’ was not declared in this scope
+ cv::Mat whiteim(rows, [01;31m[Kcols[m[K, CV_8U, cv::Scalar(255, 255, 255));
+                       [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:220:23:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcos[m[K’
+ cv::Mat whiteim(rows, [01;36m[Kcols[m[K, CV_8U, cv::Scalar(255, 255, 255));
+                       [01;36m[K^~~~[m[K
+                       [32m[Kcos[m[K
+CMakeFiles/image_processor_node.dir/build.make:62: recipe for target 'CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o' failed
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+CMakeFiles/Makefile2:995: recipe for target 'CMakeFiles/image_processor_node.dir/all' failed
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

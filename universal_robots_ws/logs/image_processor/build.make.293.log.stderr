@@ -1,0 +1,26 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:264:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+                     [01;31m[K}[m[K
+                     [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:267:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+                     [01;31m[K}[m[K
+                     [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:270:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+                     [01;31m[K}[m[K
+                     [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:416:33:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+ void ImageProcessor::draw_circle[01;31m[K([m[Kconst cv::Point & center, int radius, bool draw_center_coordinates)
+                                 [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:433:39:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+ cv::Mat ImageProcessor::getOutputImage[01;31m[K([m[K){
+                                       [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:437:42:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+ cv::Point ImageProcessor::getCircleCenter[01;31m[K([m[K){
+                                          [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:439:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:439:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

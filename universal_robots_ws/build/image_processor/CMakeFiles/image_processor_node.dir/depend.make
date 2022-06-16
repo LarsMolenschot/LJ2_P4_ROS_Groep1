@@ -3,7 +3,6 @@
 
 CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/camera.h
 CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/circle_detector.h
-CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/color_detector.h
 CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h
 CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp
 
