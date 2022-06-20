@@ -1,0 +1,13 @@
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include/robotiq_3f_gripper_control/Robotiq3FGripperConfig.h
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/librobotiq_3f_gripper_control.so
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/robotiq_3f_gripper_control/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/robotiq_3f_gripper_control/cfg/Robotiq3FGripperConfig.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/robotiq_3f_gripper_control/cfg/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/robotiq_3f_gripper_control.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/robotiq_3f_gripper_control/robotiq_3f_gripper_can_node
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_node
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig-usage.dox
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.wikidoc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.dox
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_3f_gripper_control/cmake/robotiq_3f_gripper_controlConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_3f_gripper_control/cmake/robotiq_3f_gripper_controlConfig.cmake
