@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib;/opt/ros/melodic/lib")
+set(ORDERED_PATHS "/opt/ros/melodic/lib;/home/student/universal_robots_ws/devel/.private/ur_robot_driver/lib")

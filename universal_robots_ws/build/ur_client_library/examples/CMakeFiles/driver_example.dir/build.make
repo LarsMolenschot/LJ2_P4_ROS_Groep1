@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_Client_Library
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_client_library
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/driver_example.dir/depend.make
@@ -58,17 +58,17 @@ include examples/CMakeFiles/driver_example.dir/progress.make
 include examples/CMakeFiles/driver_example.dir/flags.make
 
 examples/CMakeFiles/driver_example.dir/full_driver.cpp.o: examples/CMakeFiles/driver_example.dir/flags.make
-examples/CMakeFiles/driver_example.dir/full_driver.cpp.o: /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/driver_example.dir/full_driver.cpp.o"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_example.dir/full_driver.cpp.o -c /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp
+examples/CMakeFiles/driver_example.dir/full_driver.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/driver_example.dir/full_driver.cpp.o"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_example.dir/full_driver.cpp.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp
 
 examples/CMakeFiles/driver_example.dir/full_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/driver_example.dir/full_driver.cpp.i"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp > CMakeFiles/driver_example.dir/full_driver.cpp.i
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp > CMakeFiles/driver_example.dir/full_driver.cpp.i
 
 examples/CMakeFiles/driver_example.dir/full_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/driver_example.dir/full_driver.cpp.s"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp -o CMakeFiles/driver_example.dir/full_driver.cpp.s
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/full_driver.cpp -o CMakeFiles/driver_example.dir/full_driver.cpp.s
 
 examples/CMakeFiles/driver_example.dir/full_driver.cpp.o.requires:
 
@@ -92,8 +92,8 @@ examples/driver_example: examples/CMakeFiles/driver_example.dir/full_driver.cpp.
 examples/driver_example: examples/CMakeFiles/driver_example.dir/build.make
 examples/driver_example: liburcl.so
 examples/driver_example: examples/CMakeFiles/driver_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable driver_example"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/driver_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable driver_example"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/driver_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/driver_example.dir/build: examples/driver_example
@@ -105,10 +105,10 @@ examples/CMakeFiles/driver_example.dir/requires: examples/CMakeFiles/driver_exam
 .PHONY : examples/CMakeFiles/driver_example.dir/requires
 
 examples/CMakeFiles/driver_example.dir/clean:
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/driver_example.dir/cmake_clean.cmake
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/driver_example.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/driver_example.dir/clean
 
 examples/CMakeFiles/driver_example.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/universal_robots_ws/build/ur_client_library /home/student/universal_robots_ws/build/ur_client_library/examples /home/student/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/driver_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/driver_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/driver_example.dir/depend
 

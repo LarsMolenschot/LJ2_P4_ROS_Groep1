@@ -1,4 +1,4 @@
-The system is: Linux - 5.4.0-110-generic - x86_64
+The system is: Linux - 5.4.0-120-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a76c2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a76c2.dir/build.make CMakeFiles/cmTC_a76c2.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a76c2.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a76c2.dir/testCCompiler.c.o   -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_a76c2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a76c2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a76c2.dir/testCCompiler.c.o  -o cmTC_a76c2 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_3e807/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e807.dir/build.make CMakeFiles/cmTC_3e807.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e807.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3e807.dir/testCCompiler.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3e807
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e807.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3e807.dir/testCCompiler.c.o  -o cmTC_3e807 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8efe4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8efe4.dir/build.make CMakeFiles/cmTC_8efe4.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_8efe4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8efe4.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o  -o cmTC_8efe4 
+Run Build Command:"/usr/bin/make" "cmTC_e4d3c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4d3c.dir/build.make CMakeFiles/cmTC_e4d3c.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_e4d3c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4d3c.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o  -o cmTC_e4d3c 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8efe4' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrkPXZ3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8efe4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8efe4' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e4d3c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cczDgVvZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e4d3c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e4d3c' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8efe4/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8efe4.dir/build.make CMakeFiles/cmTC_8efe4.dir/build]
-  ignore line: [make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_8efe4]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8efe4.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o  -o cmTC_8efe4 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e4d3c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e4d3c.dir/build.make CMakeFiles/cmTC_e4d3c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_e4d3c]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4d3c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o  -o cmTC_e4d3c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8efe4' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrkPXZ3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8efe4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e4d3c' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cczDgVvZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e4d3c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccrkPXZ3.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cczDgVvZ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8efe4] ==> ignore
+    arg [cmTC_e4d3c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_8efe4.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_e4d3c.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -157,17 +157,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8a2d2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8a2d2.dir/build.make CMakeFiles/cmTC_8a2d2.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8a2d2.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_8a2d2.dir/feature_tests.c.o   -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
-Linking C executable cmTC_8a2d2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a2d2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8a2d2.dir/feature_tests.c.o  -o cmTC_8a2d2 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_12287/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12287.dir/build.make CMakeFiles/cmTC_12287.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12287.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_12287.dir/feature_tests.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
+Linking C executable cmTC_12287
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12287.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_12287.dir/feature_tests.c.o  -o cmTC_12287 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,17 +177,17 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_91b91/fast"
-/usr/bin/make -f CMakeFiles/cmTC_91b91.dir/build.make CMakeFiles/cmTC_91b91.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_91b91.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_91b91.dir/feature_tests.c.o   -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
-Linking C executable cmTC_91b91
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91b91.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_91b91.dir/feature_tests.c.o  -o cmTC_91b91 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6c75b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6c75b.dir/build.make CMakeFiles/cmTC_6c75b.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c75b.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_6c75b.dir/feature_tests.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6c75b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c75b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6c75b.dir/feature_tests.c.o  -o cmTC_6c75b 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,17 +197,17 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ed121/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ed121.dir/build.make CMakeFiles/cmTC_ed121.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed121.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ed121.dir/feature_tests.c.o   -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ed121
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed121.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ed121.dir/feature_tests.c.o  -o cmTC_ed121 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_98287/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98287.dir/build.make CMakeFiles/cmTC_98287.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98287.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_98287.dir/feature_tests.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.c
+Linking C executable cmTC_98287
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98287.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_98287.dir/feature_tests.c.o  -o cmTC_98287 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -215,30 +215,30 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6c5cd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6c5cd.dir/build.make CMakeFiles/cmTC_6c5cd.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6c5cd.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_6c5cd.dir/testCXXCompiler.cxx.o -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_6c5cd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c5cd.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_6c5cd.dir/testCXXCompiler.cxx.o  -o cmTC_6c5cd 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d6dfa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6dfa.dir/build.make CMakeFiles/cmTC_d6dfa.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d6dfa.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_d6dfa.dir/testCXXCompiler.cxx.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d6dfa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6dfa.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d6dfa.dir/testCXXCompiler.cxx.o  -o cmTC_d6dfa 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3093b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3093b.dir/build.make CMakeFiles/cmTC_3093b.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_3093b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3093b.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3093b 
+Run Build Command:"/usr/bin/make" "cmTC_4bb1a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4bb1a.dir/build.make CMakeFiles/cmTC_4bb1a.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_4bb1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb1a.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4bb1a 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -250,24 +250,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3093b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaGGCRj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3093b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3093b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb1a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc13atxh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4bb1a /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb1a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3093b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3093b.dir/build.make CMakeFiles/cmTC_3093b.dir/build]
-  ignore line: [make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_3093b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3093b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3093b ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4bb1a/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4bb1a.dir/build.make CMakeFiles/cmTC_4bb1a.dir/build]
+  ignore line: [make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_4bb1a]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb1a.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4bb1a ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3093b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaGGCRj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3093b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb1a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc13atxh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4bb1a /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccaGGCRj.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc13atxh.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3093b] ==> ignore
+    arg [cmTC_4bb1a] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_3093b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_4bb1a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -342,17 +342,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_61717/fast"
-/usr/bin/make -f CMakeFiles/cmTC_61717.dir/build.make CMakeFiles/cmTC_61717.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_61717.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_61717.dir/feature_tests.cxx.o -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_61717
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61717.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_61717.dir/feature_tests.cxx.o  -o cmTC_61717 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b6d18/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b6d18.dir/build.make CMakeFiles/cmTC_b6d18.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b6d18.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_b6d18.dir/feature_tests.cxx.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b6d18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6d18.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_b6d18.dir/feature_tests.cxx.o  -o cmTC_b6d18 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -415,17 +415,17 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0389d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0389d.dir/build.make CMakeFiles/cmTC_0389d.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0389d.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_0389d.dir/feature_tests.cxx.o -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_0389d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0389d.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0389d.dir/feature_tests.cxx.o  -o cmTC_0389d 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_13bae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_13bae.dir/build.make CMakeFiles/cmTC_13bae.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13bae.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_13bae.dir/feature_tests.cxx.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_13bae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13bae.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_13bae.dir/feature_tests.cxx.o  -o cmTC_13bae 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -488,17 +488,17 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_91ff8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_91ff8.dir/build.make CMakeFiles/cmTC_91ff8.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_91ff8.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_91ff8.dir/feature_tests.cxx.o -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_91ff8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91ff8.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_91ff8.dir/feature_tests.cxx.o  -o cmTC_91ff8 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_f39fa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f39fa.dir/build.make CMakeFiles/cmTC_f39fa.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f39fa.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_f39fa.dir/feature_tests.cxx.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f39fa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f39fa.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f39fa.dir/feature_tests.cxx.o  -o cmTC_f39fa 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -561,17 +561,17 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a593a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a593a.dir/build.make CMakeFiles/cmTC_a593a.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a593a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_a593a.dir/feature_tests.cxx.o -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a593a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a593a.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a593a.dir/feature_tests.cxx.o  -o cmTC_a593a 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8712a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8712a.dir/build.make CMakeFiles/cmTC_8712a.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8712a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_8712a.dir/feature_tests.cxx.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8712a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8712a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8712a.dir/feature_tests.cxx.o  -o cmTC_8712a 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -632,30 +632,30 @@ make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dc15a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dc15a.dir/build.make CMakeFiles/cmTC_dc15a.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dc15a.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_dc15a.dir/CheckIncludeFile.c.o   -c /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_dc15a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc15a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dc15a.dir/CheckIncludeFile.c.o  -o cmTC_dc15a 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0c237/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c237.dir/build.make CMakeFiles/cmTC_0c237.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c237.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0c237.dir/CheckIncludeFile.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0c237
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c237.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0c237.dir/CheckIncludeFile.c.o  -o cmTC_0c237 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_32c12/fast"
-/usr/bin/make -f CMakeFiles/cmTC_32c12.dir/build.make CMakeFiles/cmTC_32c12.dir/build
-make[1]: Entering directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_32c12.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_32c12.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_32c12
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32c12.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_32c12.dir/CheckFunctionExists.c.o  -o cmTC_32c12 -lpthread 
-make[1]: Leaving directory '/home/student/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_3fe55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3fe55.dir/build.make CMakeFiles/cmTC_3fe55.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fe55.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3fe55.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3fe55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fe55.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3fe55.dir/CheckFunctionExists.c.o  -o cmTC_3fe55 -lpthread 
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_universal_robot_controllers/CMakeFiles/CMakeTmp'
 
 

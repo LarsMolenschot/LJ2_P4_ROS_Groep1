@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/universal_robots_ws/src/Universal_Robots_Client_Library
+# Install script for directory: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/universal_robots_ws/devel")
+  set(CMAKE_INSTALL_PREFIX "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liburcl.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/universal_robots_ws/build/ur_client_library/liburcl.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/liburcl.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liburcl.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liburcl.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -54,14 +54,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library/urclTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library/urclTargets.cmake"
-         "/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets.cmake")
+         "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library/urclTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -70,39 +70,39 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles/Export/lib/cmake/ur_client_library/urclTargets-relwithdebinfo.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/ur_client_libraryConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ur_client_library" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/ur_client_libraryConfig.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library" TYPE FILE FILES "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_client_library/share/ament_index/resource_index/packages/ur_client_library")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/share/ament_index/resource_index/packages/ur_client_library")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library/hook" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_client_library/share/ur_client_library/hook/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library/hook" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/share/ur_client_library/hook/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library/hook" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_client_library/share/ur_client_library/hook/ros_package_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library/hook" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/share/ur_client_library/hook/ros_package_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/src/Universal_Robots_Client_Library/resources")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_client_library" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/resources")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/universal_robots_ws/build/ur_client_library/examples/cmake_install.cmake")
+  include("/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples/cmake_install.cmake")
 
 endif()
 
@@ -114,5 +114,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/universal_robots_ws/build/ur_client_library/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

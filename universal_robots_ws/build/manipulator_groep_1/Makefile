@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/my_universal_robots/manipulator_groep_1
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/manipulator_groep_1
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/manipulator_groep_1/CMakeFiles /home/student/universal_robots_ws/build/manipulator_groep_1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/CMakeFiles /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/manipulator_groep_1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/manipulator_groep_1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

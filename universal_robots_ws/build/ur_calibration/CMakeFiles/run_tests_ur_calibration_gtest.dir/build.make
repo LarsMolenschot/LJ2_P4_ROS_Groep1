@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_calibration
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_calibration
 
 # Utility rule file for run_tests_ur_calibration_gtest.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests_ur_calibration_gtest.dir/clean:
 .PHONY : CMakeFiles/run_tests_ur_calibration_gtest.dir/clean
 
 CMakeFiles/run_tests_ur_calibration_gtest.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_calibration && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration /home/student/universal_robots_ws/build/ur_calibration /home/student/universal_robots_ws/build/ur_calibration /home/student/universal_robots_ws/build/ur_calibration/CMakeFiles/run_tests_ur_calibration_gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_calibration && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_calibration /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_calibration /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_calibration /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_calibration/CMakeFiles/run_tests_ur_calibration_gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests_ur_calibration_gtest.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/universal_robots_ws/src/ur_msgs
+# Install script for directory: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/universal_robots_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,155 +49,155 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/_setup_util.py")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE PROGRAM FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE PROGRAM FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/env.sh")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE PROGRAM FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE PROGRAM FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/setup.bash;/home/student/universal_robots_ws/install/local_setup.bash")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/setup.bash;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE FILE FILES
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.bash"
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE FILE FILES
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.bash"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/setup.sh;/home/student/universal_robots_ws/install/local_setup.sh")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/setup.sh;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE FILE FILES
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.sh"
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE FILE FILES
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.sh"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/setup.zsh;/home/student/universal_robots_ws/install/local_setup.zsh")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/setup.zsh;/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE FILE FILES
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.zsh"
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE FILE FILES
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/setup.zsh"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/student/universal_robots_ws/install/.rosinstall")
+   "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/student/universal_robots_ws/install" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/msg" TYPE FILE FILES
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/Analog.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/Digital.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/IOStates.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/RobotStateRTMsg.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/MasterboardDataMsg.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/RobotModeDataMsg.msg"
-    "/home/student/universal_robots_ws/src/ur_msgs/msg/ToolDataMsg.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/Analog.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/Digital.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/IOStates.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/RobotStateRTMsg.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/MasterboardDataMsg.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/RobotModeDataMsg.msg"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/msg/ToolDataMsg.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/srv" TYPE FILE FILES
-    "/home/student/universal_robots_ws/src/ur_msgs/srv/SetPayload.srv"
-    "/home/student/universal_robots_ws/src/ur_msgs/srv/SetSpeedSliderFraction.srv"
-    "/home/student/universal_robots_ws/src/ur_msgs/srv/SetIO.srv"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/srv/SetPayload.srv"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/srv/SetSpeedSliderFraction.srv"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/srv/SetIO.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/cmake" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/cmake" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/devel/.private/ur_msgs/include/ur_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/include/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/devel/.private/ur_msgs/share/roseus/ros/ur_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/share/roseus/ros/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/devel/.private/ur_msgs/share/common-lisp/ros/ur_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/share/common-lisp/ros/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/devel/.private/ur_msgs/share/gennodejs/ros/ur_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/share/gennodejs/ros/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/student/universal_robots_ws/devel/.private/ur_msgs/lib/python2.7/dist-packages/ur_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/lib/python2.7/dist-packages/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/student/universal_robots_ws/devel/.private/ur_msgs/lib/python2.7/dist-packages/ur_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_msgs/lib/python2.7/dist-packages/ur_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/cmake" TYPE FILE FILES "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/cmake" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs/cmake" TYPE FILE FILES
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgsConfig.cmake"
-    "/home/student/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgsConfig-version.cmake"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgsConfig.cmake"
+    "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/catkin_generated/installspace/ur_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs" TYPE FILE FILES "/home/student/universal_robots_ws/src/ur_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_msgs" TYPE FILE FILES "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/ur_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/universal_robots_ws/build/ur_msgs/gtest/cmake_install.cmake")
+  include("/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/gtest/cmake_install.cmake")
 
 endif()
 
@@ -209,5 +209,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/universal_robots_ws/build/ur_msgs/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

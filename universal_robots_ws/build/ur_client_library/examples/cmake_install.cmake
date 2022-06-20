@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples
+# Install script for directory: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/universal_robots_ws/devel")
+  set(CMAKE_INSTALL_PREFIX "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
