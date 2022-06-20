@@ -65,16 +65,19 @@ class controlUR5Class():
             error_msg = String()
             error_msg = "error"
             self.error_pub.publish(error_msg)
+
+            self._success.succeeded.data = False
+            
         else:
             rospy.loginfo("desired position reached!")
+
+            self._success.succeeded.data = True
+            
 
     def movepredefined(self, robotgoal):
         #mode for moving to predefined positions
         rospy.loginfo("mode = 0")
         rospy.loginfo("moving to predefined position %s", robotgoal.position.data)
-
-        #set the success variable to true
-        self._success = True
         
 
         #create moveitcommander
@@ -127,17 +130,17 @@ class controlUR5Class():
                 pose.orientation.z = float(value)
                 self._controlPose.orientation.z = float(value)
 
-                self._success = True
+                self.success = True
                 
                 break
-            self._success = False
+            self.success = False
 
 
-        if self._success == False:
+        if self.success == False:
             rospy.logerr("position not defined, please pass a defined position")
             self.UR5_action.set_preempted()
         
-        if self._success == True:
+        if self.success == True:
             rospy.loginfo("moving to: \n")
             rospy.loginfo(pose)
 
@@ -155,11 +158,9 @@ class controlUR5Class():
             plan2 = group2.plan()
             group2.go(wait=True)
         
-        if self._success == True:
-            self.UR5_action.set_succeeded(self._success)
 
     def movelineair(self, robotgoal):
-        self._success = True
+        self.success = True
 
         moveit_commander.roscpp_initialize(sys.argv)
 
@@ -204,10 +205,6 @@ class controlUR5Class():
         plan1 = group.plan()
         group.go(wait=True)
 
-        #set the action server as completed
-        if self._success == True:
-            self.UR5_action.set_succeeded(self._success)
-
     def moverobot(self, robotgoal):
         if robotgoal.mode.data == 0:
             self.movepredefined(robotgoal)
@@ -215,6 +212,7 @@ class controlUR5Class():
             self.movelineair(robotgoal)
 
         self.checkfinalpose()
+        self.UR5_action.set_succeeded(self._success)
 
 
 
