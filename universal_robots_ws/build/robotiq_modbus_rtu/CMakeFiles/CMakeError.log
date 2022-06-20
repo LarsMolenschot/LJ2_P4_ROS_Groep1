@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_50785/fast"
-/usr/bin/make -f CMakeFiles/cmTC_50785.dir/build.make CMakeFiles/cmTC_50785.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a2787/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2787.dir/build.make CMakeFiles/cmTC_a2787.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_50785.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_50785.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_50785
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50785.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_50785.dir/CheckSymbolExists.c.o  -o cmTC_50785 
-CMakeFiles/cmTC_50785.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_a2787.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a2787.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a2787
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2787.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a2787.dir/CheckSymbolExists.c.o  -o cmTC_a2787 
+CMakeFiles/cmTC_a2787.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_50785.dir/build.make:97: recipe for target 'cmTC_50785' failed
-make[1]: *** [cmTC_50785] Error 1
+CMakeFiles/cmTC_a2787.dir/build.make:97: recipe for target 'cmTC_a2787' failed
+make[1]: *** [cmTC_a2787] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_50785/fast' failed
-make: *** [cmTC_50785/fast] Error 2
+Makefile:126: recipe for target 'cmTC_a2787/fast' failed
+make: *** [cmTC_a2787/fast] Error 2
 
 File /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_12b2e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_12b2e.dir/build.make CMakeFiles/cmTC_12b2e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_484f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_484f0.dir/build.make CMakeFiles/cmTC_484f0.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12b2e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_12b2e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_12b2e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12b2e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_12b2e.dir/CheckFunctionExists.c.o  -o cmTC_12b2e -lpthreads 
+Building C object CMakeFiles/cmTC_484f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_484f0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_484f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_484f0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_484f0.dir/CheckFunctionExists.c.o  -o cmTC_484f0 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_12b2e.dir/build.make:97: recipe for target 'cmTC_12b2e' failed
-make[1]: *** [cmTC_12b2e] Error 1
+CMakeFiles/cmTC_484f0.dir/build.make:97: recipe for target 'cmTC_484f0' failed
+make[1]: *** [cmTC_484f0] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_rtu/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_12b2e/fast' failed
-make: *** [cmTC_12b2e/fast] Error 2
+Makefile:126: recipe for target 'cmTC_484f0/fast' failed
+make: *** [cmTC_484f0/fast] Error 2
 
 

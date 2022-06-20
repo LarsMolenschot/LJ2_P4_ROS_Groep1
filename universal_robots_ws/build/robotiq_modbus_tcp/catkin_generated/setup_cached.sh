@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_modbus_tcp'
 export PYTHONPATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1e4db/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1e4db.dir/build.make CMakeFiles/cmTC_1e4db.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6672d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6672d.dir/build.make CMakeFiles/cmTC_6672d.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1e4db.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_1e4db.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_1e4db
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e4db.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1e4db.dir/CheckSymbolExists.c.o  -o cmTC_1e4db 
-CMakeFiles/cmTC_1e4db.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_6672d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6672d.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6672d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6672d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6672d.dir/CheckSymbolExists.c.o  -o cmTC_6672d 
+CMakeFiles/cmTC_6672d.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1e4db.dir/build.make:97: recipe for target 'cmTC_1e4db' failed
-make[1]: *** [cmTC_1e4db] Error 1
+CMakeFiles/cmTC_6672d.dir/build.make:97: recipe for target 'cmTC_6672d' failed
+make[1]: *** [cmTC_6672d] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1e4db/fast' failed
-make: *** [cmTC_1e4db/fast] Error 2
+Makefile:126: recipe for target 'cmTC_6672d/fast' failed
+make: *** [cmTC_6672d/fast] Error 2
 
 File /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9f17/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9f17.dir/build.make CMakeFiles/cmTC_c9f17.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_697b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_697b2.dir/build.make CMakeFiles/cmTC_697b2.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c9f17.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c9f17.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c9f17
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9f17.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c9f17.dir/CheckFunctionExists.c.o  -o cmTC_c9f17 -lpthreads 
+Building C object CMakeFiles/cmTC_697b2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_697b2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_697b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697b2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_697b2.dir/CheckFunctionExists.c.o  -o cmTC_697b2 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c9f17.dir/build.make:97: recipe for target 'cmTC_c9f17' failed
-make[1]: *** [cmTC_c9f17] Error 1
+CMakeFiles/cmTC_697b2.dir/build.make:97: recipe for target 'cmTC_697b2' failed
+make[1]: *** [cmTC_697b2] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_85_gripper_visualization/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c9f17/fast' failed
-make: *** [cmTC_c9f17/fast] Error 2
+Makefile:126: recipe for target 'cmTC_697b2/fast' failed
+make: *** [cmTC_697b2/fast] Error 2
 
 

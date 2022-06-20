@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_2f_gripper_control:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_2f_gripper_control/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_2f_gripper_control/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_gripper_control'
 export PYTHONPATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_2f_gripper_control/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_2f_gripper_control/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

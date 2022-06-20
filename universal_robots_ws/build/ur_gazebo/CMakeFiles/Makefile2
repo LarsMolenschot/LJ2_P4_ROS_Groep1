@@ -259,13 +259,13 @@ clean: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5.
 # Target rules for target CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir
 
 # All Build rule for target.
+CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5.xml.dir/all
+CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5e.xml.dir/all
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3.xml.dir/all
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/all
-CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5e.xml.dir/all
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/all
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur10e.xml.dir/all
 CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur10.xml.dir/all
-CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5.xml.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/build.make CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/build.make CMakeFiles/_run_tests_ur_gazebo_roslaunch-check.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_gazebo/CMakeFiles --progress-num= "Built target _run_tests_ur_gazebo_roslaunch-check"
@@ -748,12 +748,12 @@ clean: CMakeFiles/_run_tests_ur_gazebo.dir/clean
 # Target rules for target CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5e.xml.dir/all
-CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/all
+CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur10.xml.dir/all
 CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3.xml.dir/all
 CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur16e.xml.dir/all
+CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5e.xml.dir/all
 CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur10e.xml.dir/all
-CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur10.xml.dir/all
+CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur3e.xml.dir/all
 CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/all: CMakeFiles/run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur5.xml.dir/all
 	$(MAKE) -f CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/build.make CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/build.make CMakeFiles/run_tests_ur_gazebo_roslaunch-check.dir/build

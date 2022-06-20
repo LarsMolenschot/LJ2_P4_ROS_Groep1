@@ -8,6 +8,7 @@ import moveit_msgs.msg
 import xml.etree.ElementTree as ET
 
 from moveit_python import MoveGroupInterface
+from std_msgs.msg import String
 from moveit_msgs.msg import MoveItErrorCodes
 from geometry_msgs.msg import Pose
 
@@ -20,6 +21,8 @@ class controlUR5Class():
     def __init__(self):
             self.UR5_action = actionlib.SimpleActionServer('control_robot', control_robotAction, self.moverobot ,False)
             self.UR5_action.start()
+
+            self.error_pub = rospy.Publisher('/manipulator_error',String)
 
             self._success = control_robotResult()
 
@@ -59,6 +62,9 @@ class controlUR5Class():
         
         if reached == False:
             rospy.logerr("desired position not reached correctly!")
+            error_msg = String()
+            error_msg = "error"
+            self.error_pub.publish(error_msg)
         else:
             rospy.loginfo("desired position reached!")
 
