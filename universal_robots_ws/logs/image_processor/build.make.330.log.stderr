@@ -1,0 +1,13 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:26:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[KImageProcessor[m[K’
+ [01;31m[KImageProcessor[m[K::ImageProcessor()
+ [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:342:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_mat_ptr_in_[m[K’ does not name a type; did you mean ‘[01m[KcvReadString[m[K’?
+     [01;31m[Kcv_mat_ptr_in_[m[K = nullptr;
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+     [32m[KcvReadString[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:343:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
