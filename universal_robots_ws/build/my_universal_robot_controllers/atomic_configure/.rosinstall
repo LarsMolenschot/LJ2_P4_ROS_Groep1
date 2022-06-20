@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/setup.sh
+    local-name: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_universal_robot_controllers/setup.sh

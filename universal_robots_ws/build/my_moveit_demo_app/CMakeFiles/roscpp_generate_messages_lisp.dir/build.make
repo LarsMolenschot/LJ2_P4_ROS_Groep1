@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/my_moveit_demo_app
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /home/student/universal_robots_ws/build/my_moveit_demo_app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app /home/student/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app /home/student/universal_robots_ws/build/my_moveit_demo_app /home/student/universal_robots_ws/build/my_moveit_demo_app /home/student/universal_robots_ws/build/my_moveit_demo_app/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_moveit_demo_app/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 

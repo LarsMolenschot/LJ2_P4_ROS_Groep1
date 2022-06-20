@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_Client_Library
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_client_library
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/ur_client_library/CMakeFiles /home/student/universal_robots_ws/build/ur_client_library/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/universal_robots_ws/build/ur_client_library/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

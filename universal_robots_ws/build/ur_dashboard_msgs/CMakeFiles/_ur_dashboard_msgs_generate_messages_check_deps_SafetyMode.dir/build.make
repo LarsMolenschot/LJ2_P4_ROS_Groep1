@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_dashboard_msgs
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs
 
 # Utility rule file for _ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_dashboard_msgs
 include CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/progress.make
 
 CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_dashboard_msgs /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/SafetyMode.msg 
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/SafetyMode.msg 
 
 _ur_dashboard_msgs_generate_messages_check_deps_SafetyMode: CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode
 _ur_dashboard_msgs_generate_messages_check_deps_SafetyMode: CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/clean:
 .PHONY : CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/clean
 
 CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_dashboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SafetyMode.dir/depend
 

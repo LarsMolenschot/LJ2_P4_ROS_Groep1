@@ -1,0 +1,14 @@
+#goal
+
+geometry_msgs/Pose lineairpose
+
+std_msgs/String position
+
+std_msgs/Bool mode
+---
+#result
+
+std_msgs/Bool succeeded
+---
+#feedback
+

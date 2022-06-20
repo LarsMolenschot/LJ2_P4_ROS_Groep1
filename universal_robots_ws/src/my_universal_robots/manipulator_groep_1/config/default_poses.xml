@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<table name = "poses">
+  <positie name = "home">
+    <x> 0.9857 </x>
+    <y> 0.9810 </y>
+    <z> 0.4337 </z>
+    <Rx> -0.4983 </Rx>
+    <Ry> 0.5022 </Ry>
+    <Rz> 0.4966 </Rz>
+    <w>0.5028</w>
+  </positie>
+
+  <positie name = "vision">
+    <x> 0.8337 </x>
+    <y> 0.7298 </y>
+    <z> 0.4337 </z>
+    <Rx> -0.5006 </Rx>
+    <Ry> 0.5008 </Ry>
+    <Rz> 0.4942 </Rz>
+    <w>0.5043</w>
+  </positie>
+
+  <positie name = "bak1_1">
+    <x> 0.3915 </x>
+    <y> 1.5414 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7051 </Rx>
+    <Ry> 0.0043 </Ry>
+    <Rz> -0.7091 </Rz>
+    <w>0.0005</w>
+  </positie>
+
+  <positie name = "bak1_2">
+    <x> 0.5015 </x>
+    <y> 1.5414 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7051 </Rx>
+    <Ry> 0.0043 </Ry>
+    <Rz> -0.7091 </Rz>
+    <w>0.0005</w>
+  </positie>
+
+  <positie name = "bak1_3">
+    <x> 0.6115 </x>
+    <y> 1.5414 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7051 </Rx>
+    <Ry> 0.0043 </Ry>
+    <Rz> -0.7091 </Rz>
+    <w>0.0005</w>
+  </positie>
+
+  <positie name = "bak1_4">
+    <x> 0.7215 </x>
+    <y> 1.5414 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7051 </Rx>
+    <Ry> 0.0043 </Ry>
+    <Rz> -0.7091 </Rz>
+    <w>0.0005</w>
+  </positie>
+  
+  <positie name = "bak2_1">
+    <x> 0.3906 </x>
+    <y> 1.6136 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7080 </Rx>
+    <Ry> -0.0012 </Ry>
+    <Rz> -0.7063 </Rz>
+    <w>0.0008</w>
+  </positie>
+
+  <positie name = "bak2_2">
+    <x> 0.5006 </x>
+    <y> 1.6136 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7080 </Rx>
+    <Ry> -0.0012 </Ry>
+    <Rz> -0.7063 </Rz>
+    <w>0.0008</w>
+  </positie>
+
+  <positie name = "bak2_3">
+    <x> 0.6106 </x>
+    <y> 1.6136 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7080 </Rx>
+    <Ry> -0.0012 </Ry>
+    <Rz> -0.7063 </Rz>
+    <w>0.0008</w>
+  </positie>
+
+  <positie name = "bak2_4">
+    <x> 0.7206 </x>
+    <y> 1.6136 </y>
+    <z> 0.4337 </z>
+    <Rx> 0.7080 </Rx>
+    <Ry> -0.0012 </Ry>
+    <Rz> -0.7063 </Rz>
+    <w>0.0008</w>
+  </positie>
+</table>

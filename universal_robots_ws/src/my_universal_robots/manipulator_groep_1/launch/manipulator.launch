@@ -1,0 +1,12 @@
+<launch>
+    <node 
+    pkg="manipulator_groep_1" 
+    type="manipulator_action.py" 
+    name="robotAction"  
+    output="screen">  
+    </node>
+
+    <include file="$(find my_universal_robot_controllers)/launch/ur5_bringup.launch"/>
+    <include file="$(find my_demo)/launch/environment_ur5.launch"/>
+
+</launch>

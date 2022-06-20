@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_Client_Library
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_client_library
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/primary_pipeline_example.dir/depend.make
@@ -58,17 +58,17 @@ include examples/CMakeFiles/primary_pipeline_example.dir/progress.make
 include examples/CMakeFiles/primary_pipeline_example.dir/flags.make
 
 examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o: examples/CMakeFiles/primary_pipeline_example.dir/flags.make
-examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o: /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o -c /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp
+examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp
 
 examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.i"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp > CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.i
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp > CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.i
 
 examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.s"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp -o CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.s
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples/primary_pipeline.cpp -o CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.s
 
 examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o.requires:
 
@@ -92,8 +92,8 @@ examples/primary_pipeline_example: examples/CMakeFiles/primary_pipeline_example.
 examples/primary_pipeline_example: examples/CMakeFiles/primary_pipeline_example.dir/build.make
 examples/primary_pipeline_example: liburcl.so
 examples/primary_pipeline_example: examples/CMakeFiles/primary_pipeline_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable primary_pipeline_example"
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/primary_pipeline_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable primary_pipeline_example"
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/primary_pipeline_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/primary_pipeline_example.dir/build: examples/primary_pipeline_example
@@ -105,10 +105,10 @@ examples/CMakeFiles/primary_pipeline_example.dir/requires: examples/CMakeFiles/p
 .PHONY : examples/CMakeFiles/primary_pipeline_example.dir/requires
 
 examples/CMakeFiles/primary_pipeline_example.dir/clean:
-	cd /home/student/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/primary_pipeline_example.dir/cmake_clean.cmake
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples && $(CMAKE_COMMAND) -P CMakeFiles/primary_pipeline_example.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/primary_pipeline_example.dir/clean
 
 examples/CMakeFiles/primary_pipeline_example.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/universal_robots_ws/build/ur_client_library /home/student/universal_robots_ws/build/ur_client_library/examples /home/student/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/primary_pipeline_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_Client_Library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library/examples/CMakeFiles/primary_pipeline_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/primary_pipeline_example.dir/depend
 

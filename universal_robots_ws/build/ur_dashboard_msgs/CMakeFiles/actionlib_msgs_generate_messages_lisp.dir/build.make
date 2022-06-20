@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_dashboard_msgs
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs
 
 # Utility rule file for actionlib_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_dashboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs /home/student/universal_robots_ws/build/ur_dashboard_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_dashboard_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
 

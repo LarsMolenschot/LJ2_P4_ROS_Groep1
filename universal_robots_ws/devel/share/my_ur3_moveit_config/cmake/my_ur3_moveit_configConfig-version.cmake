@@ -1,1 +1,1 @@
-/home/student/universal_robots_ws/devel/.private/my_ur3_moveit_config/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig-version.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur3_moveit_config/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig-version.cmake
