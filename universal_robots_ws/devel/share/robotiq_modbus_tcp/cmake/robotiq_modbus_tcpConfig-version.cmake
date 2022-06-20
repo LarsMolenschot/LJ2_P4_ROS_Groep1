@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_tcp/share/robotiq_modbus_tcp/cmake/robotiq_modbus_tcpConfig-version.cmake

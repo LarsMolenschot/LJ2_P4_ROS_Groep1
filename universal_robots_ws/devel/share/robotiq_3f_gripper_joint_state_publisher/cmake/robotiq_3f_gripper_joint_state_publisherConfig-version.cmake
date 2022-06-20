@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_3f_gripper_joint_state_publisher/share/robotiq_3f_gripper_joint_state_publisher/cmake/robotiq_3f_gripper_joint_state_publisherConfig-version.cmake

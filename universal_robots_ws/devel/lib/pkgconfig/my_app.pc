@@ -1,1 +1,0 @@
-/home/student/universal_robots_ws/devel/.private/my_app/lib/pkgconfig/my_app.pc

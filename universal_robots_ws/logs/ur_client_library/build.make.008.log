@@ -1,8 +1,0 @@
-[  2%] [32m[1mLinking CXX shared library liburcl.so[0m
-[ 82%] Built target urcl
-[ 85%] [32m[1mLinking CXX executable primary_pipeline_example[0m
-[ 88%] Built target primary_pipeline_example
-[ 91%] [32m[1mLinking CXX executable driver_example[0m
-[ 94%] Built target driver_example
-[ 97%] [32m[1mLinking CXX executable rtde_client_example[0m
-[100%] Built target rtde_client_example
