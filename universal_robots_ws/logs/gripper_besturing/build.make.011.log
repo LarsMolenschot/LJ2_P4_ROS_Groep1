@@ -1,0 +1,18 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _gripper_besturing_generate_messages_check_deps_gripperServiceMessage
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[ 14%] [34m[1mGenerating C++ code from gripper_besturing/gripperServiceMessage.srv[0m
+[ 14%] Built target gripper_besturing_generate_messages_cpp
+[ 28%] [34m[1mGenerating Python code from SRV gripper_besturing/gripperServiceMessage[0m
+[ 42%] [34m[1mGenerating Python srv __init__.py for gripper_besturing[0m
+[ 42%] Built target gripper_besturing_generate_messages_py
+[ 57%] [34m[1mGenerating Lisp code from gripper_besturing/gripperServiceMessage.srv[0m
+[ 57%] Built target gripper_besturing_generate_messages_lisp
+[ 71%] [34m[1mGenerating EusLisp code from gripper_besturing/gripperServiceMessage.srv[0m
+[ 85%] Built target gripper_besturing_generate_messages_eus
+[100%] [34m[1mGenerating Javascript code from gripper_besturing/gripperServiceMessage.srv[0m
+[100%] Built target gripper_besturing_generate_messages_nodejs
+[100%] Built target gripper_besturing_generate_messages

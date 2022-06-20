@@ -11,5 +11,4 @@ export CMAKE_PREFIX_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/de
 export LD_LIBRARY_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/my_ur_description'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/student/universal_robots_ws/src/my_universal_robots/my_ur_description:/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/my_ur_description:$ROS_PACKAGE_PATH"

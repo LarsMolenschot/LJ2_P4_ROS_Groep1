@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_gazebo/lib/pkgconfig/ur_gazebo.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_gazebo.pc
+Warning: Source hash: 21ae93b7c8793e7c61e23779e808c898
+Warning: Dest hash: 63ecc3ff28107618d1d9d0cfe6a8f0b7
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_gazebo/share/ur_gazebo/cmake/ur_gazeboConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_gazebo/cmake/ur_gazeboConfig.cmake
+Warning: Source hash: 4e8b44813317c8745a590e916ec24f00
+Warning: Dest hash: 547cd4be96581756f0295c7563f7cdb7
