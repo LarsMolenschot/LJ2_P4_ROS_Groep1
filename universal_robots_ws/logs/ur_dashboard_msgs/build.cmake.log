@@ -40,6 +40,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 [36m--[0m Generating .msg files for action ur_dashboard_msgs/SetMode /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/action/SetMode.action
+Generating for action SetMode
 [36m--[0m ur_dashboard_msgs: 10 messages, 10 services
 [36m--[0m Configuring done
 [36m--[0m Generating done

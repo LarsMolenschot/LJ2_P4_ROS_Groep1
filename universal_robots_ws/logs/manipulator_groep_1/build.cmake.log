@@ -40,6 +40,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 [36m--[0m Generating .msg files for action manipulator_groep_1/control_robot /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/manipulator_groep_1/action/control_robot.action
+Generating for action control_robot
 [36m--[0m manipulator_groep_1: 7 messages, 0 services
 [36m--[0m Configuring done
 [36m--[0m Generating done
