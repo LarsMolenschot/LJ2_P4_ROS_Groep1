@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+from py_compile import main
 import rospy
 import time
 import actionlib
@@ -17,10 +18,27 @@ ERROR = 4
 # it just prints a message indicating a new message has been received
 
 # initializes the action client node
-rospy.init_node('hoofdprogramma_node')
 
-#maak een action server client aan voor de manipulator module en wacht tot deze is opgestart
-action_server_name_manipulator = '/control_robot'
-client_manipulator = actionlib.SimpleActionClient(action_server_name_manipulator, control_robotAction)
-client_manipulator.wait_for_server()
-rospy.loginfo('Action Server Found...'+action_server_name_manipulator)
+class MainProgramClass()
+    def __init__(self):
+        # Manipulator
+        # maak een action server client aan voor de manipulator module en wacht tot deze is opgestart
+        action_server_name_manipulator = '/control_robot'
+        self.client_manipulator = actionlib.SimpleActionClient(action_server_name_manipulator, control_robotAction)
+        self.client_manipulator.wait_for_server()
+        rospy.loginfo('Action Server Found...'+action_server_name_manipulator)
+
+        # HMI
+        # :::::
+        rospy.Subscriber("chatter", String, callback)
+        
+
+
+
+        
+
+if __name__ == '__main__':
+    rospy.init_node('hoofdprogramma')
+    MainProgramClass()
+    rospy.spin()
+        
