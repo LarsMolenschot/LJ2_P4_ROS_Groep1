@@ -1,0 +1,7 @@
+string open_of_dicht_gripper
+int64 gripper_opstarten
+---
+bool succes
+bool found_object
+int64 error_nummer
+string error_tekst
