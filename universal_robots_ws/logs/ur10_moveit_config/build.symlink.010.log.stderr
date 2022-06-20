@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur10_moveit_config/lib/pkgconfig/ur10_moveit_config.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur10_moveit_config.pc
+Warning: Source hash: a065bc6dce4632744141418dc7010feb
+Warning: Dest hash: 1ceb642dee1bf2b617d651e93e1ddaac
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur10_moveit_config/cmake/ur10_moveit_configConfig.cmake
+Warning: Source hash: 896f3fd1c5e9daa04b345b462fde3bcb
+Warning: Dest hash: 75ceca2a6166929e3bd7de575181de78

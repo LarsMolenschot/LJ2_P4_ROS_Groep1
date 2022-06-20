@@ -1,0 +1,13 @@
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_description/lib/pkgconfig/ur_description.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc
+Warning: Source hash: 4ea329b313a598659481857e9809076b
+Warning: Dest hash: 02befaf85e73e94fced9bdebd761c26a
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake
+Warning: Source hash: 4b2d817274830cf1c59dce27957d0011
+Warning: Dest hash: bc295ea3cb7edd9e2198fa2c85d7493c
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/lib/pkgconfig/ur_description.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake

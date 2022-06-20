@@ -1,0 +1,13 @@
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur3_moveit_config/lib/pkgconfig/my_ur3_moveit_config.pc to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_ur3_moveit_config.pc
+Warning: Source hash: 0b978b7b32ed36c7618e28518e4ad6fe
+Warning: Dest hash: c1d491c3fbfb6f40d037d8caf2b5f544
+Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur3_moveit_config/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig.cmake
+Warning: Source hash: c15028981f77daf95061d6c2df76fe14
+Warning: Dest hash: 7381b4e4a9805fcdba7d6b846699d82d
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_ur3_moveit_config/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_ur3_moveit_config/lib/pkgconfig/my_ur3_moveit_config.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_ur3_moveit_config.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_ur3_moveit_config/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_ur3_moveit_config/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig.cmake, /home/student/universal_robots_ws/devel/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_ur3_moveit_config.pc
+Unlinking: /home/student/universal_robots_ws/devel/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig-version.cmake
+Unlinking: /home/student/universal_robots_ws/devel/share/my_ur3_moveit_config/cmake/my_ur3_moveit_configConfig.cmake

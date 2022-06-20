@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec3bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec3bb.dir/build.make CMakeFiles/cmTC_ec3bb.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec3bb.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ec3bb.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ec3bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec3bb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ec3bb.dir/CheckSymbolExists.c.o  -o cmTC_ec3bb 
+CMakeFiles/cmTC_ec3bb.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ec3bb.dir/build.make:97: recipe for target 'cmTC_ec3bb' failed
+make[1]: *** [cmTC_ec3bb] Error 1
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ec3bb/fast' failed
+make: *** [cmTC_ec3bb/fast] Error 2
+
+File /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2fddf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2fddf.dir/build.make CMakeFiles/cmTC_2fddf.dir/build
+make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fddf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2fddf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2fddf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fddf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2fddf.dir/CheckFunctionExists.c.o  -o cmTC_2fddf -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2fddf.dir/build.make:97: recipe for target 'cmTC_2fddf' failed
+make[1]: *** [cmTC_2fddf] Error 1
+make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/robotiq_2f_c2_gripper_visualization/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2fddf/fast' failed
+make: *** [cmTC_2fddf/fast] Error 2
+
+
