@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+  Gripper launch file.
+  Launched 2 files: gripper connectie file, gripper service server.
+-->
+<launch>
+  <node pkg="robotiq_2f_gripper_control" type="Robotiq2FGripperRtuNode.py"  name="robotiq2FGripper" output="screen">
+    <param name="port"  type="string" value="/dev/ttyUSB0" />
+  </node>
+</launch>
