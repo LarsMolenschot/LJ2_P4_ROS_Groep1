@@ -4,10 +4,3 @@ Warning: Dest hash: e6922f0ad27f61390fc068294ffa5671
 Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake
 Warning: Source hash: 090205c4b23481489bc1bd56878199d9
 Warning: Dest hash: 2b52821b2ccd8cd582e7cc3dffc56fd4
-Cleaning: (/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/lib/pkgconfig/my_universal_robot_controllers.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_universal_robot_controllers.pc)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake, /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake)
-Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_universal_robot_controllers.pc
-Unlinking: /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake
-Unlinking: /home/student/universal_robots_ws/devel/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig-version.cmake

@@ -4,10 +4,3 @@ Warning: Dest hash: fc9e22f518076a5b8bd244f7f3225234
 Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur10e_moveit_config/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig.cmake
 Warning: Source hash: 39345ee9478dd5c462c45ad569121b72
 Warning: Dest hash: 0826a4e3acfc6a6a05288a7cd9dea6ff
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config/lib/pkgconfig/ur10e_moveit_config.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur10e_moveit_config.pc)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig-version.cmake)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur10e_moveit_config/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig.cmake, /home/student/universal_robots_ws/devel/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig.cmake)
-Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur10e_moveit_config.pc
-Unlinking: /home/student/universal_robots_ws/devel/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig-version.cmake
-Unlinking: /home/student/universal_robots_ws/devel/share/ur10e_moveit_config/cmake/ur10e_moveit_configConfig.cmake

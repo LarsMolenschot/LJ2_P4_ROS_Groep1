@@ -7,12 +7,3 @@ Warning: Dest hash: 06c3cda97c5fd6aa2113c0f4da1a90ed
 Warning: Cannot symlink from /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake to existing file /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake
 Warning: Source hash: a3d0f15e28417b085369ededbfb3670f
 Warning: Dest hash: 079b8c7beb810d7675455971b1613be8
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/lib/ur_calibration/calibration_correction, /home/student/universal_robots_ws/devel/lib/ur_calibration/calibration_correction)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/lib/pkgconfig/ur_calibration.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake)
-Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake)
-Unlinking: /home/student/universal_robots_ws/devel/lib/ur_calibration/calibration_correction
-Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc
-Unlinking: /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake
-Unlinking: /home/student/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
