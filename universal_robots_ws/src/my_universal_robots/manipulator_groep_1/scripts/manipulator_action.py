@@ -60,7 +60,7 @@ class controlUR5Class():
         elif self._controlPose.orientation.w > curr_pose.pose.orientation.w + marge or self._controlPose.orientation.w < curr_pose.pose.orientation.w - marge:
             reached = False
         
-        if reached == False:
+        if reached == False or self.success == False:
             rospy.logerr("desired position not reached correctly!")
             error_msg = String()
             error_msg = "error"

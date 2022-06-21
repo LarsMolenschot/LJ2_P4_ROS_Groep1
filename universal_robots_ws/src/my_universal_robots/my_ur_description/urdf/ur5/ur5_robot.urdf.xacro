@@ -286,6 +286,29 @@
     <child link="bak2_4_link" />
   </joint>
 
+ <link name="grippervision_link">
+    <visual>
+      <origin xyz="0 0 0.001" rpy="1.57079 3.14 0.0"/>
+      <geometry>
+        <mesh filename="package://my_ur_description/urdf/ur5/gripper_rviz.STL"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.001" rpy="1.57079 3.14 0.0"/>
+      <geometry>
+        <mesh filename="package://my_ur_description/urdf/ur5/gripper_rviz.STL"/>
+      </geometry>
+      <material name="blue"/>
+    </collision>
+  </link>
+
+  <joint name="grippervision_joint" type="fixed">
+    <origin xyz="0.0015 -0.09343 -0.08" rpy="3.14 1.57 0"  />
+    <parent link="tcp_link" />
+    <child link="grippervision_link" />
+  </joint>
+
 
 
 </robot>
