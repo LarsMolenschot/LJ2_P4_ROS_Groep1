@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -pedantic -Wall -pedantic -O2 -g -DNDEBUG  -rdynamic CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o  -o primary_pipeline_example -Wl,-rpath,/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_client_library ../liburcl.so -lpthread 
