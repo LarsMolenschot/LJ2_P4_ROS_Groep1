@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <node
+	name="arduino_connector"
+        pkg="hmi"
+        type="arduino.py"
+	output="screen">
+    </node>
+    	<include file="$(find hmi)/launch/launch_avans_arduino_shield.launch"/>
+</launch>
