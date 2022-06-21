@@ -309,6 +309,27 @@
     <child link="grippervision_link" />
   </joint>
 
+ <link name="transportsystem_link">
+    <visual>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <mesh filename="package://my_ur_description/urdf/ur5/transportsystem.STL"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://my_ur_description/urdf/ur5/transportsystem.STL"/>
+      </geometry>
+      <material name="blue"/>
+    </collision>
+  </link>
 
+  <joint name="transportsystem_joint" type="fixed">
+    <origin xyz="0.02 0.32 0" rpy=" 1.57 0 0"/>
+    <parent link="baseplate_link" />
+    <child link="transportsystem_link" />
+  </joint>
 
 </robot>
