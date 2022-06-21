@@ -1,1 +1,0 @@
-/home/student/universal_robots_ws/devel/.private/my_ur5e_moveit_config/lib/pkgconfig/my_ur5e_moveit_config.pc

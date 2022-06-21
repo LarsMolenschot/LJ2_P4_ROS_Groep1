@@ -1,1 +1,0 @@
-/home/student/universal_robots_ws/devel/.private/my_ur_description/share/my_ur_description/cmake/my_ur_descriptionConfig-version.cmake

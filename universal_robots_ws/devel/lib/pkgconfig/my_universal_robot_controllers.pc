@@ -1,1 +1,0 @@
-/home/student/universal_robots_ws/devel/.private/my_universal_robot_controllers/lib/pkgconfig/my_universal_robot_controllers.pc
