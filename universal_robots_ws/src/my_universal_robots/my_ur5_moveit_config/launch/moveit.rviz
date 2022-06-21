@@ -74,6 +74,46 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          bak1_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           base:
             Alpha: 1
             Show Axes: false
@@ -101,6 +141,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          grippervision_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           mountingplate_link:
             Alpha: 1
             Show Axes: false
@@ -119,6 +164,11 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          transportsystem_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           upper_arm_link:
             Alpha: 1
             Show Axes: false
@@ -188,6 +238,46 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          bak1_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak1_4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          bak2_4_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           base:
             Alpha: 1
             Show Axes: false
@@ -215,6 +305,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          grippervision_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           mountingplate_link:
             Alpha: 1
             Show Axes: false
@@ -233,6 +328,11 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          transportsystem_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           upper_arm_link:
             Alpha: 1
             Show Axes: false
@@ -267,6 +367,22 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        bak1_1_link:
+          Value: true
+        bak1_2_link:
+          Value: true
+        bak1_3_link:
+          Value: true
+        bak1_4_link:
+          Value: true
+        bak2_1_link:
+          Value: true
+        bak2_2_link:
+          Value: true
+        bak2_3_link:
+          Value: true
+        bak2_4_link:
+          Value: true
         base:
           Value: false
         base_link:
@@ -279,6 +395,8 @@ Visualization Manager:
           Value: false
         forearm_link:
           Value: false
+        grippervision_link:
+          Value: true
         ik_testpoint:
           Value: false
         mountingplate_link:
@@ -289,6 +407,8 @@ Visualization Manager:
           Value: false
         tool0:
           Value: false
+        transportsystem_link:
+          Value: true
         upper_arm_link:
           Value: false
         world:
@@ -307,6 +427,16 @@ Visualization Manager:
       Tree:
         world:
           baseplate_link:
+            bak1_1_link:
+              bak1_2_link:
+                bak1_3_link:
+                  bak1_4_link:
+                    {}
+              bak2_1_link:
+                bak2_2_link:
+                  bak2_3_link:
+                    bak2_4_link:
+                      {}
             mountingplate_link:
               base_link:
                 base:
@@ -321,7 +451,10 @@ Visualization Manager:
                               flange:
                                 tool0:
                                   tcp_link:
-                                    {}
+                                    grippervision_link:
+                                      {}
+            transportsystem_link:
+              {}
           ik_testpoint:
             {}
       Update Interval: 0
@@ -342,25 +475,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 1.139756679534912
+      Distance: 2.2618494033813477
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.3835039138793945
-        Y: -0.25616341829299927
-        Z: -1.7881336589198327e-7
+        X: 2.310875415802002
+        Y: 0.8966588973999023
+        Z: 2.384191475357511e-7
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.34979715943336487
+      Pitch: 0.5447970032691956
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 5.244953632354736
+      Yaw: 5.814962387084961
     Saved: ~
 Window Geometry:
   Displays:

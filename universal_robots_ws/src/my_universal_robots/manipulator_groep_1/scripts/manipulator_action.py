@@ -28,6 +28,9 @@ class controlUR5Class():
 
             self._controlPose = Pose()
 
+            self._planningtime = 5
+            self._planattempts = 3
+
             rospy.loginfo("actionserver running!")
     
     def checkfinalpose(self):
@@ -146,8 +149,8 @@ class controlUR5Class():
 
             #set planning settings
             group2.set_planner_id("RRTConnectkConfigDefault")
-            group2.set_planning_time(10)
-            group2.set_num_planning_attempts(20)
+            group2.set_planning_time(self._planningtime)
+            group2.set_num_planning_attempts(self._planattempts)
             group2.set_end_effector_link("tcp_link")
             group2.set_goal_tolerance(0.01)
 
@@ -195,8 +198,8 @@ class controlUR5Class():
 
         #set the planner settings
         group.set_planner_id("RRTConnectkConfigDefault")
-        group.set_planning_time(5)
-        group.set_num_planning_attempts(10)
+        group.set_planning_time(self._planningtime)
+        group.set_num_planning_attempts(self._planattempts)
         group.set_end_effector_link("tcp_link")
         group.set_goal_tolerance(0.01)
         group.set_pose_target(pose_target)

@@ -42,7 +42,7 @@ class MainProgramClass():
         # Maak een subscriber en publisher voor de HMI.
         # Declare variabelen voor de knoppen en functies.
         rospy.Subscriber("/avans/buttons/state", UInt8, self.HMICallback)
-        self.pub = rospy.Publisher('/HMI', HMI_state, queue_size=10)
+        self.pub = rospy.Publisher('/HMI', HMI_state, queue_size=1)
         rospy.loginfo("\n \nHMI publisher and subscriber made successfully\n \n")
         self._fout = False
         self._storing = False
@@ -69,14 +69,16 @@ class MainProgramClass():
 
     def HMICallback(self, data):
         text = "in callback subscriber with data: "+ str(data.data)
-        #rospy.loginfo(text)
+        
         buttonstate = data.data
 
         if buttonstate == 8 and self._fout: # Noodstop en fout.
             self.stopProgram()
         elif buttonstate == 1: # 1 cyclus.
+            rospy.logwarn(text)
             self.single()
         elif buttonstate == 2 and self._continu: # Continue cyclus.
+            rospy.logwarn(text)
             self.continuous()
     
     def single(self):
@@ -92,7 +94,7 @@ class MainProgramClass():
         state_result = self.client_manipulator.get_state()
 
         while state_result < self.DONE:
-            rospy.loginfo("moving to home")
+            rospy.logwarn("moving to home")
             
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
@@ -106,7 +108,7 @@ class MainProgramClass():
         self.client_manipulator.send_goal(self.manipulator_goal)
 
         while state_result < self.DONE:
-            rospy.loginfo("moving to vision")
+            rospy.logwarn("moving to vision")
             
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
@@ -133,7 +135,7 @@ class MainProgramClass():
         self.client_manipulator.send_goal(self.manipulator_goal)
 
         while state_result < self.DONE:
-            rospy.loginfo("moving to visionfeedback")
+            rospy.logwarn("moving to visionfeedback")
             
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
@@ -155,7 +157,7 @@ class MainProgramClass():
         self.client_manipulator.send_goal(self.manipulator_goal)
 
         while state_result < self.DONE:
-            rospy.loginfo("moving to down")
+            rospy.logwarn("moving to down")
             
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
@@ -166,6 +168,22 @@ class MainProgramClass():
         #Gripper dicht
         #self._gripper_service_response = self._gripper_program('dicht', 1)
         rospy.loginfo("gripper gaat dicht")
+
+        #Manipulator naar home 
+        self.manipulator_goal.mode.data = False
+        self.manipulator_goal.position.data = "home"
+        self.client_manipulator.send_goal(self.manipulator_goal)
+
+        state_result = self.client_manipulator.get_state()
+
+        while state_result < self.DONE:
+            rospy.logwarn("moving to home")
+            
+            state_result = self.client_manipulator.get_state()
+            rospy.loginfo("state_result: "+str(state_result))
+            self.manrate.sleep()
+
+        state_result = self.ACTIVE
 
         #Manipulator naar sorteerpositie
         self.manipulator_goal.mode.data = False
@@ -198,7 +216,7 @@ class MainProgramClass():
         self.client_manipulator.send_goal(self.manipulator_goal)
 
         while state_result < self.DONE:
-            rospy.loginfo("moving to positie vision voordef")
+            rospy.logwarn("moving to positie vision voordef")
             
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
@@ -209,6 +227,22 @@ class MainProgramClass():
         #gripper open
         #self._gripper_service_response = self._gripper_program('open', 1)
         rospy.loginfo("gripper gaat open")
+
+        #Manipulator naar bak2_4 
+        self.manipulator_goal.mode.data = False
+        self.manipulator_goal.position.data = "bak2_4"
+        self.client_manipulator.send_goal(self.manipulator_goal)
+
+        state_result = self.client_manipulator.get_state()
+
+        while state_result < self.DONE:
+            rospy.logwarn("moving to bak2_4")
+            
+            state_result = self.client_manipulator.get_state()
+            rospy.loginfo("state_result: "+str(state_result))
+            self.manrate.sleep()
+
+        state_result = self.ACTIVE
         
 
 
