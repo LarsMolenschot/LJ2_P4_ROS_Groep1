@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_97aae/fast"
-/usr/bin/make -f CMakeFiles/cmTC_97aae.dir/build.make CMakeFiles/cmTC_97aae.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b9cb4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9cb4.dir/build.make CMakeFiles/cmTC_b9cb4.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_97aae.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_97aae.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_97aae
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97aae.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_97aae.dir/CheckSymbolExists.c.o  -o cmTC_97aae 
-CMakeFiles/cmTC_97aae.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_b9cb4.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b9cb4.dir/CheckSymbolExists.c.o   -c /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b9cb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9cb4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b9cb4.dir/CheckSymbolExists.c.o  -o cmTC_b9cb4 
+CMakeFiles/cmTC_b9cb4.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_97aae.dir/build.make:97: recipe for target 'cmTC_97aae' failed
-make[1]: *** [cmTC_97aae] Error 1
+CMakeFiles/cmTC_b9cb4.dir/build.make:97: recipe for target 'cmTC_b9cb4' failed
+make[1]: *** [cmTC_b9cb4] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_97aae/fast' failed
-make: *** [cmTC_97aae/fast] Error 2
+Makefile:126: recipe for target 'cmTC_b9cb4/fast' failed
+make: *** [cmTC_b9cb4/fast] Error 2
 
 File /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2c613/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2c613.dir/build.make CMakeFiles/cmTC_2c613.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_33d49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33d49.dir/build.make CMakeFiles/cmTC_33d49.dir/build
 make[1]: Entering directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2c613.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2c613.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2c613
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c613.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2c613.dir/CheckFunctionExists.c.o  -o cmTC_2c613 -lpthreads 
+Building C object CMakeFiles/cmTC_33d49.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_33d49.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_33d49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33d49.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_33d49.dir/CheckFunctionExists.c.o  -o cmTC_33d49 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_2c613.dir/build.make:97: recipe for target 'cmTC_2c613' failed
-make[1]: *** [cmTC_2c613] Error 1
+CMakeFiles/cmTC_33d49.dir/build.make:97: recipe for target 'cmTC_33d49' failed
+make[1]: *** [cmTC_33d49] Error 1
 make[1]: Leaving directory '/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_msgs/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2c613/fast' failed
-make: *** [cmTC_2c613/fast] Error 2
+Makefile:126: recipe for target 'cmTC_33d49/fast' failed
+make: *** [cmTC_33d49/fast] Error 2
 
 

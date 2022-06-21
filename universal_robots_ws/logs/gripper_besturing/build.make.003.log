@@ -1,24 +1,12 @@
-[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
 [  0%] Built target std_msgs_generate_messages_cpp
-[35m[1mScanning dependencies of target _gripper_besturing_generate_messages_check_deps_gripperServiceMessage[0m
 [  0%] Built target _gripper_besturing_generate_messages_check_deps_gripperServiceMessage
-[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
 [  0%] Built target std_msgs_generate_messages_py
-[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
 [  0%] Built target std_msgs_generate_messages_lisp
-[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
 [  0%] Built target std_msgs_generate_messages_eus
-[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
 [  0%] Built target std_msgs_generate_messages_nodejs
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages_cpp[0m
 [ 14%] Built target gripper_besturing_generate_messages_cpp
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages_py[0m
 [ 42%] Built target gripper_besturing_generate_messages_py
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages_lisp[0m
 [ 57%] Built target gripper_besturing_generate_messages_lisp
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages_eus[0m
 [ 85%] Built target gripper_besturing_generate_messages_eus
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages_nodejs[0m
 [100%] Built target gripper_besturing_generate_messages_nodejs
-[35m[1mScanning dependencies of target gripper_besturing_generate_messages[0m
 [100%] Built target gripper_besturing_generate_messages

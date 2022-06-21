@@ -25,6 +25,7 @@
 [ 50%] [34m[1mGenerating EusLisp code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.msg[0m
 [ 58%] [34m[1mGenerating EusLisp code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.msg[0m
 [ 66%] [34m[1mGenerating EusLisp manifest code for robotiq_3f_gripper_articulated_msgs[0m
+[ 66%] Built target robotiq_3f_gripper_articulated_msgs_generate_messages_eus
 [35m[1mScanning dependencies of target robotiq_3f_gripper_articulated_msgs_generate_messages_cpp[0m
 [ 75%] [34m[1mGenerating C++ code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.msg[0m
 [ 83%] [34m[1mGenerating C++ code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.msg[0m
@@ -33,6 +34,5 @@
 [ 91%] [34m[1mGenerating Javascript code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.msg[0m
 [100%] [34m[1mGenerating Javascript code from robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.msg[0m
 [100%] Built target robotiq_3f_gripper_articulated_msgs_generate_messages_nodejs
-[100%] Built target robotiq_3f_gripper_articulated_msgs_generate_messages_eus
 [35m[1mScanning dependencies of target robotiq_3f_gripper_articulated_msgs_generate_messages[0m
 [100%] Built target robotiq_3f_gripper_articulated_msgs_generate_messages

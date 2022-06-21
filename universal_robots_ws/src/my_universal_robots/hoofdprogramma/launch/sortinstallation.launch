@@ -1,0 +1,14 @@
+<launch>
+    <node 
+    pkg="hoofdprogramma" 
+    type="sorteerinstallatie.py" 
+    name="sorteerinstallatie"  
+    output="screen">  
+    </node>
+
+    <!-- <include file="$(find my_universal_robot_controllers)/launch/ur5_bringup.launch"/> -->
+    <include file="$(find manipulator_groep_1)/launch/manipulator.launch"/>
+    <include file="$(find hmi)/launch/human_machine_interface.launch"/>
+
+
+</launch>

@@ -1,63 +1,26 @@
-[35m[1mScanning dependencies of target _robotiq_ft_sensor_generate_messages_check_deps_ft_sensor[0m
 [  0%] Built target _robotiq_ft_sensor_generate_messages_check_deps_ft_sensor
-[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
 [  0%] Built target std_msgs_generate_messages_py
-[35m[1mScanning dependencies of target _robotiq_ft_sensor_generate_messages_check_deps_sensor_accessor[0m
 [  0%] Built target _robotiq_ft_sensor_generate_messages_check_deps_sensor_accessor
-[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
 [  0%] Built target std_msgs_generate_messages_cpp
-[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
 [  0%] Built target std_msgs_generate_messages_eus
-[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
 [  0%] Built target std_msgs_generate_messages_lisp
-[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
 [  0%] Built target std_msgs_generate_messages_nodejs
-[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
 [  0%] Built target rosgraph_msgs_generate_messages_nodejs
-[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
 [  0%] Built target rosgraph_msgs_generate_messages_py
-[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
 [  0%] Built target rosgraph_msgs_generate_messages_lisp
-[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
 [  0%] Built target rosgraph_msgs_generate_messages_eus
-[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
 [  0%] Built target rosgraph_msgs_generate_messages_cpp
-[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
-[  0%] Built target roscpp_generate_messages_py
-[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
 [  0%] Built target roscpp_generate_messages_nodejs
-[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  0%] Built target roscpp_generate_messages_py
 [  0%] Built target roscpp_generate_messages_eus
-[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
 [  0%] Built target roscpp_generate_messages_lisp
-[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
 [  0%] Built target roscpp_generate_messages_cpp
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages_py[0m
 [ 21%] Built target robotiq_ft_sensor_generate_messages_py
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages_cpp[0m
 [ 31%] Built target robotiq_ft_sensor_generate_messages_cpp
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages_eus[0m
-[ 47%] Built target robotiq_ft_sensor_generate_messages_eus
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages_lisp[0m
-[ 57%] Built target robotiq_ft_sensor_generate_messages_lisp
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages_nodejs[0m
+[ 42%] Built target robotiq_ft_sensor_generate_messages_lisp
+[ 57%] Built target robotiq_ft_sensor_generate_messages_eus
+[ 57%] Built target robotiq_ft_sensor_gencpp
 [ 68%] Built target robotiq_ft_sensor_generate_messages_nodejs
-[35m[1mScanning dependencies of target robotiq_ft_sensor_gencpp[0m
-[ 68%] Built target robotiq_ft_sensor_gencpp
-[35m[1mScanning dependencies of target robotiq_ft_sensor_generate_messages[0m
-[ 68%] Built target robotiq_ft_sensor_generate_messages
-[35m[1mScanning dependencies of target rq_test_sensor[0m
-[ 73%] [32mBuilding CXX object CMakeFiles/rq_test_sensor.dir/nodes/rq_test_sensor.cpp.o[0m
-[ 78%] [32m[1mLinking CXX executable /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_ft_sensor/lib/robotiq_ft_sensor/rq_test_sensor[0m
 [ 78%] Built target rq_test_sensor
-[35m[1mScanning dependencies of target rq_sensor[0m
-[ 84%] [32mBuilding CXX object CMakeFiles/rq_sensor.dir/nodes/rq_sensor.cpp.o[0m
-[ 89%] [32mBuilding CXX object CMakeFiles/rq_sensor.dir/src/rq_sensor_com.cpp.o[0m
-In file included from [01m[K/usr/include/termios.h:25:0[m[K,
-                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/robotiq/robotiq_ft_sensor/src/rq_sensor_com.cpp:49[m[K:
-[01m[K/usr/include/features.h:184:3:[m[K [01;35m[Kwarning: [m[K#warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [[01;35m[K-Wcpp[m[K]
- # [01;35m[Kwarning[m[K "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
-   [01;35m[K^~~~~~~[m[K
-[ 94%] [32mBuilding CXX object CMakeFiles/rq_sensor.dir/src/rq_sensor_state.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_ft_sensor/lib/robotiq_ft_sensor/rq_sensor[0m
 [100%] Built target rq_sensor
+[100%] Built target robotiq_ft_sensor_generate_messages
