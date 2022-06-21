@@ -1,0 +1,1 @@
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake

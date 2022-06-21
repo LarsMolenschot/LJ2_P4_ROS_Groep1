@@ -1,0 +1,4 @@
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/rosserial_vex_cortex/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/rosserial_vex_cortex.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake

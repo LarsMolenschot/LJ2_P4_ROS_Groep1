@@ -1,1 +1,1 @@
-/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake

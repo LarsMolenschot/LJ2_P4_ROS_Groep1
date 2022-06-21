@@ -1,5 +1,21 @@
-Symlinking /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/my_moveit_demo_app
-Symlinking /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/moveit_test
-Symlinking /home/student/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_app.pc
-Symlinking /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake
-Symlinking /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/my_moveit_demo_app/my_moveit_demo_app
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/my_moveit_demo_app/moveit_test
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_app.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig-version.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/my_moveit_demo_app, /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/my_moveit_demo_app)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/my_moveit_demo_app/moveit_test, /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/moveit_test)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/lib/pkgconfig/my_moveit_demo_app.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_app.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake, /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_moveit_demo_app/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/my_moveit_demo_app
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/my_moveit_demo_app/moveit_test
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_moveit_demo_app.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig-version.cmake
+Already unlinked: {}

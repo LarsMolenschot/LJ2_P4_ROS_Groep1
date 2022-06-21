@@ -1,4 +1,17 @@
-Symlinking /home/student/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc
-Symlinking /home/student/universal_robots_ws/devel/lib/controller_stopper/node
-Symlinking /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake
-Symlinking /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/controller_stopper/node
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/controller_stopper/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/controller_stopper/lib/pkgconfig/controller_stopper.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/controller_stopper/lib/controller_stopper/node, /home/student/universal_robots_ws/devel/lib/controller_stopper/node)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig-version.cmake, /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig.cmake, /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/controller_stopper.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/controller_stopper/node
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/controller_stopper/cmake/controller_stopperConfig.cmake
+Already unlinked: {}

@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
+
+Name: avans_arduino_shield
+Description: Description of avans_arduino_shield
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,3 +1,13 @@
-Symlinking /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc
-Symlinking /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake
-Symlinking /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/lib/pkgconfig/ur_description.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake, /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake, /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/ur_description.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/ur_description/cmake/ur_descriptionConfig.cmake
+Already unlinked: {}

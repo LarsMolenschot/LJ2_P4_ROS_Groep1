@@ -1,0 +1,6 @@
+rosserial/rosserial_vex_cortex
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_cortex/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_cortex/lib/python2.7/dist-packages/rosserial_vex_cortex/__init__.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/rosserial_vex_cortex/__init__.py
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_cortex/lib/pkgconfig/rosserial_vex_cortex.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/rosserial_vex_cortex.pc
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake

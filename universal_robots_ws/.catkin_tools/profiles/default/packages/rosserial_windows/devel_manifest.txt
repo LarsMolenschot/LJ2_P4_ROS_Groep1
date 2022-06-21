@@ -1,0 +1,5 @@
+rosserial/rosserial_windows
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_windows/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_windows/lib/pkgconfig/rosserial_windows.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/rosserial_windows.pc
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_windows/share/rosserial_windows/cmake/rosserial_windowsConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_windows/cmake/rosserial_windowsConfig-version.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_windows/share/rosserial_windows/cmake/rosserial_windowsConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_windows/cmake/rosserial_windowsConfig.cmake

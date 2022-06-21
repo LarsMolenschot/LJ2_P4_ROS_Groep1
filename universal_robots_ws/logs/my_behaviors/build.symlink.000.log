@@ -1,4 +1,17 @@
-Symlinking /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
-Symlinking /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
-Symlinking /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
-Symlinking /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/python2.7/dist-packages/my_behaviors/__init__.py, /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/lib/pkgconfig/my_behaviors.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_behaviors/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/python2.7/dist-packages/my_behaviors/__init__.py
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_behaviors.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_behaviors/cmake/my_behaviorsConfig-version.cmake
+Already unlinked: {}

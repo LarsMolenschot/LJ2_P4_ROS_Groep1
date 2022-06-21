@@ -1,0 +1,6 @@
+rosserial/rosserial_python
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/lib/python2.7/dist-packages/rosserial_python/__init__.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/rosserial_python/__init__.py
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/lib/pkgconfig/rosserial_python.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/rosserial_python.pc
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake

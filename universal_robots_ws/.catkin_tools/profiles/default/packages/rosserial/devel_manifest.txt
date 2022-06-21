@@ -1,0 +1,2 @@
+rosserial/rosserial
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock

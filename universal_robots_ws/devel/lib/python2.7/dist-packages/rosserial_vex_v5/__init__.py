@@ -1,0 +1,1 @@
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_vex_v5/lib/python2.7/dist-packages/rosserial_vex_v5/__init__.py

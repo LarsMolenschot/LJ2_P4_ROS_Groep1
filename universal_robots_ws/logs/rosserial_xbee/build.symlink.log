@@ -1,0 +1,5 @@
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/rosserial_xbee/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/xbee/__init__.py
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/rosserial_xbee.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake

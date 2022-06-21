@@ -1,0 +1,5 @@
+AvansArduinoShieldByteOperations/arduino
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/avans_arduino_shield/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/avans_arduino_shield/lib/pkgconfig/avans_arduino_shield.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/avans_arduino_shield.pc
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/avans_arduino_shield/share/avans_arduino_shield/cmake/avans_arduino_shieldConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/avans_arduino_shield/cmake/avans_arduino_shieldConfig-version.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/avans_arduino_shield/share/avans_arduino_shield/cmake/avans_arduino_shieldConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/avans_arduino_shield/cmake/avans_arduino_shieldConfig.cmake

@@ -1,3 +1,13 @@
-Symlinking /home/student/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc
-Symlinking /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake
-Symlinking /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake
+Symlinking /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_demo/cmake.lock, /home/student/universal_robots_ws/devel/./cmake.lock)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_demo/lib/pkgconfig/my_demo.pc, /home/student/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig-version.cmake, /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake)
+Cleaning: (/home/student/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig.cmake, /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake)
+Unlinking: /home/student/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/student/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake
+Already unlinked: {}

@@ -1,0 +1,1 @@
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/rosserial_msgs/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js

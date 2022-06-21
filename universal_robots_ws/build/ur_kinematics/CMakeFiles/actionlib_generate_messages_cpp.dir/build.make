@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/universal_robots_ws/src/universal_robot/ur_kinematics
+CMAKE_SOURCE_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/universal_robots_ws/build/ur_kinematics
+CMAKE_BINARY_DIR = /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics
 
 # Utility rule file for actionlib_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/actionlib_generate_messages_cpp.dir/clean
 
 CMakeFiles/actionlib_generate_messages_cpp.dir/depend:
-	cd /home/student/universal_robots_ws/build/ur_kinematics && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/universal_robots_ws/src/universal_robot/ur_kinematics /home/student/universal_robots_ws/src/universal_robot/ur_kinematics /home/student/universal_robots_ws/build/ur_kinematics /home/student/universal_robots_ws/build/ur_kinematics /home/student/universal_robots_ws/build/ur_kinematics/CMakeFiles/actionlib_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/universal_robot/ur_kinematics /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/build/ur_kinematics/CMakeFiles/actionlib_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/actionlib_generate_messages_cpp.dir/depend
 
