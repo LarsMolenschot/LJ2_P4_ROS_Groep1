@@ -35,6 +35,8 @@ class ImageProcessor
         //wished process rate, [hz]
         double rate_;
 
+	//std::cout LEGO_;
+
     protected:
         // callbacks
 

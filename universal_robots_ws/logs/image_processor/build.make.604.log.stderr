@@ -1,0 +1,7 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:[m[K In constructor ‘[01m[KImageProcessorRos::ImageProcessorRos()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:72:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kw[m[K’
+   visionpose.[01;31m[Kw[m[K = 0;
+              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

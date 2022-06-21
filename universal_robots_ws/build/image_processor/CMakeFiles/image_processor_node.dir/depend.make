@@ -10,6 +10,9 @@ CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /home/studen
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor_node.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/cv_bridge/cv_bridge.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/geometry_msgs/Point.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/geometry_msgs/Pose.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/geometry_msgs/Quaternion.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/image_transport/camera_publisher.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/image_transport/camera_subscriber.h
@@ -82,6 +85,11 @@ CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/mel
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/sensor_msgs/RegionOfInterest.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/sensor_msgs/image_encodings.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/tf2/LinearMath/MinMax.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/tf2/LinearMath/QuadWord.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/tf2/LinearMath/Quaternion.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/tf2/LinearMath/Scalar.h
+CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/tf2/LinearMath/Vector3.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

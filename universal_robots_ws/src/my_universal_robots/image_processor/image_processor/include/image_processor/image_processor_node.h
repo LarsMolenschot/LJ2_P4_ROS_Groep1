@@ -35,6 +35,7 @@ class ImageProcessorRos
         //publishers
         image_transport::Publisher image_pub_;
         ros::Publisher circle_center_pub;
+	ros::Publisher pub_positie;
 
         //pointer to received (in) and published (out) images
         cv_bridge::CvImagePtr cv_img_ptr_in_;

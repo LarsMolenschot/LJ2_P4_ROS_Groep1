@@ -1,0 +1,33 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:[m[K In constructor ‘[01m[KImageProcessorRos::ImageProcessorRos()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:65:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle[m[K’ was not declared in this scope
+   myQuaternion.setRPY( 0, 0, [01;31m[Kangle[m[K );  // Create this quaternion from roll/pitch/yaw (in radians)
+                              [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:65:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:7:0[m[K:
+[01m[K/opt/ros/melodic/include/tf2/LinearMath/Quaternion.h:405:1:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2::angle[m[K’
+ [01;36m[Kangle[m[K(const Quaternion& q1, const Quaternion& q2)
+ [01;36m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:69:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kposition[m[K’
+   visionpose.[01;31m[Kposition[m[K.x = 0;
+              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:70:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kposition[m[K’
+   visionpose.[01;31m[Kposition[m[K.y = 0;
+              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:71:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kposition[m[K’
+   visionpose.[01;31m[Kposition[m[K.z = 0;
+              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:74:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Korientation[m[K’
+   visionpose.[01;31m[Korientation[m[K.x = myQuaternion.getX();
+              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:75:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Korientation[m[K’
+   visionpose.[01;31m[Korientation[m[K.y = myQuaternion.getY();
+              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:76:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Korientation[m[K’
+   visionpose.[01;31m[Korientation[m[K.z = myQuaternion.getZ();
+              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:77:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Vector3 {aka struct geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Korientation[m[K’
+   visionpose.[01;31m[Korientation[m[K.w = myQuaternion.getW();
+              [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

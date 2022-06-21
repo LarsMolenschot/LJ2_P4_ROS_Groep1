@@ -1,0 +1,7 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/vector3.h: No such file or directory
+ #include [01;31m[K"geometry_msgs/vector3.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

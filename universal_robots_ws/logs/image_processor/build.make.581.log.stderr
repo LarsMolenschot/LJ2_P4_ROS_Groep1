@@ -1,0 +1,43 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:[m[K In constructor ‘[01m[KImageProcessorRos::ImageProcessorRos()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:57:32:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+   ros::Publisher pub_positie = [01;31m[Knh[m[K.advertise<geometry_msgs::Pose>("vision_pose", 1);
+                                [01;31m[K^~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:57:32:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Knh_[m[K’
+   ros::Publisher pub_positie = [01;36m[Knh[m[K.advertise<geometry_msgs::Pose>("vision_pose", 1);
+                                [01;36m[K^~[m[K
+                                [32m[Knh_[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:57:60:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’
+   ros::Publisher pub_positie = nh.advertise<geometry_msgs::[01;31m[KPose[m[K>("vision_pose", 1);
+                                                            [01;31m[K^~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:62:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle[m[K’ was not declared in this scope
+   myQuaternion.setRPY( 0, 0, [01;31m[Kangle[m[K );  // Create this quaternion from roll/pitch/yaw (in radians)
+                              [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:62:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:7:0[m[K:
+[01m[K/opt/ros/melodic/include/tf2/LinearMath/Quaternion.h:405:1:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2::angle[m[K’
+ [01;36m[Kangle[m[K(const Quaternion& q1, const Quaternion& q2)
+ [01;36m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:65:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector3[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’
+   geometry_msgs::[01;31m[Kvector3[m[K visionpose;
+                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:65:18:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KVector3[m[K’
+   geometry_msgs::[01;36m[Kvector3[m[K visionpose;
+                  [01;36m[K^~~~~~~[m[K
+                  [32m[KVector3[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:66:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisionpose[m[K’ was not declared in this scope
+   [01;31m[Kvisionpose[m[K.position.x = x0;
+   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:66:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[K__sincosl[m[K’
+   [01;36m[Kvisionpose[m[K.position.x = x0;
+   [01;36m[K^~~~~~~~~~[m[K
+   [32m[K__sincosl[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:66:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kx0[m[K’ was not declared in this scope
+   visionpose.position.x = [01;31m[Kx0[m[K;
+                           [01;31m[K^~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:66:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ky0[m[K’
+   visionpose.position.x = [01;36m[Kx0[m[K;
+                           [01;36m[K^~[m[K
+                           [32m[Ky0[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
