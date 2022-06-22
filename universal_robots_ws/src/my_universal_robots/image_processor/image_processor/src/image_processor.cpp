@@ -143,7 +143,7 @@ void ImageProcessor::process()
                 assert(grayscale.type() == CV_8UC1);
 
                 //Convert grayscale image to binary.
-                int th { 200};
+                int th { 220};
                 cv::Mat binary { };
                 cv::threshold(grayscale, binary, th, 255, cv::THRESH_BINARY);
 
@@ -248,6 +248,7 @@ void ImageProcessor::process()
                                   }
                               // std::cout << part<<"\t"<< color <<"\n";
                               mask = bw1;
+                              object = part;
                              }
                           }
                     }

@@ -1,0 +1,2 @@
+geometry_msgs/Pose vision_positie
+std_msgs/String object_naam

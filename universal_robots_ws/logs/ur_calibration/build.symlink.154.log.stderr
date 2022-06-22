@@ -1,9 +1,0 @@
-Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration/lib/ur_calibration/calibration_correction to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/ur_calibration/calibration_correction
-Warning: Source hash: 53690f34c0d6ad5b7d44c50a4b942114
-Warning: Dest hash: dcdd0079fa973a6d1123bbe291df630a
-Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration/lib/pkgconfig/ur_calibration.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/ur_calibration.pc
-Warning: Source hash: 8eefdb6fc1fa622815c41aa0bf629fca
-Warning: Dest hash: fec3b83d258ee6fa5c668088694cb666
-Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/ur_calibration/cmake/ur_calibrationConfig.cmake
-Warning: Source hash: 977e52803882e0e841d3f023609ad981
-Warning: Dest hash: ab91c941a7979ee6fef88c4ab5e10cb8

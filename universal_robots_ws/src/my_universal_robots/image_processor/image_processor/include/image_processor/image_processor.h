@@ -3,6 +3,7 @@
 
 #include <opencv2/opencv.hpp>
 #include <vector>
+#include <string>
 
 //std C++
 #include <iostream>
@@ -76,6 +77,8 @@ class ImageProcessor
 	double positionX;
 	double positionY;
 	double OBangle;
+	std::string object;
+
 
 };
 #endif

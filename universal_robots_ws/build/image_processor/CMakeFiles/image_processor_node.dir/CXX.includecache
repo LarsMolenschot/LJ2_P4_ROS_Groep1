@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include/vision_message/vision_msg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+geometry_msgs/Pose.h
+-
+std_msgs/String.h
+-
+
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/camera.h
 opencv2/opencv.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/opencv2/opencv.hpp
@@ -22,6 +42,8 @@ opencv2/core.hpp
 opencv2/opencv.hpp
 -
 vector
+-
+string
 -
 iostream
 -
@@ -85,6 +107,8 @@ geometry_msgs/Vector3.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/geometry_msgs/Vector3.h
 geometry_msgs/Pose.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/geometry_msgs/Pose.h
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include/vision_message/vision_msg.h
+-
 vector
 -
 sensor_msgs/image_encodings.h
@@ -975,6 +999,22 @@ string
 -
 
 /opt/ros/melodic/include/std_msgs/Header.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/melodic/include/std_msgs/String.h
 string
 -
 vector

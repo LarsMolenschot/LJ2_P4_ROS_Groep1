@@ -1,6 +1,0 @@
-CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o: In function `ImageProcessorRos::ImageProcessorRos()':
-image_processor_node.cpp:(.text+0x35c): undefined reference to `ImageProcessor::getposes()'
-collect2: error: ld returned 1 exit status
-make[2]: *** [/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/lib/image_processor/image_processor_node] Error 1
-make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
-make: *** [all] Error 2

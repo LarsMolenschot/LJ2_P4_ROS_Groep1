@@ -8,7 +8,9 @@
 
 #include "geometry_msgs/Vector3.h"
 #include "geometry_msgs/Pose.h"
+#include "/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/include/vision_message/vision_msg.h"
 #include <vector>
+
 
 
 #include <sensor_msgs/image_encodings.h>
@@ -59,8 +61,8 @@ ImageProcessorRos::ImageProcessorRos() :
   circle_center_pub   = nh_.advertise<geometry_msgs::Vector3>("circle_center", 1);
 
   //create publisher for vision
-  pub_positie = nh_.advertise<geometry_msgs::Pose>("vision_pose", 1);
-  geometry_msgs::Pose visionpose;
+  pub_positie = nh_.advertise<vision_message::vision_msg>("vision_pose", 1);
+  vision_message::vision_msg visionpose;
 
   // image_pub_ = img_tp_.advertise("image_out", 100);
   // std::cout << part<<"\t"<< color <<"\n";   = nh_.advertise<std_msgs::string>("LEGO", 1);
@@ -109,20 +111,23 @@ void ImageProcessorRos::publish()
       double objectX = imgp.positionX;
       double objectY = imgp.positionY;
       double objectDegree = imgp.OBangle;
+      std::string visionObject = imgp.object;
 
 
-      geometry_msgs::Pose visionpose;
-      visionpose.position.x = objectX;
-      visionpose.position.y = objectY;
-      visionpose.position.z = 0;
+      vision_message::vision_msg visionpose;
+      visionpose.vision_positie.position.x = objectX;
+      visionpose.vision_positie.position.y = objectY;
+      visionpose.vision_positie.position.z = 0;
 
       tf2::Quaternion myQuaternion;
       myQuaternion.setRPY( 0, 0, objectDegree );  // Create this quaternion from roll/pitch/yaw (in radians)
 
-      visionpose.orientation.x = myQuaternion.getX();
-      visionpose.orientation.y = myQuaternion.getY();
-      visionpose.orientation.z = myQuaternion.getZ();
-      visionpose.orientation.w = myQuaternion.getW();
+      visionpose.vision_positie.orientation.x = myQuaternion.getX();
+      visionpose.vision_positie.orientation.y = myQuaternion.getY();
+      visionpose.vision_positie.orientation.z = myQuaternion.getZ();
+      visionpose.vision_positie.orientation.w = myQuaternion.getW();
+
+      visionpose.object_naam.data = visionObject;
       pub_positie.publish(visionpose);
 
       // Publish circle center

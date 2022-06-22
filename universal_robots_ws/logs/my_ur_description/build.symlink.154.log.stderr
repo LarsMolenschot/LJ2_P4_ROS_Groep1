@@ -1,6 +1,0 @@
-Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description/lib/pkgconfig/my_ur_description.pc to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_ur_description.pc
-Warning: Source hash: aebe35d687a9918a25acb6e967947289
-Warning: Dest hash: 5d70820b1372761d64d2f16a7a1d1595
-Warning: Cannot symlink from /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_ur_description/share/my_ur_description/cmake/my_ur_descriptionConfig.cmake to existing file /home/student/.local/share/Trash/files/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_ur_description/cmake/my_ur_descriptionConfig.cmake
-Warning: Source hash: c011acc5618d92e767c9c636c976a9a0
-Warning: Dest hash: ff92670247051de3c30a7eff018b833f
