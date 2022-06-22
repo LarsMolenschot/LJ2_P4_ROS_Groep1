@@ -1,0 +1,35 @@
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1:0[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:75:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type; did you mean ‘[01m[Kperror[m[K’?
+  [01;31m[Kvector[m[K<double> getposes();
+  [01;31m[K^~~~~~[m[K
+  [32m[Kperror[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:400:41:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kstd::vector<double, std::allocator<double> > ImageProcessor::getposes()[m[K’ member function declared in class ‘[01m[KImageProcessor[m[K’
+ vector<double> ImageProcessor::getposes([01;31m[K)[m[K{
+                                         [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor_node.h:15:0[m[K,
+                 from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:3[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:75:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type; did you mean ‘[01m[Kperror[m[K’?
+  [01;31m[Kvector[m[K<double> getposes();
+  [01;31m[K^~~~~~[m[K
+  [32m[Kperror[m[K
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:3:0[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor_node.h:57:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type; did you mean ‘[01m[Kperror[m[K’?
+  [01;31m[Kvector[m[K<double> poses;
+  [01;31m[K^~~~~~[m[K
+  [32m[Kperror[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessorRos::publish()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:94:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kposes[m[K’ was not declared in this scope
+   [01;31m[Kposes[m[K = imgp.getposes();
+   [01;31m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:94:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kpopen[m[K’
+   [01;36m[Kposes[m[K = imgp.getposes();
+   [01;36m[K^~~~~[m[K
+   [32m[Kpopen[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor_node.cpp:94:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ImageProcessor[m[K’ has no member named ‘[01m[Kgetposes[m[K’
+   poses = imgp.[01;31m[Kgetposes[m[K();
+                [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

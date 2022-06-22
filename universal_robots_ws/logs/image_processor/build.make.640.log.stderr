@@ -1,0 +1,43 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kdouble ImageProcessor::getposes()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:25:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KImageProcessor::positionX[m[K’ 
+   double returnarr[] = [[01;31m[KpositionX[m[K, positionY, angle];
+                         [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1:0[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:37:9:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble ImageProcessor::positionX[m[K’ declared here
+  double [01;36m[KpositionX[m[K;
+         [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:36:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KImageProcessor::positionY[m[K’ 
+   double returnarr[] = [positionX, [01;31m[KpositionY[m[K, angle];
+                                    [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1:0[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:38:9:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble ImageProcessor::positionY[m[K’ declared here
+  double [01;36m[KpositionY[m[K;
+         [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:47:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KImageProcessor::angle[m[K’ 
+   double returnarr[] = [positionX, positionY, [01;31m[Kangle[m[K];
+                                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:1:0[m[K:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h:39:9:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble ImageProcessor::angle[m[K’ declared here
+  double [01;36m[Kangle[m[K;
+         [01;36m[K^~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In lambda function:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+   double returnarr[] = [positionX, positionY, angle][01;31m[K;[m[K
+                                                     [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kdouble ImageProcessor::getposes()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:10:[m[K [01;31m[Kerror: [m[Kinitializer fails to determine size of ‘[01m[Kreturnarr[m[K’
+   double [01;31m[Kreturnarr[m[K[] = [positionX, positionY, angle];
+          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:404:53:[m[K [01;31m[Kerror: [m[Karray must be initialized with a brace-enclosed initializer
+   double returnarr[] = [positionX, positionY, angle][01;31m[K;[m[K
+                                                     [01;31m[K^[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:406:10:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble*[m[K’ to ‘[01m[Kdouble[m[K’ in return
+   return [01;31m[Kreturnarr[m[K
+          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:407:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2
