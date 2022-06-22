@@ -48,19 +48,19 @@ if __name__=="__main__":
     rospy.loginfo("ROS Serial Python Node")
 
     port_name = rospy.get_param('~port','/dev/ttyUSB0')
-    baud = int(rospy.get_param('~baud','57600'))
+    baud = int(rospy.get_param('~baud','2000000'))
 
     # for systems where pyserial yields errors in the fcntl.ioctl(self.fd, TIOCMBIS, \
     # TIOCM_DTR_str) line, which causes an IOError, when using simulated port
     fix_pyserial_for_test = rospy.get_param('~fix_pyserial_for_test', False)
 
     # Allows for assigning local parameters for tcp_port and fork_server with
-    # global parameters as fallback to prevent breaking changes 
+    # global parameters as fallback to prevent breaking changes
     if(rospy.has_param('~tcp_port')):
         tcp_portnum = int(rospy.get_param('~tcp_port'))
     else:
         tcp_portnum = int(rospy.get_param('/rosserial_embeddedlinux/tcp_port', '11411'))
-    
+
     if(rospy.has_param('~fork_server')):
         fork_server = rospy.get_param('~fork_server')
     else:
