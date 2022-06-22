@@ -8,6 +8,7 @@
 
 #include "geometry_msgs/Vector3.h"
 #include "geometry_msgs/Pose.h"
+#include <vector>
 
 
 #include <sensor_msgs/image_encodings.h>
@@ -92,6 +93,9 @@ void ImageProcessorRos::publish()
   cv_img_out_.image = imgp.getOutputImage();
   circle_center = imgp.getCircleCenter();
 
+
+
+
   //image_raw topic
 	if(cv_img_out_.image.data)
 	{
@@ -102,13 +106,18 @@ void ImageProcessorRos::publish()
 	    cv_img_out_.encoding = img_encoding_;
 	    image_pub_.publish(cv_img_out_.toImageMsg());
 
+      double objectX = imgp.positionX;
+      double objectY = imgp.positionY;
+      double objectDegree = imgp.OBangle;
+
+
       geometry_msgs::Pose visionpose;
-      visionpose.position.x = 0;
-      visionpose.position.y = 0;
+      visionpose.position.x = objectX;
+      visionpose.position.y = objectY;
       visionpose.position.z = 0;
 
       tf2::Quaternion myQuaternion;
-      myQuaternion.setRPY( 0, 0, 0 );  // Create this quaternion from roll/pitch/yaw (in radians)
+      myQuaternion.setRPY( 0, 0, objectDegree );  // Create this quaternion from roll/pitch/yaw (in radians)
 
       visionpose.orientation.x = myQuaternion.getX();
       visionpose.orientation.y = myQuaternion.getY();

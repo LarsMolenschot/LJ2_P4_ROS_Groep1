@@ -9,10 +9,12 @@
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
 #include <sensor_msgs/CameraInfo.h>
+#include <vector>
 
 #include "geometry_msgs/Vector3.h"
 
 #include "image_processor.h"
+
 
 /** \brief Simple Image Processor
  *
@@ -36,10 +38,13 @@ class ImageProcessorRos
         image_transport::Publisher image_pub_;
         ros::Publisher circle_center_pub;
 	ros::Publisher pub_positie;
+	
+ 
 
         //pointer to received (in) and published (out) images
         cv_bridge::CvImagePtr cv_img_ptr_in_;
         cv_bridge::CvImage cv_img_out_;
+
         // ray direction in camera frame.
 
         //image encoding label
@@ -51,8 +56,11 @@ class ImageProcessorRos
         ImageProcessor imgp;
 
         cv::Point circle_center;
+	//std::vector<double> poses = imgp.getposes();
+	
 
-
+	
+	
     protected:
         // callbacks
         void imageCallback(const sensor_msgs::ImageConstPtr& _msg);
@@ -72,7 +80,10 @@ class ImageProcessorRos
         *
         */
         ~ImageProcessorRos();
+	
 
+
+	
 
   	//std::cout << matrixP_ << std::endl;
       /** \brief Process input image
@@ -81,6 +92,7 @@ class ImageProcessorRos
         *
         **/
         void process();
+
 
         /** \brief Publish output image
         *

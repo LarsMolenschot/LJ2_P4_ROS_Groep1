@@ -2,6 +2,7 @@
 #define ROS_IMG_PROCESSOR_H
 
 #include <opencv2/opencv.hpp>
+#include <vector>
 
 //std C++
 #include <iostream>
@@ -34,6 +35,7 @@ class ImageProcessor
 
         //wished process rate, [hz]
         double rate_;
+	
 
 	//std::cout LEGO_;
 
@@ -69,6 +71,11 @@ class ImageProcessor
 
         cv::Mat getOutputImage();
         cv::Point getCircleCenter();
+	//std::vector<double> getposes();
+
+	double positionX;
+	double positionY;
+	double OBangle;
 
 };
 #endif

@@ -21,6 +21,8 @@ opencv2/core.hpp
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/image_processor.h
 opencv2/opencv.hpp
 -
+vector
+-
 iostream
 -
 
@@ -34,6 +36,8 @@ cv_bridge/cv_bridge.h
 sensor_msgs/image_encodings.h
 -
 sensor_msgs/CameraInfo.h
+-
+vector
 -
 geometry_msgs/Vector3.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/include/image_processor/geometry_msgs/Vector3.h
@@ -81,6 +85,8 @@ geometry_msgs/Vector3.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/geometry_msgs/Vector3.h
 geometry_msgs/Pose.h
 /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/geometry_msgs/Pose.h
+vector
+-
 sensor_msgs/image_encodings.h
 -
 

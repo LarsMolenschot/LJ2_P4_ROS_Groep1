@@ -18,14 +18,14 @@
 [  0%] Built target _ur_dashboard_msgs_generate_messages_check_deps_ProgramState
 [  0%] Built target _ur_dashboard_msgs_generate_messages_check_deps_AddToLog
 [  0%] Built target _ur_dashboard_msgs_generate_messages_check_deps_IsProgramRunning
+[  0%] Built target actionlib_msgs_generate_messages_eus
 [  0%] Built target _ur_dashboard_msgs_generate_messages_check_deps_GetSafetyMode
 [  0%] Built target _ur_dashboard_msgs_generate_messages_check_deps_SetModeResult
-[  0%] Built target actionlib_msgs_generate_messages_eus
-[  0%] Built target std_msgs_generate_messages_eus
 [  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
 [  0%] Built target std_msgs_generate_messages_py
-[  0%] Built target std_msgs_generate_messages_cpp
 [  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
 [  0%] Built target std_msgs_generate_messages_nodejs
 [  0%] Built target actionlib_msgs_generate_messages_nodejs
 [ 19%] Built target ur_dashboard_msgs_generate_messages_lisp

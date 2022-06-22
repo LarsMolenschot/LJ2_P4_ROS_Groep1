@@ -23,6 +23,7 @@ using namespace cv;
 
 // do not use ROS functions/headers/etc. in this file
 
+
 ImageProcessor::ImageProcessor()
 {
   std::cout << "Constructor" << std::endl;
@@ -319,8 +320,8 @@ void ImageProcessor::process()
               drawKeypoints(pictureUpdateHead, h, pictureUpdateHead, Scalar(200, 80, 20), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
               h.erase(h.begin());
 
-              float x0 = keypoints[0].pt.x;
-              float y0 = keypoints[0].pt.y;
+              positionX = keypoints[0].pt.x;
+              positionY = keypoints[0].pt.y;
 
 
           cv_mat_out_ = pictureUpdateHead;
@@ -349,9 +350,11 @@ void ImageProcessor::process()
           drawContours(src, contours, static_cast<int>(i), Scalar(0, 0, 255), 2);
           // Find the orientation of each shape
           angle = getOrientation(contours[i], src);
-          int degrees = angle * (180/ 3.141592654);
+          double degrees = angle * (180/ 3.141592654);
           if (area > 3000){
-          std::cout << "X"<< " "<< x0 << "\t" << "Y" << " "<< y0 << "\t" << "Rotation" << " "<< degrees <<"\n"<<"\n";
+          std::cout << "X"<< " "<< positionX << "\t" << "Y" << " "<< positionY << "\t" << "Rotation" << " "<< degrees <<"\n"<<"\n";
+
+          OBangle = angle;
         }
     }
 
@@ -366,6 +369,7 @@ cv_mat_out_ = src;
     //reset input image
     cv_mat_ptr_in_ = nullptr;
 }
+
 
 void ImageProcessor::draw_circle(const cv::Point & center, int radius, bool draw_center_coordinates)
 {
@@ -392,3 +396,22 @@ cv::Mat ImageProcessor::getOutputImage(){
 cv::Point ImageProcessor::getCircleCenter(){
   return circle_center_;
 }
+
+// vector<double> ImageProcessor::getposes(){
+//   positionX = x_pos;
+// 	positionY = y_pos;
+// 	angle = angle_pos;
+//   //double = returnarr[] = [positionX, positionY, angle];
+//   vector<double> returnarr;
+//   returnarr[0] = positionX;
+//   returnarr[1] = positionY;
+//   returnarr[2] = angle;
+//
+//   return returnarr;
+// }
+
+
+// cv::Point ImageProcessor::getpose(){
+//   return x0;
+//
+// }
