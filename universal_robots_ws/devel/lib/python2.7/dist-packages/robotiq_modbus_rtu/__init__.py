@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/lib/python2.7/dist-packages/robotiq_modbus_rtu/__init__.py

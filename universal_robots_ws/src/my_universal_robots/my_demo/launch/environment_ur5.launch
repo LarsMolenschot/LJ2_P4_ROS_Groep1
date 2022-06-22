@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
 
-  <arg name="sim" default="true"/>
+  <arg name="sim" default="false"/>
 
   <!-- startup ros_control for real robot -->
   <group unless="$(arg sim)">

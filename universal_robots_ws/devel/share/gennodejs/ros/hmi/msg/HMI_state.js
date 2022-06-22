@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/hmi/share/gennodejs/ros/hmi/msg/HMI_state.js

@@ -22,7 +22,7 @@ class controlUR5Class():
             self.UR5_action = actionlib.SimpleActionServer('control_robot', control_robotAction, self.moverobot ,False)
             self.UR5_action.start()
 
-            self.error_pub = rospy.Publisher('/manipulator_error',String)
+            self.error_pub = rospy.Publisher('/manipulator_error',String, queue_size=1)
 
             self._success = control_robotResult()
 
