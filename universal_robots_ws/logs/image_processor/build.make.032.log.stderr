@@ -1,0 +1,14 @@
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::process()[m[K’:
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:371:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_s[m[K’ was not declared in this scope
+ count = (stop_s-[01;31m[Kstart_s[m[K)/double(CLOCKS_PER_SEC)*1000;
+                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:371:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kstrtok[m[K’
+ count = (stop_s-[01;36m[Kstart_s[m[K)/double(CLOCKS_PER_SEC)*1000;
+                 [01;36m[K^~~~~~~[m[K
+                 [32m[Kstrtok[m[K
+[01m[K/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_universal_robots/image_processor/image_processor/src/image_processor.cpp:373:11:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator>[m[K’
+ if ([01;31m[Kcount > 3000[m[K){
+     [01;31m[K~~~~~~^~~~~~[m[K
+make[2]: *** [CMakeFiles/image_processor_node.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor_node.dir/all] Error 2
+make: *** [all] Error 2

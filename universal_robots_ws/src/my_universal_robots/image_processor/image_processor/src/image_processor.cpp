@@ -117,6 +117,9 @@ void ImageProcessor::process()
 
 
       // =========================================================================
+
+
+
       //  //crop
       // //(a,b,c,d)
       // //a,b : Coordinates of the top-left corner (X,Y)
@@ -132,8 +135,13 @@ void ImageProcessor::process()
 
       cv::Mat blackim(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
       cv::Mat mask = blackim;
-
+      //Time the code.
+      int count(0);
+      int start_s=clock() ;
+      //The code you wish to time goes here.
       for (int i = 0; i < 1; i++) {
+                // =========================================================================
+
                 // =========================================================================
                 // wit
                 //Convert origional image to grayscale.
@@ -143,14 +151,11 @@ void ImageProcessor::process()
                 assert(grayscale.type() == CV_8UC1);
 
                 //Convert grayscale image to binary.
-                int th { 220};
+                int th { 210};
                 cv::Mat binary { };
                 cv::threshold(grayscale, binary, th, 255, cv::THRESH_BINARY);
 
-                cv::dilate(binary, binary, cv::Mat(), cv::Point(-1,-1));
-                // floodFill(binary, cv::Point(0,0), cv::Scalar(255));
-                // cv::Mat im_floodfill_inv;
-                // bitwise_not(binary, im_floodfill_inv);
+                cv::dilate(binary, binary, cv::Mat(), cv::Point(-1,-1), 13, 1, 1);
 
 
                 cv::Mat white = binary;
@@ -171,7 +176,7 @@ void ImageProcessor::process()
                 cvtColor(cv_mat_out_,cv_mat_out_,CV_BGR2HSV);
 
                 cv::Mat yellow1 , yellow2;
-                inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), yellow1);
+                inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 180), yellow1);
                 inRange(cv_mat_out_, cv::Scalar(80, 90, 70), cv::Scalar(105, 255, 255), yellow2);
 
                 // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), yellow1);
@@ -188,7 +193,7 @@ void ImageProcessor::process()
                 string part;
                 //for loop for every color
                 for (int j = 0; j < 3; j++) {
-                          if (j == 0) {
+                          if (j == 2) {
                             bw1 = white;
                             color = "white";
                           }
@@ -196,7 +201,7 @@ void ImageProcessor::process()
                             bw1= red;
                             color = "red";
                           }
-                          else if (j == 2) {
+                          else if (j == 0) {
                           //if (j == 2) {
                             bw1 = yellow;
                             color = "yellow";
@@ -259,7 +264,8 @@ void ImageProcessor::process()
           cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
 
           std::vector<cv::Mat> images(3);
-
+          //std::cout << rows<<"\t"<< "rows" <<"\n";
+          //std::cout << cols<<"\t"<< "cols" <<"\n";
           // OpenCV works natively with RGB ordering
           images.at(0) = black;
           images.at(1) = mask;
@@ -321,8 +327,26 @@ void ImageProcessor::process()
               drawKeypoints(pictureUpdateHead, h, pictureUpdateHead, Scalar(200, 80, 20), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
               h.erase(h.begin());
 
-              positionX = keypoints[0].pt.x;
-              positionY = keypoints[0].pt.y;
+              int xfov;
+              int yfov;
+              xfov = keypoints[0].pt.x;
+              yfov = keypoints[0].pt.y;
+              //positionY = positionY - 61.4;
+
+              // =========================================================================
+              int FOVcenter = 223.7;
+
+              positionY = (FOVcenter + (180 - yfov))/3666.7;
+
+              if (xfov >= 320){
+                  positionX = (320 + xfov)/3666.7;
+              }
+              else if (xfov <= 320){
+                  positionX = (320 - xfov)/3666.7;
+              }
+
+              // =========================================================================
+
 
 
           cv_mat_out_ = pictureUpdateHead;
@@ -360,6 +384,14 @@ void ImageProcessor::process()
     }
 
 cv_mat_out_ = src;
+//Stop timing the code.
+
+int stop_s=clock();
+count = (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000;
+
+if (count > 3000){
+object = "error";
+}
 
       // =========================================================================
       // =========================================================================
