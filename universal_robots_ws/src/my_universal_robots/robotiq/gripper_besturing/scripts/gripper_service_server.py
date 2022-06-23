@@ -12,11 +12,13 @@ def gripper_prog(req):
 	rate = rospy.Rate(0.5)
 
 	# Eerste keer als programma opgestart moet worden, dan moet er een 'open/dicht 0' worden opgegeven!!!
+	count_in_sec = 0
 	wait_for_active = req.gripper_opstarten
-	while wait_for_active == 0:
+	while wait_for_active == 0 and count_in_sec <= 5:
 		publish_var.rACT = 0
 		pub.publish(publish_var)
 		rate.sleep()
+		count_in_sec += 1
 		wait_for_active = subscriber_gACT
 
 	# Bepalen van waarden voor publish
@@ -42,7 +44,7 @@ def gripper_prog(req):
 	# Passed_or_failed bepalen
 	error_bericht = 'Gripper NOT at requested position.'
 	passed_or_failed = False
-	if subscriber_gOBJ == 2 or subscriber_gOBJ == 3:
+	if subscriber_gOBJ == 2 and count_in_sec <= 5 or subscriber_gOBJ == 3 and count_in_sec <= 5:
 		passed_or_failed = True
 		error_bericht = ''
 
@@ -87,5 +89,8 @@ def run_service():
     rospy.spin()
 
 if __name__ == '__main__':
+	subscriber_gACT = 0
+	subscriber_gOBJ = 0
+	subscriber_gFLT = 255
 	run_subscriber()
 	run_service()

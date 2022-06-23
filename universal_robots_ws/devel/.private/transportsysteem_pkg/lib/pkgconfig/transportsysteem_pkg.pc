@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/transportsysteem_pkg
+
+Name: transportsysteem_pkg
+Description: Description of transportsysteem_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

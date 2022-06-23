@@ -7,6 +7,6 @@
 
     <node name="serial_node_regelaar"        pkg="rosserial_python"      type="serial_node.py">
     <param name="port"              type="string"               value="/dev/ttyACM1"/>
-    <param name="baud"              type="int"                  value="2000000"/>
+    <param name="baud"              type="int"                  value="115200"/>
     </node>
 </launch>

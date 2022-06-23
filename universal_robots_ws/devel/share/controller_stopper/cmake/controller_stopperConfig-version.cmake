@@ -1,0 +1,1 @@
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/controller_stopper/share/controller_stopper/cmake/controller_stopperConfig-version.cmake

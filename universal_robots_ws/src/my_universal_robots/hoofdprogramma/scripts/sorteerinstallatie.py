@@ -21,6 +21,8 @@ from gripper_besturing.srv import *
 
 class MainProgramClass():
     def __init__(self):
+
+
         # Manipulator
         # maak een action server client aan voor de manipulator module en wacht tot deze is opgestart
         action_server_name_manipulator = '/control_robot'
@@ -38,10 +40,11 @@ class MainProgramClass():
         self.manrate = rospy.Rate(1)
         rospy.loginfo("\n \n manipulator started! \n \n")
 
+
         # HMI
         # Maak een subscriber en publisher voor de HMI.
         # Declare variabelen voor de knoppen en functies.
-        rospy.Subscriber("/avans/buttons/state", UInt8, self.HMICallback)
+        self.sub_HMI = rospy.Subscriber("/avans/buttons/state", UInt8, self.HMICallback)
         self.pub = rospy.Publisher('/HMI', HMI_state, queue_size=1)
         rospy.loginfo("\n \nHMI publisher and subscriber made successfully\n \n")
         self._fout = False
@@ -50,6 +53,7 @@ class MainProgramClass():
         self._stop = False
 
         self._continu = True
+
 
         # Gripper
         # Connect to gripper service server, than activate gripper. (it will open and close)
@@ -72,9 +76,9 @@ class MainProgramClass():
         # Maak een subscriber aan die naar de positie van de transportband luistert
 
         self.pub_transportsysteem = rospy.Publisher('/Start_state', UInt8, queue_size=1)
-        #self.pub_HMI_transportsysteem = rospy.Publisher('/HMI_transportsysteem', UInt8, queue_size=1)
+        self.pub_HMI_transportsysteem = rospy.Publisher('/HMI_transportsysteem', UInt8, queue_size=1)
 
-        #self.huidige_positie
+        self.huidige_positie = 0
         self.single_distance = 397
         self.continous_distance = 197
 
@@ -88,21 +92,20 @@ class MainProgramClass():
         #rospy.logwarn(text)
 
         if buttonstate == 8 and self._fout: # Noodstop en fout.
-            self.stopProgram()
+            #self.stopProgram()
+            ""
         elif buttonstate == 1: # 1 cyclus.
             rospy.logwarn(text)
-            self.single()
+            #self.single()
         elif buttonstate == 2 and self._continu: # Continue cyclus.
             rospy.logwarn(text)
             self.continuous()
 
     def pos_transportsyteemCallback(self, pos):
-        #self.huidige_positie = pos.data
-        #rospy.loginfo(pos.data)
+        self.huidige_positie = pos.data
+        rospy.loginfo(pos.data)
 
 
-    def single(self):
-        ""
 
     def continuous(self):
         rospy.loginfo("in continuous")
@@ -146,12 +149,12 @@ class MainProgramClass():
 
         while self.pub_transportsysteem.get_num_connections()< 1:
             rospy.loginfo('Waiting for subscriber')
-        self.pub_transportsysteem.publish(2)
+        self.pub_transportsysteem.publish(1)
 
         self.sub_pos_transportband = rospy.Subscriber('/enc_pos', Float32, self.pos_transportsyteemCallback)
 
         while self.huidige_positie <= self.continous_distance:
-            ""
+            rospy.logwarn(self.huidige_positie)
         rospy.logwarn("transportband op positie")
 
 
@@ -277,32 +280,6 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-
-
-
-
-
-
-
-
-
-
-
-
-    def checkNoodstop(self):
-        if self._noodstop == True:
-            self.noodstop()
-
-    def stopProgram(self):
-        msg = HMI_state()
-        msg.programstate = "fout"
-        msg.programtype = "main"
-        self.pub.publish(msg)
-        rospy.loginfo("!!!--Emergency stop pressed--!!!")
-
-
-
-
 
 
 
