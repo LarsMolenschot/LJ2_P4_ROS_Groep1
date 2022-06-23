@@ -7,7 +7,7 @@ import actionlib
 from manipulator_groep_1.msg import control_robotGoal, control_robotResult, control_robotAction, control_robotFeedback
 from hmi.msg import HMI_state
 from geometry_msgs.msg import Pose
-from std_msgs.msg import UInt8
+from std_msgs.msg import UInt8, Empty, Float32
 from gripper_besturing.srv import *
 
 # We create some constants with the corresponing vaules from the SimpleGoalState class
@@ -65,12 +65,27 @@ class MainProgramClass():
         #    rospy.loginfo("in subscriber loop")
         #    rate.sleep()
 
-            
+        # Transportsysteem
+        # Maak een publisher aan die het startcommando voor het transportsysteem geeft
+        # Maak een publisher aan die de huidige status van het HMI doorgeeft aan het transportsysteem
+        # (Dit is om de Single of Continuous modus van het transportsysteem te bepalen)
+        # Maak een subscriber aan die naar de positie van de transportband luistert
+
+        self.pub_transportsysteem = rospy.Publisher('/Start_state', UInt8, queue_size=1)
+        #self.pub_HMI_transportsysteem = rospy.Publisher('/HMI_transportsysteem', UInt8, queue_size=1)
+
+        #self.huidige_positie
+        self.single_distance = 397
+        self.continous_distance = 197
+
+
+
 
     def HMICallback(self, data):
         text = "in callback subscriber with data: "+ str(data.data)
-        
+
         buttonstate = data.data
+        #rospy.logwarn(text)
 
         if buttonstate == 8 and self._fout: # Noodstop en fout.
             self.stopProgram()
@@ -80,13 +95,19 @@ class MainProgramClass():
         elif buttonstate == 2 and self._continu: # Continue cyclus.
             rospy.logwarn(text)
             self.continuous()
-    
+
+    def pos_transportsyteemCallback(self, pos):
+        #self.huidige_positie = pos.data
+        #rospy.loginfo(pos.data)
+
+
     def single(self):
         ""
 
     def continuous(self):
         rospy.loginfo("in continuous")
-        #Manipulator naar home 
+        #Manipulator naar home
+
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "home"
         self.client_manipulator.send_goal(self.manipulator_goal)
@@ -95,7 +116,7 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to home")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
@@ -109,18 +130,31 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to vision")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
-        
+
         state_result = self.ACTIVE
 
         #Machinevision
         #self.visionpose.position.x = visionfeedback.x
 
         #Transportsysteem if vision geen object
-        
+
+        rospy.loginfo("Transportband aan")
+
+        while self.pub_transportsysteem.get_num_connections()< 1:
+            rospy.loginfo('Waiting for subscriber')
+        self.pub_transportsysteem.publish(2)
+
+        self.sub_pos_transportband = rospy.Subscriber('/enc_pos', Float32, self.pos_transportsyteemCallback)
+
+        while self.huidige_positie <= self.continous_distance:
+            ""
+        rospy.logwarn("transportband op positie")
+
+
         #Manipulator op positie vision
         self.manipulator_goal.mode.data = True
 
@@ -136,7 +170,7 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to visionfeedback")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
@@ -158,7 +192,7 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to down")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
@@ -169,7 +203,7 @@ class MainProgramClass():
         #self._gripper_service_response = self._gripper_program('dicht', 1)
         rospy.loginfo("gripper gaat dicht")
 
-        #Manipulator naar home 
+        #Manipulator naar home
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "home"
         self.client_manipulator.send_goal(self.manipulator_goal)
@@ -178,7 +212,7 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to home")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
@@ -217,7 +251,7 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to positie vision voordef")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
@@ -228,7 +262,7 @@ class MainProgramClass():
         #self._gripper_service_response = self._gripper_program('open', 1)
         rospy.loginfo("gripper gaat open")
 
-        #Manipulator naar bak2_4 
+        #Manipulator naar bak2_4
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "bak2_4"
         self.client_manipulator.send_goal(self.manipulator_goal)
@@ -237,13 +271,13 @@ class MainProgramClass():
 
         while state_result < self.DONE:
             rospy.logwarn("moving to bak2_4")
-            
+
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-        
+
 
 
 
@@ -270,10 +304,9 @@ class MainProgramClass():
 
 
 
-        
+
 
 if __name__ == '__main__':
     rospy.init_node('sorteerinstallatie')
     MainProgramClass()
     rospy.spin()
-        
