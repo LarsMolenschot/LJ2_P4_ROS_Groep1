@@ -117,32 +117,20 @@ void ImageProcessor::process()
 
 
       // =========================================================================
-
-
-
-      //  //crop
-      // //(a,b,c,d)
-      // //a,b : Coordinates of the top-left corner (X,Y)
-      // //c,d : Rectangle width and height(X,Y)
-      // cv::Rect crop_region(0, 0, 200, 200);
-      //
-      // //new image crop
-      // cv_mat_out_=cv_mat_out_(crop_region);
-
-      // =========================================================================
       int rows = cv_mat_out_.rows;
       int cols = cv_mat_out_.cols;
 
       cv::Mat blackim(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
       cv::Mat mask = blackim;
+      // =========================================================================
       //Time the code.
       int count(0);
       int start_s=clock() ;
       //The code you wish to time goes here.
+      // =========================================================================
       for (int i = 0; i < 1; i++) {
                 // =========================================================================
 
-                // =========================================================================
                 // wit
                 //Convert origional image to grayscale.
                 cv::Mat grayscale { cv_mat_out_ };
@@ -155,7 +143,11 @@ void ImageProcessor::process()
                 cv::Mat binary { };
                 cv::threshold(grayscale, binary, th, 255, cv::THRESH_BINARY);
 
-                cv::dilate(binary, binary, cv::Mat(), cv::Point(-1,-1), 13, 1, 1);
+                cv::Mat dilate_erode;
+                cv::dilate(binary, dilate_erode, cv::Mat(), cv::Point(-1,-1), 13, 1, 1);
+                //// cv::erode(binary, binary, cv::Mat(), cv::Point(-1,-1), 5, 1, 1);
+                cv::erode(dilate_erode, binary, getStructuringElement(MORPH_RECT, Size(15, 15)));
+
 
 
                 cv::Mat white = binary;
@@ -167,6 +159,8 @@ void ImageProcessor::process()
                 cv::Mat red1 , red2;
                 inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), red1);
                 inRange(cv_mat_out_, cv::Scalar(100, 90, 70), cv::Scalar(115, 255, 255), red2);
+                // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), red1);
+                // inRange(cv_mat_out_, cv::Scalar(100, 90, 70), cv::Scalar(115, 255, 255), red2);
 
 
                 cv::Mat red = red1 | red2;
@@ -251,7 +245,7 @@ void ImageProcessor::process()
                                     part = "head big";
                                     std::cout << part<<"\t"<< color <<"\n";
                                   }
-                              // std::cout << part<<"\t"<< color <<"\n";
+
                               mask = bw1;
                               object = part;
                              }
@@ -264,8 +258,7 @@ void ImageProcessor::process()
           cv::Mat black(rows, cols, CV_8U, cv::Scalar(0, 0, 0));
 
           std::vector<cv::Mat> images(3);
-          //std::cout << rows<<"\t"<< "rows" <<"\n";
-          //std::cout << cols<<"\t"<< "cols" <<"\n";
+
           // OpenCV works natively with RGB ordering
           images.at(0) = black;
           images.at(1) = mask;
@@ -385,13 +378,14 @@ void ImageProcessor::process()
 
 cv_mat_out_ = src;
 //Stop timing the code.
-
+// =========================================================================
 int stop_s=clock();
 count = (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000;
-
-if (count > 3000){
+if (count < 3000){
 object = "error";
 }
+// =========================================================================
+
 
       // =========================================================================
       // =========================================================================
