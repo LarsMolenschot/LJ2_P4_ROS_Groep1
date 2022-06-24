@@ -1,0 +1,1 @@
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/manipulator_groep_1/lib/python2.7/dist-packages/manipulator_groep_1/msg/_control_robotResult.py

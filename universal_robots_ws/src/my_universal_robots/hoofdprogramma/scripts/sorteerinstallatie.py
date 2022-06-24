@@ -9,6 +9,7 @@ from hmi.msg import HMI_state
 from geometry_msgs.msg import Pose
 from std_msgs.msg import UInt8, Empty, Float32
 from gripper_besturing.srv import gripperServiceMessage, gripperServiceMessageResponse
+from vision_message.msg import vision_msg
 
 # We create some constants with the corresponing vaules from the SimpleGoalState class
 
@@ -54,7 +55,7 @@ class MainProgramClass():
 
         self._continu = True
 
-
+        """
         # Gripper
         # Connect to gripper service server, than activate gripper. (it will open and close)
         #rospy.wait_for_service('gripper_open_of_dicht_doen')
@@ -83,6 +84,18 @@ class MainProgramClass():
         self.single_distance = 397
         self.continous_distance = 197
 
+        # Vision
+        # Beschrijving aangemaakte publishers subscribers enzovoort............................
+        # maak var aan positie en rotatie 
+        self.poseX = 0
+        self.poseY = 0
+        self.poseRX = 0
+        self.poseRY = 0
+        self.poseRZ = 0
+        self.poseRW = 0
+        """
+
+
 
 
 
@@ -105,11 +118,10 @@ class MainProgramClass():
 
     def pos_transportsyteemCallback(self, pos):
         self.huidige_positie = pos.data
-        rospy.loginfo(pos.data)
+        #rospy.loginfo(pos.data)
 
-    def add_two_ints_client(idk_maat, x):
+    def add_two_ints_client(self, x):
         print(str(x))
-        print(str(idk_maat))
         rospy.wait_for_service('gripper_open_of_dicht_doen')
         try:
             add_two_ints = rospy.ServiceProxy('gripper_open_of_dicht_doen', gripperServiceMessage)
@@ -119,15 +131,27 @@ class MainProgramClass():
         except rospy.ServiceException as e:
             print("Service call failed: %s"%e)
 
+    def callbackVision(self ,dataImage):
+       
+        self.poseX = dataImage.vision_positie.position.x 
+        self.poseY = dataImage.vision_positie.position.y
+        self.poseRX = 0#dataImage.vision_positie.orientation.x 
+        self.poseRY = 0#dataImage.vision_positie.orientation.y 
+        self.poseRZ = 0#dataImage.vision_positie.orientation.z 
+        self.poseRW = 0#dataImage.vision_positie.orientation.w 
+        
+
+
 
     def continuous(self):
         rospy.loginfo("in continuous")
 
+        """
         #gripper gaat open
         rospy.loginfo("gripper gaat open")
         self.gripper_response = self.add_two_ints_client('open')
         self.gripper_response = self.add_two_ints_client('open')
-
+        """
         #Manipulator naar home
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "home"
@@ -157,12 +181,14 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-
+        
+        """     
         #Machinevision
         #self.visionpose.position.x = visionfeedback.x
-
+        rospy.loginfo("start vision")
+        self.sub_vision = rospy.Subscriber('/image_processor/vision_pose',vision_msg, self.callbackVision)  
+        
         #Transportsysteem if vision geen object
-
         rospy.loginfo("Transportband aan")
 
         while self.pub_transportsysteem.get_num_connections()< 1:
@@ -171,22 +197,44 @@ class MainProgramClass():
 
         self.sub_pos_transportband = rospy.Subscriber('/enc_pos', Float32, self.pos_transportsyteemCallback)
 
-        while self.huidige_positie <= self.continous_distance:
-            rospy.logwarn(self.huidige_positie)
+        #while self.huidige_positie <= self.continous_distance:
+            #""
+            #rospy.logwarn(self.huidige_positie)
         rospy.logwarn("transportband op positie")
-        
 
-        #Manipulator op positie vision
+        #Manipulator naar boven
         self.manipulator_goal.mode.data = True
 
-        self.manipulator_goal.lineairpose.position.x = 0.01
-        self.manipulator_goal.lineairpose.position.y = 0.01
-        self.manipulator_goal.lineairpose.position.z = 0
+        self.manipulator_goal.lineairpose.position.x = 0
+        self.manipulator_goal.lineairpose.position.y = 0
+        self.manipulator_goal.lineairpose.position.z = 0.05
 
         self.manipulator_goal.lineairpose.orientation.x = 0
         self.manipulator_goal.lineairpose.orientation.y = 0
         self.manipulator_goal.lineairpose.orientation.z = 0
         self.manipulator_goal.lineairpose.orientation.w = 0
+        self.client_manipulator.send_goal(self.manipulator_goal)
+
+        while state_result < self.DONE:
+            rospy.logwarn("moving up")
+
+            state_result = self.client_manipulator.get_state()
+            rospy.loginfo("state_result: "+str(state_result))
+            self.manrate.sleep()
+
+        state_result = self.ACTIVE
+
+        #Manipulator op positie vision
+        self.manipulator_goal.mode.data = True
+
+        self.manipulator_goal.lineairpose.position.x = self.poseX
+        self.manipulator_goal.lineairpose.position.y = self.poseY
+        self.manipulator_goal.lineairpose.position.z = 0
+
+        self.manipulator_goal.lineairpose.orientation.x = self.poseRX
+        self.manipulator_goal.lineairpose.orientation.y = self.poseRY
+        self.manipulator_goal.lineairpose.orientation.z = self.poseRZ
+        self.manipulator_goal.lineairpose.orientation.w = self.poseRW
         self.client_manipulator.send_goal(self.manipulator_goal)
 
         while state_result < self.DONE:
@@ -203,7 +251,7 @@ class MainProgramClass():
 
         self.manipulator_goal.lineairpose.position.x = 0
         self.manipulator_goal.lineairpose.position.y = 0
-        self.manipulator_goal.lineairpose.position.z = -0.01
+        self.manipulator_goal.lineairpose.position.z = -0.05
 
         self.manipulator_goal.lineairpose.orientation.x = 0
         self.manipulator_goal.lineairpose.orientation.y = 0
@@ -304,7 +352,7 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-
+        """
 
 
 if __name__ == '__main__':

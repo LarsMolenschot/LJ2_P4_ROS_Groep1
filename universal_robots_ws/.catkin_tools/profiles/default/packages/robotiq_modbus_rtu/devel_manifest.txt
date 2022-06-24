@@ -1,0 +1,6 @@
+my_universal_robots/robotiq/robotiq_modbus_rtu
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/lib/python2.7/dist-packages/robotiq_modbus_rtu/__init__.py /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/python2.7/dist-packages/robotiq_modbus_rtu/__init__.py
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/lib/pkgconfig/robotiq_modbus_rtu.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/robotiq_modbus_rtu.pc
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/share/robotiq_modbus_rtu/cmake/robotiq_modbus_rtuConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_modbus_rtu/cmake/robotiq_modbus_rtuConfig.cmake
+/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_modbus_rtu/share/robotiq_modbus_rtu/cmake/robotiq_modbus_rtuConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/robotiq_modbus_rtu/cmake/robotiq_modbus_rtuConfig-version.cmake
