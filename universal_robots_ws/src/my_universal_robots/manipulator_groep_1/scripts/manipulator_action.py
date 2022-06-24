@@ -3,6 +3,7 @@
 import sys
 import copy
 import rospy
+import tf
 import moveit_commander
 import moveit_msgs.msg
 import xml.etree.ElementTree as ET
@@ -178,21 +179,37 @@ class controlUR5Class():
         curr_pose = Pose()
         curr_pose = group.get_current_pose()
 
+        #transform from quartunnions to euler
+        quaternion = (
+        curr_pose.pose.orientation.x,
+        curr_pose.pose.orientation.y,
+        curr_pose.pose.orientation.z,
+        curr_pose.pose.orientation.w)
+        euler = tf.transformations.euler_from_quaternion(quaternion)
+
+        eulerX = euler[0] + robotgoal.lineairpose.orientation.x
+        eulerY = euler[1] + robotgoal.lineairpose.orientation.y
+        eulerZ = euler[2] + robotgoal.lineairpose.orientation.z
+        quaternion_new = tf.transformations.quaternion_from_euler(eulerX, eulerY, eulerZ)
+
+        #transform from euler to quaternion
+
         #set the desired position
         pose_target = Pose()
-        pose_target.orientation.w = curr_pose.pose.orientation.w + robotgoal.lineairpose.orientation.w
-        pose_target.orientation.x = curr_pose.pose.orientation.x + robotgoal.lineairpose.orientation.x
-        pose_target.orientation.z = curr_pose.pose.orientation.z + robotgoal.lineairpose.orientation.z
-        pose_target.orientation.y = curr_pose.pose.orientation.y + robotgoal.lineairpose.orientation.y
+        pose_target.orientation.w = quaternion_new[3]
+        pose_target.orientation.x = quaternion_new[0]
+        pose_target.orientation.z = quaternion_new[2]
+        pose_target.orientation.y = quaternion_new[1]
         pose_target.position.x = curr_pose.pose.position.x + robotgoal.lineairpose.position.x
         pose_target.position.y = curr_pose.pose.position.y + robotgoal.lineairpose.position.y
         pose_target.position.z = curr_pose.pose.position.z + robotgoal.lineairpose.position.z
-
+        print("current pose:\n", curr_pose)
+        print("pose target:\n", pose_target)
         #set the controlpose to the desired position for error checking later
-        self._controlPose.orientation.w = curr_pose.pose.orientation.w + robotgoal.lineairpose.orientation.w
-        self._controlPose.orientation.x = curr_pose.pose.orientation.x + robotgoal.lineairpose.orientation.x
-        self._controlPose.orientation.z = curr_pose.pose.orientation.z + robotgoal.lineairpose.orientation.z
-        self._controlPose.orientation.y = curr_pose.pose.orientation.y + robotgoal.lineairpose.orientation.y
+        self._controlPose.orientation.w =  robotgoal.lineairpose.orientation.w
+        self._controlPose.orientation.x =  robotgoal.lineairpose.orientation.x
+        self._controlPose.orientation.z =  robotgoal.lineairpose.orientation.z
+        self._controlPose.orientation.y =  robotgoal.lineairpose.orientation.y
         self._controlPose.position.x = curr_pose.pose.position.x + robotgoal.lineairpose.position.x
         self._controlPose.position.y = curr_pose.pose.position.y + robotgoal.lineairpose.position.y
         self._controlPose.position.z = curr_pose.pose.position.z + robotgoal.lineairpose.position.z

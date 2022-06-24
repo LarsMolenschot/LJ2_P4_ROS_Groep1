@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.7425600290298462
@@ -216,7 +217,7 @@ Visualization Manager:
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
         Planning Group: arm
-        Query Goal State: true
+        Query Goal State: false
         Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
@@ -368,35 +369,35 @@ Visualization Manager:
       Frames:
         All Enabled: false
         bak1_1_link:
-          Value: true
+          Value: false
         bak1_2_link:
-          Value: true
+          Value: false
         bak1_3_link:
-          Value: true
+          Value: false
         bak1_4_link:
-          Value: true
+          Value: false
         bak2_1_link:
-          Value: true
+          Value: false
         bak2_2_link:
-          Value: true
+          Value: false
         bak2_3_link:
-          Value: true
+          Value: false
         bak2_4_link:
-          Value: true
+          Value: false
         base:
           Value: false
         base_link:
-          Value: true
+          Value: false
         base_link_inertia:
           Value: false
         baseplate_link:
-          Value: true
+          Value: false
         flange:
           Value: false
         forearm_link:
           Value: false
         grippervision_link:
-          Value: true
+          Value: false
         ik_testpoint:
           Value: false
         mountingplate_link:
@@ -404,11 +405,11 @@ Visualization Manager:
         shoulder_link:
           Value: false
         tcp_link:
-          Value: false
+          Value: true
         tool0:
           Value: false
         transportsystem_link:
-          Value: true
+          Value: false
         upper_arm_link:
           Value: false
         world:
