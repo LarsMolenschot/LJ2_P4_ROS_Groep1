@@ -1,5 +1,0 @@
-my_universal_robots/my_demo
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_demo/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_demo/lib/pkgconfig/my_demo.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_demo.pc
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig-version.cmake
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_demo/share/my_demo/cmake/my_demoConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_demo/cmake/my_demoConfig.cmake

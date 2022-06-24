@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/robotiq_ft_sensor/include/robotiq_ft_sensor/sensor_accessorResponse.h

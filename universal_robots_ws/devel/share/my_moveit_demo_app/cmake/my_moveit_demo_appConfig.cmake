@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app/share/my_moveit_demo_app/cmake/my_moveit_demo_appConfig.cmake

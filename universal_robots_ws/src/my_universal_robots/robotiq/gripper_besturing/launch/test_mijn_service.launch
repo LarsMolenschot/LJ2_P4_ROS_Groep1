@@ -6,7 +6,4 @@
 <launch>
   <node pkg="gripper_besturing" type="gripper_service_server.py"  name="bestruring_gripper_node"  output="screen">
   </node>
-  <node pkg="robotiq_2f_gripper_control" type="Robotiq2FGripperRtuNode.py"  name="robotiq2FGripper" output="screen">
-    <param name="port"  type="string" value="/dev/ttyUSB0" />
-  </node>
 </launch>

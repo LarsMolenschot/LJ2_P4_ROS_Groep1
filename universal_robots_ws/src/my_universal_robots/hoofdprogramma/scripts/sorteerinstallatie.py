@@ -8,7 +8,7 @@ from manipulator_groep_1.msg import control_robotGoal, control_robotResult, cont
 from hmi.msg import HMI_state
 from geometry_msgs.msg import Pose
 from std_msgs.msg import UInt8, Empty, Float32
-from gripper_besturing.srv import *
+from gripper_besturing.srv import gripperServiceMessage, gripperServiceMessageResponse
 
 # We create some constants with the corresponing vaules from the SimpleGoalState class
 
@@ -61,6 +61,7 @@ class MainProgramClass():
         #self._gripper_program = rospy.ServiceProxy('gripper_open_of_dicht_doen', gripperServiceMessage)
         #self._gripper_service_response = self._gripper_program('open', 0)
         rospy.loginfo("\n \n gripper started\n \n")
+        self.gripper_response = gripperServiceMessageResponse()
 
         #rospy.loginfo("in subscriber loop before while")
         #while not rospy.is_shutdown():
@@ -101,16 +102,33 @@ class MainProgramClass():
             rospy.logwarn(text)
             self.continuous()
 
+
     def pos_transportsyteemCallback(self, pos):
         self.huidige_positie = pos.data
         rospy.loginfo(pos.data)
 
+    def add_two_ints_client(idk_maat, x):
+        print(str(x))
+        print(str(idk_maat))
+        rospy.wait_for_service('gripper_open_of_dicht_doen')
+        try:
+            add_two_ints = rospy.ServiceProxy('gripper_open_of_dicht_doen', gripperServiceMessage)
+            resp1 = add_two_ints(x, 1)
+            resp1List = [resp1.succes, resp1.found_object, resp1.error_nummer, resp1.error_tekst]
+            return resp1List
+        except rospy.ServiceException as e:
+            print("Service call failed: %s"%e)
 
 
     def continuous(self):
         rospy.loginfo("in continuous")
-        #Manipulator naar home
 
+        #gripper gaat open
+        rospy.loginfo("gripper gaat open")
+        self.gripper_response = self.add_two_ints_client('open')
+        self.gripper_response = self.add_two_ints_client('open')
+
+        #Manipulator naar home
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "home"
         self.client_manipulator.send_goal(self.manipulator_goal)
@@ -156,7 +174,7 @@ class MainProgramClass():
         while self.huidige_positie <= self.continous_distance:
             rospy.logwarn(self.huidige_positie)
         rospy.logwarn("transportband op positie")
-
+        
 
         #Manipulator op positie vision
         self.manipulator_goal.mode.data = True
@@ -205,6 +223,10 @@ class MainProgramClass():
         #Gripper dicht
         #self._gripper_service_response = self._gripper_program('dicht', 1)
         rospy.loginfo("gripper gaat dicht")
+        self.gripper_response = self.add_two_ints_client('dicht')
+        self.gripper_response = self.add_two_ints_client('dicht')
+
+
 
         #Manipulator naar home
         self.manipulator_goal.mode.data = False
@@ -264,6 +286,8 @@ class MainProgramClass():
         #gripper open
         #self._gripper_service_response = self._gripper_program('open', 1)
         rospy.loginfo("gripper gaat open")
+        self.gripper_response = self.add_two_ints_client('open')
+        self.gripper_response = self.add_two_ints_client('open')
 
         #Manipulator naar bak2_4
         self.manipulator_goal.mode.data = False

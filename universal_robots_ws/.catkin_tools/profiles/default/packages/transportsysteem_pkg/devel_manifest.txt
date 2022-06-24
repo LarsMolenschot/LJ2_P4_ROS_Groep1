@@ -1,5 +1,0 @@
-my_universal_robots/transportsysteem_pkg
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/transportsysteem_pkg/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/transportsysteem_pkg/lib/pkgconfig/transportsysteem_pkg.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/transportsysteem_pkg.pc
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/transportsysteem_pkg/share/transportsysteem_pkg/cmake/transportsysteem_pkgConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/transportsysteem_pkg/cmake/transportsysteem_pkgConfig.cmake
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/transportsysteem_pkg/share/transportsysteem_pkg/cmake/transportsysteem_pkgConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/transportsysteem_pkg/cmake/transportsysteem_pkgConfig-version.cmake

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 import rospy
 from robotiq_2f_gripper_control.msg import Robotiq2FGripper_robot_output
@@ -13,7 +13,7 @@ def gripper_prog(req):
 
 	# Eerste keer als programma opgestart moet worden, dan moet er een 'open/dicht 0' worden opgegeven!!!
 	count_in_sec = 0
-	wait_for_active = req.gripper_opstarten
+	wait_for_active = subscriber_gACT
 	while wait_for_active == 0 and count_in_sec <= 5:
 		publish_var.rACT = 0
 		pub.publish(publish_var)
