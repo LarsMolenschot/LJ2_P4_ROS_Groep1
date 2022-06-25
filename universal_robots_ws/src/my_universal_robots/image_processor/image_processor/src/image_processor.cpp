@@ -336,7 +336,7 @@ void ImageProcessor::process()
               // =========================================================================
               int FOVcenter = 223.7;
 
-              positionY = (FOVcenter + (180 - yfov))/3666.7;
+              positionY = ((FOVcenter + (180 - yfov))/3666.7)* (-1);
 
               if (xfov >= 320){
                   positionX = (320 + xfov)/3666.7;

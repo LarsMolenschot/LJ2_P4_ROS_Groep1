@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_universal_robot_controllers/share/my_universal_robot_controllers/cmake/my_universal_robot_controllersConfig.cmake

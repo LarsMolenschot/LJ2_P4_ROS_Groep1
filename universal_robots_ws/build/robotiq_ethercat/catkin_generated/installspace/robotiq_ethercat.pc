@@ -1,8 +1,0 @@
-prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
-
-Name: robotiq_ethercat
-Description: Description of robotiq_ethercat
-Version: 1.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lrobotiq_ethercat
-Requires: soem roscpp

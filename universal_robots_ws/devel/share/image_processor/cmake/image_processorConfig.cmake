@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/image_processor/share/image_processor/cmake/image_processorConfig.cmake

@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_gazebo/share/ur_gazebo/cmake/ur_gazeboConfig.cmake

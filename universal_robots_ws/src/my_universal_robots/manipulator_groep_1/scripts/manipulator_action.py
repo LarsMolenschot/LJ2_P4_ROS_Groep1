@@ -203,8 +203,8 @@ class controlUR5Class():
         pose_target.position.x = curr_pose.pose.position.x + robotgoal.lineairpose.position.x
         pose_target.position.y = curr_pose.pose.position.y + robotgoal.lineairpose.position.y
         pose_target.position.z = curr_pose.pose.position.z + robotgoal.lineairpose.position.z
-        print("current pose:\n", curr_pose)
-        print("pose target:\n", pose_target)
+        #print("current pose:\n", curr_pose)
+        print(pose_target)
         #set the controlpose to the desired position for error checking later
         self._controlPose.orientation.w =  robotgoal.lineairpose.orientation.w
         self._controlPose.orientation.x =  robotgoal.lineairpose.orientation.x

@@ -10,7 +10,7 @@
     <include file="$(find manipulator_groep_1)/launch/manipulator.launch"/>
     <include file="$(find hmi)/launch/human_machine_interface.launch"/>
     <!-- <include file="$(find transportsysteem_pkg)/launch/transportsysteem.launch"/> -->
-	<include file="$(find gripper_besturing)/launch/gripper_service_server.launch"/>
-<!--	<include file="$(find image_processor)/launch/image_processor.launch"/> -->
+	  <!-- <include file="$(find gripper_besturing)/launch/gripper_service_server.launch"/> -->
+    <include file="$(find image_processor)/launch/image_processor.launch"/>
 
 </launch>

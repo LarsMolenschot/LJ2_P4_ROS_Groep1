@@ -119,13 +119,14 @@ void ImageProcessorRos::publish()
       visionpose.vision_positie.position.y = objectY;
       visionpose.vision_positie.position.z = 0;
 
-      tf2::Quaternion myQuaternion;
-      myQuaternion.setRPY( 0, 0, objectDegree );  // Create this quaternion from roll/pitch/yaw (in radians)
+      //tf2::Quaternion myQuaternion;
+      //myQuaternion.setRPY( 0, 0, objectDegree );  // Create this quaternion from roll/pitch/yaw (in radians)
 
-      visionpose.vision_positie.orientation.x = myQuaternion.getX();
-      visionpose.vision_positie.orientation.y = myQuaternion.getY();
-      visionpose.vision_positie.orientation.z = myQuaternion.getZ();
-      visionpose.vision_positie.orientation.w = myQuaternion.getW();
+      visionpose.vision_positie.orientation.x = objectDegree;
+      visionpose.vision_positie.orientation.y = 0;
+      visionpose.vision_positie.orientation.z = 0;
+      visionpose.vision_positie.orientation.w = 0;
+
 
       visionpose.object_naam.data = visionObject;
       pub_positie.publish(visionpose);

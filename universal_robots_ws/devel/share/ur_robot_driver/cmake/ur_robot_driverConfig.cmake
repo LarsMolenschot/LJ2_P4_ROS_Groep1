@@ -1,1 +1,0 @@
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake

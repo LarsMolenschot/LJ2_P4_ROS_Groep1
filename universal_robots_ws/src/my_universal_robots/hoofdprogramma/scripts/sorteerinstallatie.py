@@ -86,7 +86,7 @@ class MainProgramClass():
 
         # Vision
         # Beschrijving aangemaakte publishers subscribers enzovoort............................
-        # maak var aan positie en rotatie 
+        # maak var aan positie en rotatie
         self.poseX = 0
         self.poseY = 0
         self.poseRX = 0
@@ -132,14 +132,14 @@ class MainProgramClass():
             print("Service call failed: %s"%e)
 
     def callbackVision(self ,dataImage):
-       
-        self.poseX = dataImage.vision_positie.position.x 
+
+        self.poseX = dataImage.vision_positie.position.x
         self.poseY = dataImage.vision_positie.position.y
-        self.poseRX = 0#dataImage.vision_positie.orientation.x 
-        self.poseRY = 0#dataImage.vision_positie.orientation.y 
-        self.poseRZ = 0#dataImage.vision_positie.orientation.z 
-        self.poseRW = 0#dataImage.vision_positie.orientation.w 
-        
+        self.poseRX = dataImage.vision_positie.orientation.x
+        self.poseRY = dataImage.vision_positie.orientation.y
+        self.poseRZ = dataImage.vision_positie.orientation.z
+        self.poseRW = dataImage.vision_positie.orientation.w
+
 
 
 
@@ -181,26 +181,26 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-        
-        """     
+
+
         #Machinevision
         #self.visionpose.position.x = visionfeedback.x
         rospy.loginfo("start vision")
-        self.sub_vision = rospy.Subscriber('/image_processor/vision_pose',vision_msg, self.callbackVision)  
-        
+        self.sub_vision = rospy.Subscriber('/image_processor/vision_pose',vision_msg, self.callbackVision)
+
         #Transportsysteem if vision geen object
-        rospy.loginfo("Transportband aan")
-
-        while self.pub_transportsysteem.get_num_connections()< 1:
-            rospy.loginfo('Waiting for subscriber')
-        self.pub_transportsysteem.publish(1)
-
-        self.sub_pos_transportband = rospy.Subscriber('/enc_pos', Float32, self.pos_transportsyteemCallback)
-
-        #while self.huidige_positie <= self.continous_distance:
-            #""
-            #rospy.logwarn(self.huidige_positie)
-        rospy.logwarn("transportband op positie")
+        # rospy.loginfo("Transportband aan")
+        #
+        # while self.pub_transportsysteem.get_num_connections()< 1:
+        #     rospy.loginfo('Waiting for subscriber')
+        # self.pub_transportsysteem.publish(1)
+        #
+        # self.sub_pos_transportband = rospy.Subscriber('/enc_pos', Float32, self.pos_transportsyteemCallback)
+        #
+        # #while self.huidige_positie <= self.continous_distance:
+        #     #""
+        #     #rospy.logwarn(self.huidige_positie)
+        # rospy.logwarn("transportband op positie")
 
         #Manipulator naar boven
         self.manipulator_goal.mode.data = True
@@ -270,9 +270,9 @@ class MainProgramClass():
 
         #Gripper dicht
         #self._gripper_service_response = self._gripper_program('dicht', 1)
-        rospy.loginfo("gripper gaat dicht")
-        self.gripper_response = self.add_two_ints_client('dicht')
-        self.gripper_response = self.add_two_ints_client('dicht')
+        # rospy.loginfo("gripper gaat dicht")
+        # self.gripper_response = self.add_two_ints_client('dicht')
+        # self.gripper_response = self.add_two_ints_client('dicht')
 
 
 
@@ -333,9 +333,9 @@ class MainProgramClass():
 
         #gripper open
         #self._gripper_service_response = self._gripper_program('open', 1)
-        rospy.loginfo("gripper gaat open")
-        self.gripper_response = self.add_two_ints_client('open')
-        self.gripper_response = self.add_two_ints_client('open')
+        # rospy.loginfo("gripper gaat open")
+        # self.gripper_response = self.add_two_ints_client('open')
+        # self.gripper_response = self.add_two_ints_client('open')
 
         #Manipulator naar bak2_4
         self.manipulator_goal.mode.data = False
@@ -352,7 +352,7 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
-        """
+
 
 
 if __name__ == '__main__':

@@ -1,5 +1,0 @@
-my_moveit_demo/my_app
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_app/cmake.lock /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/./cmake.lock
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_app/lib/pkgconfig/my_app.pc /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/lib/pkgconfig/my_app.pc
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_app/share/my_app/cmake/my_appConfig-version.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_app/cmake/my_appConfig-version.cmake
-/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_app/share/my_app/cmake/my_appConfig.cmake /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/share/my_app/cmake/my_appConfig.cmake

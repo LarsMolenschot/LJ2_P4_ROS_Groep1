@@ -1,8 +1,0 @@
-prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_behaviors
-
-Name: my_behaviors
-Description: Description of my_behaviors
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib -lmy_behaviors
-Requires: 
