@@ -13,13 +13,13 @@ def gripper_prog(req):
 
 	# Eerste keer als programma opgestart moet worden, dan moet er een 'open/dicht 0' worden opgegeven!!!
 	count_in_sec = 0
-	wait_for_active = subscriber_gACT
-	while wait_for_active == 0 and count_in_sec <= 5:
+	wait_for_active = req.gripper_opstarten
+	while wait_for_active == 0 and count_in_sec <= 2:
 		publish_var.rACT = 0
 		pub.publish(publish_var)
 		rate.sleep()
 		count_in_sec += 1
-		wait_for_active = subscriber_gACT
+		print(count_in_sec)
 
 	# Bepalen van waarden voor publish
 	if req.open_of_dicht_gripper == 'dicht':

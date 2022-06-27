@@ -1,5 +1,3 @@
 string programstate
 string programtype
-bool stop
-bool noodstop
-bool stopreset
+uint8 buttontype

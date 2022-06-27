@@ -8,11 +8,6 @@ class Arduino_HMI:
         self._programstate = "gereed" # Status van het programma.
         self._programtype = "main" #  Wat onderdeel van het programma data stuurt naar de HMI.
         self._leds = 1 # Variabele dat de leds zal besturen op de shield.
-        self._buttons = 0 # Variabele dat aan geeft welke knop is ingedrukt.
-        self._stop = False
-        self._noodstop = False
-        self._stopreset = False
-        #self._noodstopreset = False
 
     # Update de leds op de arduino-shield.
     def send_leds(self):
@@ -22,13 +17,7 @@ class Arduino_HMI:
         rate.sleep()
 
     # Callback functie om informatie van het hoofdprogramma te krijgen.
-    def buttonCallback(self, data):
-        self._buttons = data.data
-
-    # Callback functie om informatie van het hoofdprogramma te krijgen.
-    def hmiCallback(self, data):
-        self._stopreset = data.stopreset
-
+    def ledCallback(self, data):
         if data.programstate and data.programtype:
             self._programstate = data.programstate
             self._programtype = data.programtype
@@ -50,29 +39,9 @@ class Arduino_HMI:
 
         rospy.loginfo(errortext)
 
-    def Check_buttons(self):
-        rospy.Subscriber("/avans/buttons/state", UInt8, self.buttonCallback)
-        buttons = self._buttons
-        stopreset = self._stopreset
-        #noodstopreset = self._noodstopreset
-
-        if buttons == 4:
-            self._stop = True
-        elif stopreset == True:
-            self._stop = False
-
-        if buttons == 8:
-            self._noodstop = True
-        elif buttons == 12:
-            self._noodstop = False
-
-        #elif noodstopreset == True:
-        #    self._noodstop = False
-        #    self._noodstopreset = False
-
     # Informatie ophalen en verwerken van het hoofdprogramma.
     def retrieve_program_data(self):
-        rospy.Subscriber("/HMI", HMI_state, self.hmiCallback)
+        rospy.Subscriber("/HMI", HMI_state, self.ledCallback)
 
         # Vaste variabelen voor de programma status en type.
         programstate = self._programstate 
@@ -112,22 +81,16 @@ class Arduino_HMI:
         # Update leds variabele
         self._leds = leds
 
-    #Published de HMI topic
-    def publish_HMItopic(self):
+    def publish_node(self):
         rate = rospy.Rate(10) # 10hz
-        pub = rospy.Publisher('/HMI', HMI_state, queue_size=1)
-        msg = HMI_state()
-        msg.stop = self._stop
-        msg.noodstop = self._noodstop
-        #rospy.loginfo(str(msg))
-        pub.publish(msg)
+        pub = rospy.Publisher('/HMI', HMI_state, queue_size=10)
+        pub.publish()
         rate.sleep()
 
 # Main programma van de Human Machine Interface programma.
 def main():
     rospy.init_node("arduino_connector")
-    Arduino_connector.Check_buttons()
-    Arduino_connector.publish_HMItopic()
+    Arduino_connector.publish_node()
     Arduino_connector.retrieve_program_data()
     Arduino_connector.send_leds()
 
