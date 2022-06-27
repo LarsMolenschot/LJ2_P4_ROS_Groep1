@@ -45,15 +45,19 @@ class MainProgramClass():
         # HMI
         # Maak een subscriber en publisher voor de HMI.
         # Declare variabelen voor de knoppen en functies.
-        self.sub_HMI = rospy.Subscriber("/avans/buttons/state", UInt8, self.HMICallback)
-        self.pub = rospy.Publisher('/HMI', HMI_state, queue_size=1)
+        self.sub_arduino = rospy.Subscriber("/avans/buttons/state", UInt8, self.buttonCallback) #new
+        self.pub_HMI = rospy.Publisher('/HMI', HMI_state, queue_size=10) #new
+        self.sub_HMI = rospy.Subscriber('/HMI', HMI_state, self.HMICallback)
         rospy.loginfo("\n \nHMI publisher and subscriber made successfully\n \n")
         self._fout = False
         self._storing = False
         self._noodstop = False
         self._stop = False
+        self.hmi_msg = HMI_state()
+        #self._stopreset = False #new
 
-        self._continu = True
+        self._continu = False #new
+        self._activated = False #new #Zorgt ervoor dat functies niet opnieuw starten als het al gestart was.
 
         """
         # Gripper
@@ -95,25 +99,103 @@ class MainProgramClass():
         self.poseRW = 0
         """
 
+    # Led functies
+    # Stuur gereed naar HMI module.
+    def gereed(self):
+        #self.hmi_msg = HMI_state()
+        self.hmi_msg.programstate = "gereed"
+        self.hmi_msg.programtype = "main"
+        self.pub_HMI.publish(self.hmi_msg)  
+    
+    # Stuur in bedrijf naar HMI module.
+    def inbedrijf(self):
+        #self.hmi_msg = HMI_state()
+        self.hmi_msg.programstate = "inbedrijf"
+        self.hmi_msg.programtype = "main"
+        self.pub_HMI.publish(self.hmi_msg)  
 
+    # Stuur een storing naar HMI module
+    def storing(self, module):
+        #self.hmi_msg = HMI_state()
+        self.hmi_msg.programstate = "storing"
+        self.hmi_msg.programtype = module
+        self.pub_HMI.publish(self.hmi_msg)  
 
+    # Stuur een fout naar HMI module
+    def fout(self, module):
+        #self.hmi_msg = HMI_state()
+        self.hmi_msg.programstate = "fout"
+        self.hmi_msg.programtype = module
+        self.pub_HMI.publish(self.hmi_msg)  
 
+    # Knop functies
+    def stopReset(self):
+        #self.hmi_msg = HMI_state()
+        self.hmi_msg.stopreset = True
+        self.pub_HMI.publish(self.hmi_msg)  
 
     def HMICallback(self, data):
+        #rospy.logwarn("stop: " + str(data))
+        #rospy.logwarn("stopreset: " + str(data.stopreset))
+        self._stop = data.stop
+        self._noodstop = data.noodstop
+
+    def checkStop(self):
+        #rospy.Subscriber('/HMI', HMI_state, self.HMICallback)
+        self.sub_HMI = rospy.Subscriber('/HMI', HMI_state, self.HMICallback)
+
+    def noodstop(self):
+        rospy.logwarn("noodstop igedrukt")
+
+    def buttonCallback(self, data): #new
         text = "in callback subscriber with data: "+ str(data.data)
 
         buttonstate = data.data
+
+        #self.stopReset()
+
+        self.checkStop()
         #rospy.logwarn(text)
 
-        if buttonstate == 8 and self._fout: # Noodstop en fout.
+        if buttonstate == 12:
+            self.gereed()
+        if self._noodstop:
+            rospy.logwarn(str(self._noodstop))
+            self._continu = False
+            self._activated = False
+            self.noodstop()
+            self.storing("main")
+
+        elif buttonstate == 8 and self._fout: # Noodstop en fout.
             #self.stopProgram()
             ""
-        elif buttonstate == 1: # 1 cyclus.
+        elif buttonstate == 1 and not self._activated: # 1 cyclus.
             rospy.logwarn(text)
-            #self.single()
-        elif buttonstate == 2 and self._continu: # Continue cyclus.
-            rospy.logwarn(text)
+            self.inbedrijf()
+            self._activated = True
+            self.single()
+            self._activated = False
+            self.gereed()
+            
+        elif (buttonstate == 2 and not self._activated) or self._continu and not self._stop: # Continue cyclus.
+            #rospy.logwarn(text)
+
+            #rospy.logwarn("stop: " + str(self._stop))
+
+            self.inbedrijf()
+            self._continu = True
+            self._activated = True
             self.continuous()
+
+        elif (self._stop and self._activated):
+            rospy.logwarn("awaiting stop reset")
+            rospy.logwarn("message:" + str(self._stop))
+            self.stopReset()
+            self._continu = False
+            self.gereed()
+            if self._stop == False:
+                self._activated = False
+
 
 
     def pos_transportsyteemCallback(self, pos):
@@ -141,10 +223,16 @@ class MainProgramClass():
         self.poseRW = dataImage.vision_positie.orientation.w
 
 
-
+    def single(self):
+        rospy.loginfo("in single")
+        self.checkStop()
 
     def continuous(self):
-        rospy.loginfo("in continuous")
+        #rospy.loginfo("in continuous")
+        self.checkStop()
+
+        if self._noodstop:
+            ""
 
         """
         #gripper gaat open
