@@ -1,0 +1,6 @@
+devel_space: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel
+install: false
+install_space: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
+profile: default
+source_space: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src
+workspace: /home/student/LJ2_P4_ROS_Groep1/universal_robots_ws

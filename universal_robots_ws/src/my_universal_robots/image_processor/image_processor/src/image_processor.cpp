@@ -140,6 +140,11 @@ void ImageProcessor::process()
       int start_s=clock() ;
       //The code you wish to time goes here.
       for (int i = 0; i < 1; i++) {
+
+        cv::Mat cv_mat_out_red;
+        cv::Mat cv_mat_out_yellow;
+
+
                 // =========================================================================
 
                 // =========================================================================
@@ -151,7 +156,7 @@ void ImageProcessor::process()
                 assert(grayscale.type() == CV_8UC1);
 
                 //Convert grayscale image to binary.
-                int th { 210};
+                int th { 180};
                 cv::Mat binary { };
                 cv::threshold(grayscale, binary, th, 255, cv::THRESH_BINARY);
 
@@ -162,22 +167,23 @@ void ImageProcessor::process()
                 // =========================================================================
 
                 // rood
-                cvtColor(cv_mat_out_,cv_mat_out_,CV_BGR2HSV);
+                cvtColor(cv_mat_out_,cv_mat_out_red,CV_BGR2HSV);
 
                 cv::Mat red1 , red2;
-                inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), red1);
-                inRange(cv_mat_out_, cv::Scalar(100, 90, 70), cv::Scalar(115, 255, 255), red2);
-
+                inRange(cv_mat_out_red, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), red1);
+                inRange(cv_mat_out_red, cv::Scalar(100, 90, 70), cv::Scalar(150, 255, 255), red2);
+                //inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), red1);
+                //inRange(cv_mat_out_, cv::Scalar(100, 90, 70), cv::Scalar(115, 255, 255), red2);
 
                 cv::Mat red = red1 | red2;
                 // =========================================================================
 
                 //geel
-                cvtColor(cv_mat_out_,cv_mat_out_,CV_BGR2HSV);
+                cvtColor(cv_mat_out_,cv_mat_out_yellow,CV_BGR2HSV);
 
                 cv::Mat yellow1 , yellow2;
-                inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 180), yellow1);
-                inRange(cv_mat_out_, cv::Scalar(80, 90, 70), cv::Scalar(105, 255, 255), yellow2);
+                inRange(cv_mat_out_yellow, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 180), yellow1);
+                inRange(cv_mat_out_yellow, cv::Scalar(80, 90, 70), cv::Scalar(105, 255, 255), yellow2);
 
                 // inRange(cv_mat_out_, cv::Scalar(0, 65, 75), cv::Scalar(1, 70, 80), yellow1);
                 // inRange(cv_mat_out_, cv::Scalar(30, 90, 70), cv::Scalar(100, 255, 255), yellow2);
@@ -215,40 +221,40 @@ void ImageProcessor::process()
                               // Ignore contours that are too small or too large
                               //part = "nothing found";
                               //std::cout << "area =" <<"\t"<< area <<"\n";
-                              if (area > 3000){
+                              if (area > (8300)){
                                 //std::cout << "area = " << area <<"\n";
                                 //std::cout << "color = " << color <<"\n";
                                 //std::cout << "area =" <<"\t"<< area <<"\n";
                                   if ((area > 8300 && area < 8600)&&(color == "white")){
-                                    part = "pants small";
+                                    part = "bak2_4"; //pants small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
                                   else if ((area > 35000 && area < 37000)&&(color == "white")){
-                                    part = "pants big";
+                                    part = "bak1_4"; //pants big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
-                                  else if ((area > 9000 && area < 11000)&&(color == "red")){
-                                    part = "shirt small";
+                                  else if ((area > 8000 && area < 13000)&&(color == "red")){
+                                    part = "bak2_3"; //shirt small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
-                                  else if ((area > 38000 && area < 40000)&&(color == "red")){
-                                    part = "shirt big";
+                                  else if ((area > 40000 && area < 48000)&&(color == "red")){
+                                    part = "bak1_3"; //shirt big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
                                   else if ((area > 3300 && area < 3900)&&(color == "yellow")){
-                                    part = "hands small";
+                                    part = "bak2_2"; //hands small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
                                   else if ((area > 15500 && area < 16500)&&(color == "yellow")){
-                                    part = "hands big";
+                                    part = "bak1_2"; //hands big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
                                   else if ((area > 14400 && area < 15400)&&(color == "yellow")){
-                                    part = "head small";
+                                    part = "bak2_1"; //head small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
-                                  else if ((area > 65000 && area < 66000)&&(color == "yellow")){
-                                    part = "head big";
+                                  else if ((area > 30000 && area < 40000)&&(color == "red")){
+                                    part = "bak1_1"; //head big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
                               // std::cout << part<<"\t"<< color <<"\n";
@@ -286,7 +292,7 @@ void ImageProcessor::process()
 
           // Filter by Area.
           params.filterByArea = true;
-          params.minArea = 3000;
+          params.minArea = 8300;
           params.maxArea = 85000000;
 
           // Filter by Circularity
@@ -335,15 +341,13 @@ void ImageProcessor::process()
 
               // =========================================================================
               int FOVcenter = 223.7;
+              int offset = -5;
 
               positionY = ((FOVcenter + (180 - yfov))/3666.7)* (-1);
 
-              if (xfov >= 320){
-                  positionX = (320 + xfov)/3666.7;
-              }
-              else if (xfov <= 320){
-                  positionX = (320 - xfov)/3666.7;
-              }
+
+              positionX = (320 - xfov)/3666.7;
+            
 
               // =========================================================================
 
@@ -376,7 +380,7 @@ void ImageProcessor::process()
           // Find the orientation of each shape
           angle = getOrientation(contours[i], src);
           double degrees = angle * (180/ 3.141592654);
-          if (area > 3000){
+          if (area > 8300){
           //std::cout << "X"<< " "<< positionX << "\t" << "Y" << " "<< positionY << "\t" << "Rotation" << " "<< degrees <<"\n"<<"\n";
 
           OBangle = angle;
@@ -389,7 +393,7 @@ cv_mat_out_ = src;
 int stop_s=clock();
 count = (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000;
 
-if (count > 3000){
+if (count > 8000){
 object = "error";
 }
 

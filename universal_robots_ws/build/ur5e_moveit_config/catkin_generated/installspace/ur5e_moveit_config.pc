@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
+
+Name: ur5e_moveit_config
+Description: Description of ur5e_moveit_config
+Version: 1.2.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -90,7 +90,10 @@ class MainProgramClass():
         self.poseRY = 0
         self.poseRZ = 0
         self.poseRW = 0
+        self.bakNaam = ""
+        self.visionEscape = False
         rospy.loginfo("\n \n Vision started\n \n")
+
 
 
 
@@ -128,15 +131,20 @@ class MainProgramClass():
             print("Service call failed: %s"%e)
 
     def callbackVision(self ,dataImage):
+        rospy.logwarn(self.visionEscape)
+        while self.visionEscape == False:
 
-        self.poseX = dataImage.vision_positie.position.x
-        self.poseY = dataImage.vision_positie.position.y
-        self.poseRX = dataImage.vision_positie.orientation.x
-        self.poseRY = dataImage.vision_positie.orientation.y
-        self.poseRZ = dataImage.vision_positie.orientation.z
-        self.poseRW = dataImage.vision_positie.orientation.w
+            self.poseX = dataImage.vision_positie.position.x
+            self.poseY = dataImage.vision_positie.position.y
+            self.poseRX = dataImage.vision_positie.orientation.x
+            self.poseRY = dataImage.vision_positie.orientation.y
+            self.poseRZ = dataImage.vision_positie.orientation.z
+            self.poseRW = dataImage.vision_positie.orientation.w
 
+            self.bakNaam = dataImage.object_naam.data
 
+            rospy.logerr(self.bakNaam)
+            self.visionEscape = True
 
 
     def continuous(self):
@@ -181,12 +189,6 @@ class MainProgramClass():
 
         state_result = self.ACTIVE
 
-
-        #Machinevision
-        #self.visionpose.position.x = visionfeedback.x
-        rospy.loginfo("start vision")
-        self.sub_vision = rospy.Subscriber('/image_processor/vision_pose',vision_msg, self.callbackVision)
-
         #Transportsysteem if vision geen object
         rospy.loginfo("Transportband aan")
 
@@ -200,6 +202,13 @@ class MainProgramClass():
             ""
             #rospy.logwarn(self.huidige_positie)
         rospy.logwarn("transportband op positie")
+
+        time.sleep(3)
+        #Machinevision
+        #self.visionpose.position.x = visionfeedback.x
+        rospy.loginfo("start vision")
+        self.visionEscape = False
+        self.sub_vision = rospy.Subscriber('/image_processor/vision_pose',vision_msg, self.callbackVision)
 
         #Manipulator naar boven
         self.manipulator_goal.mode.data = True
@@ -222,6 +231,7 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
+
 
         #Manipulator op positie vision
         self.manipulator_goal.mode.data = True
@@ -315,7 +325,7 @@ class MainProgramClass():
 
         state_result = self.ACTIVE
 
-        #Manipulator naar home
+        #Manipulator naar bak 2_4
         self.manipulator_goal.mode.data = False
         self.manipulator_goal.position.data = "bak2_4"
         self.client_manipulator.send_goal(self.manipulator_goal)
@@ -332,43 +342,24 @@ class MainProgramClass():
         state_result = self.ACTIVE
 
         #Manipulator naar sorteerpositie
+        printtext = "\n \n" + self.bakNaam + "\n \n"
+        rospy.logwarn(printtext)
         self.manipulator_goal.mode.data = False
-
-        #if visionobject == "broek_groot"
-        self.manipulator_goal.position.data = "bak1_1"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak1_2"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak1_3"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak1_4"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak2_1"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak2_2"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak2_3"
-        #elif visionobject == "broek_groot"
-            #self.manipulator_goal.position.data = "bak2_4"
-        #else
-            #self.manipulator_goal.position.data = home
-            #error naar hmi
-            #msg = HMI_state()
-            #msg.programstate = "fout"
-            #msg.programtype = "machinevision"
-            #rospy.logwarn("no object found by vision")
-            #self.pub.publish(msg)
-
+        self.manipulator_goal.position.data = self.bakNaam
         self.client_manipulator.send_goal(self.manipulator_goal)
 
+        state_result = self.client_manipulator.get_state()
+
         while state_result < self.DONE:
-            rospy.logwarn("moving to positie vision voordef")
+            rospy.logwarn("moving to home")
 
             state_result = self.client_manipulator.get_state()
             rospy.loginfo("state_result: "+str(state_result))
             self.manrate.sleep()
 
         state_result = self.ACTIVE
+
+
 
         #gripper open
         self._gripper_service_response = self._gripper_program('open', 1)
@@ -391,6 +382,8 @@ class MainProgramClass():
             self.manrate.sleep()
 
         state_result = self.ACTIVE
+
+        self.visionEscape = False
 
 
 

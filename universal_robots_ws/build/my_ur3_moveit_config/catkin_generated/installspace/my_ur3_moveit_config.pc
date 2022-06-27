@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/install
+
+Name: my_ur3_moveit_config
+Description: Description of my_ur3_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

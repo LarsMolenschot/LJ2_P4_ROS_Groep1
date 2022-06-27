@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/my_moveit_demo_app
+
+Name: my_moveit_demo_app
+Description: Description of my_moveit_demo_app
+Version: 0.0.0
+Cflags: -I/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/src/my_moveit_demo/my_moveit_demo_app/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs moveit_core moveit_visual_tools moveit_ros_planning_interface interactive_markers tf2_geometry_msgs

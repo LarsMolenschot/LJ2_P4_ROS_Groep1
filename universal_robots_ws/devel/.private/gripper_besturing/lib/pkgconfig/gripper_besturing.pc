@@ -1,0 +1,8 @@
+prefix=/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/gripper_besturing
+
+Name: gripper_besturing
+Description: Description of gripper_besturing
+Version: 0.0.0
+Cflags: -I/home/student/LJ2_P4_ROS_Groep1/universal_robots_ws/devel/.private/gripper_besturing/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs message_runtime
