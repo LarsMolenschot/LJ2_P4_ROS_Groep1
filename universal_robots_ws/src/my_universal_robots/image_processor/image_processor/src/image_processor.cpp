@@ -351,7 +351,7 @@ void ImageProcessor::process()
 
               // =========================================================================
               int FOVcenter = 223.7;
-              int offset = -0.015;
+              int offset = -0.020;
 
               positionY = ((FOVcenter + (180 - yfov))/3666.7)* (-1)+offset;
 

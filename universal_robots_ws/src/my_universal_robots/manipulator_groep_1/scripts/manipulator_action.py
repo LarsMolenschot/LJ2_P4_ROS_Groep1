@@ -31,7 +31,7 @@ class controlUR5Class():
 
             self._planningtime = 5
             self._planattempts = 3
-            self.tolorance = 0.0001
+            self.tolorance = 0.001
 
             rospy.loginfo("actionserver running!")
 
