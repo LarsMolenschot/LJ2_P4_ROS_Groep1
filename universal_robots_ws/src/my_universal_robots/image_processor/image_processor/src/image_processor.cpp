@@ -199,7 +199,7 @@ void ImageProcessor::process()
                 string part;
                 //for loop for every color
                 for (int j = 0; j < 3; j++) {
-                          if (j == 2) {
+                          if (j == 0) {
                             bw1 = white;
                             color = "white";
                           }
@@ -207,7 +207,7 @@ void ImageProcessor::process()
                             bw1= red;
                             color = "red";
                           }
-                          else if (j == 0) {
+                          else if (j == 2) {
                           //if (j == 2) {
                             bw1 = yellow;
                             color = "yellow";
@@ -221,15 +221,15 @@ void ImageProcessor::process()
                               // Ignore contours that are too small or too large
                               //part = "nothing found";
                               //std::cout << "area =" <<"\t"<< area <<"\n";
-                              if (area > (8300)){
+                              if (area > (8000)){
                                 //std::cout << "area = " << area <<"\n";
                                 //std::cout << "color = " << color <<"\n";
                                 //std::cout << "area =" <<"\t"<< area <<"\n";
-                                  if ((area > 8300 && area < 8600)&&(color == "white")){
+                                  if ((area > 12000 && area < 20000)&&(color == "white")){
                                     part = "bak2_4"; //pants small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
-                                  else if ((area > 35000 && area < 37000)&&(color == "white")){
+                                  else if ((area > 48000 && area < 57000)&&(color == "white")){
                                     part = "bak1_4"; //pants big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
@@ -241,15 +241,15 @@ void ImageProcessor::process()
                                     part = "bak1_3"; //shirt big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
-                                  else if ((area > 3300 && area < 3900)&&(color == "yellow")){
-                                    part = "bak2_2"; //hands small
+                                  //else if ((area > 3300 && area < 3900)&&(color == "yellow")){
+                                    //part = "bak2_2"; //hands small
+                                  //  std::cout << part<<"\t"<< color <<"\n";
+                                  //}
+                                  //else if ((area > 15500 && area < 16500)&&(color == "yellow")){
+                                    //part = "bak1_2"; //hands big
                                     //std::cout << part<<"\t"<< color <<"\n";
-                                  }
-                                  else if ((area > 15500 && area < 16500)&&(color == "yellow")){
-                                    part = "bak1_2"; //hands big
-                                    //std::cout << part<<"\t"<< color <<"\n";
-                                  }
-                                  else if ((area > 14400 && area < 15400)&&(color == "yellow")){
+                                  //}
+                                  else if ((area > 13000 && area < 19000)&&(color == "red")){
                                     part = "bak2_1"; //head small
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
@@ -257,9 +257,19 @@ void ImageProcessor::process()
                                     part = "bak1_1"; //head big
                                     //std::cout << part<<"\t"<< color <<"\n";
                                   }
+                                  else {
+                                    part = ""; //head big
+                                    //std::cout << part<<"\t"<< color <<"\n";
+                                  }
+
                               // std::cout << part<<"\t"<< color <<"\n";
                               mask = bw1;
                               object = part;
+                             }
+
+                             else {
+                               part = ""; //head big
+                               //std::cout << part<<"\t"<< color <<"\n";
                              }
                           }
                     }
@@ -292,7 +302,7 @@ void ImageProcessor::process()
 
           // Filter by Area.
           params.filterByArea = true;
-          params.minArea = 8300;
+          params.minArea = 8000;
           params.maxArea = 85000000;
 
           // Filter by Circularity
@@ -341,13 +351,13 @@ void ImageProcessor::process()
 
               // =========================================================================
               int FOVcenter = 223.7;
-              int offset = -5;
+              int offset = -0.015;
 
-              positionY = ((FOVcenter + (180 - yfov))/3666.7)* (-1);
+              positionY = ((FOVcenter + (180 - yfov))/3666.7)* (-1)+offset;
 
 
               positionX = (320 - xfov)/3666.7;
-            
+
 
               // =========================================================================
 
@@ -380,7 +390,7 @@ void ImageProcessor::process()
           // Find the orientation of each shape
           angle = getOrientation(contours[i], src);
           double degrees = angle * (180/ 3.141592654);
-          if (area > 8300){
+          if (area > 8000){
           //std::cout << "X"<< " "<< positionX << "\t" << "Y" << " "<< positionY << "\t" << "Rotation" << " "<< degrees <<"\n"<<"\n";
 
           OBangle = angle;
@@ -393,7 +403,7 @@ cv_mat_out_ = src;
 int stop_s=clock();
 count = (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000;
 
-if (count > 8000){
+if (count > 5000){
 object = "error";
 }
 

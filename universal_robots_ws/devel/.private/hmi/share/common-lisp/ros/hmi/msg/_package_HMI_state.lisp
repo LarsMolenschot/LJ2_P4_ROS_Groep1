@@ -3,6 +3,10 @@
           PROGRAMSTATE
           PROGRAMTYPE-VAL
           PROGRAMTYPE
-          BUTTONTYPE-VAL
-          BUTTONTYPE
+          STOP-VAL
+          STOP
+          NOODSTOP-VAL
+          NOODSTOP
+          STOPRESET-VAL
+          STOPRESET
 ))

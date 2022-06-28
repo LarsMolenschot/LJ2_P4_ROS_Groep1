@@ -26,12 +26,16 @@ struct HMI_state_
   HMI_state_()
     : programstate()
     , programtype()
-    , buttontype(0)  {
+    , stop(false)
+    , noodstop(false)
+    , stopreset(false)  {
     }
   HMI_state_(const ContainerAllocator& _alloc)
     : programstate(_alloc)
     , programtype(_alloc)
-    , buttontype(0)  {
+    , stop(false)
+    , noodstop(false)
+    , stopreset(false)  {
   (void)_alloc;
     }
 
@@ -43,8 +47,14 @@ struct HMI_state_
    typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _programtype_type;
   _programtype_type programtype;
 
-   typedef uint8_t _buttontype_type;
-  _buttontype_type buttontype;
+   typedef uint8_t _stop_type;
+  _stop_type stop;
+
+   typedef uint8_t _noodstop_type;
+  _noodstop_type noodstop;
+
+   typedef uint8_t _stopreset_type;
+  _stopreset_type stopreset;
 
 
 
@@ -77,7 +87,9 @@ bool operator==(const ::hmi::HMI_state_<ContainerAllocator1> & lhs, const ::hmi:
 {
   return lhs.programstate == rhs.programstate &&
     lhs.programtype == rhs.programtype &&
-    lhs.buttontype == rhs.buttontype;
+    lhs.stop == rhs.stop &&
+    lhs.noodstop == rhs.noodstop &&
+    lhs.stopreset == rhs.stopreset;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -134,12 +146,12 @@ struct MD5Sum< ::hmi::HMI_state_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "d05be62867557efe2359be0b2c4cb496";
+    return "12d2ece259040b0ded5a9b3526331ec2";
   }
 
   static const char* value(const ::hmi::HMI_state_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xd05be62867557efeULL;
-  static const uint64_t static_value2 = 0x2359be0b2c4cb496ULL;
+  static const uint64_t static_value1 = 0x12d2ece259040b0dULL;
+  static const uint64_t static_value2 = 0xed5a9b3526331ec2ULL;
 };
 
 template<class ContainerAllocator>
@@ -160,7 +172,9 @@ struct Definition< ::hmi::HMI_state_<ContainerAllocator> >
   {
     return "string programstate\n"
 "string programtype\n"
-"uint8 buttontype\n"
+"bool stop\n"
+"bool noodstop\n"
+"bool stopreset\n"
 ;
   }
 
@@ -181,7 +195,9 @@ namespace serialization
     {
       stream.next(m.programstate);
       stream.next(m.programtype);
-      stream.next(m.buttontype);
+      stream.next(m.stop);
+      stream.next(m.noodstop);
+      stream.next(m.stopreset);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -204,8 +220,12 @@ struct Printer< ::hmi::HMI_state_<ContainerAllocator> >
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.programstate);
     s << indent << "programtype: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.programtype);
-    s << indent << "buttontype: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.buttontype);
+    s << indent << "stop: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.stop);
+    s << indent << "noodstop: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.noodstop);
+    s << indent << "stopreset: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.stopreset);
   }
 };
 

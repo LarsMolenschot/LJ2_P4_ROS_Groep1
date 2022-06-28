@@ -20,7 +20,9 @@ class HMI_state {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.programstate = null;
       this.programtype = null;
-      this.buttontype = null;
+      this.stop = null;
+      this.noodstop = null;
+      this.stopreset = null;
     }
     else {
       if (initObj.hasOwnProperty('programstate')) {
@@ -35,11 +37,23 @@ class HMI_state {
       else {
         this.programtype = '';
       }
-      if (initObj.hasOwnProperty('buttontype')) {
-        this.buttontype = initObj.buttontype
+      if (initObj.hasOwnProperty('stop')) {
+        this.stop = initObj.stop
       }
       else {
-        this.buttontype = 0;
+        this.stop = false;
+      }
+      if (initObj.hasOwnProperty('noodstop')) {
+        this.noodstop = initObj.noodstop
+      }
+      else {
+        this.noodstop = false;
+      }
+      if (initObj.hasOwnProperty('stopreset')) {
+        this.stopreset = initObj.stopreset
+      }
+      else {
+        this.stopreset = false;
       }
     }
   }
@@ -50,8 +64,12 @@ class HMI_state {
     bufferOffset = _serializer.string(obj.programstate, buffer, bufferOffset);
     // Serialize message field [programtype]
     bufferOffset = _serializer.string(obj.programtype, buffer, bufferOffset);
-    // Serialize message field [buttontype]
-    bufferOffset = _serializer.uint8(obj.buttontype, buffer, bufferOffset);
+    // Serialize message field [stop]
+    bufferOffset = _serializer.bool(obj.stop, buffer, bufferOffset);
+    // Serialize message field [noodstop]
+    bufferOffset = _serializer.bool(obj.noodstop, buffer, bufferOffset);
+    // Serialize message field [stopreset]
+    bufferOffset = _serializer.bool(obj.stopreset, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -63,8 +81,12 @@ class HMI_state {
     data.programstate = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [programtype]
     data.programtype = _deserializer.string(buffer, bufferOffset);
-    // Deserialize message field [buttontype]
-    data.buttontype = _deserializer.uint8(buffer, bufferOffset);
+    // Deserialize message field [stop]
+    data.stop = _deserializer.bool(buffer, bufferOffset);
+    // Deserialize message field [noodstop]
+    data.noodstop = _deserializer.bool(buffer, bufferOffset);
+    // Deserialize message field [stopreset]
+    data.stopreset = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
@@ -72,7 +94,7 @@ class HMI_state {
     let length = 0;
     length += object.programstate.length;
     length += object.programtype.length;
-    return length + 9;
+    return length + 11;
   }
 
   static datatype() {
@@ -82,7 +104,7 @@ class HMI_state {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'd05be62867557efe2359be0b2c4cb496';
+    return '12d2ece259040b0ded5a9b3526331ec2';
   }
 
   static messageDefinition() {
@@ -90,7 +112,9 @@ class HMI_state {
     return `
     string programstate
     string programtype
-    uint8 buttontype
+    bool stop
+    bool noodstop
+    bool stopreset
     
     `;
   }
@@ -115,11 +139,25 @@ class HMI_state {
       resolved.programtype = ''
     }
 
-    if (msg.buttontype !== undefined) {
-      resolved.buttontype = msg.buttontype;
+    if (msg.stop !== undefined) {
+      resolved.stop = msg.stop;
     }
     else {
-      resolved.buttontype = 0
+      resolved.stop = false
+    }
+
+    if (msg.noodstop !== undefined) {
+      resolved.noodstop = msg.noodstop;
+    }
+    else {
+      resolved.noodstop = false
+    }
+
+    if (msg.stopreset !== undefined) {
+      resolved.stopreset = msg.stopreset;
+    }
+    else {
+      resolved.stopreset = false
     }
 
     return resolved;

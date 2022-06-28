@@ -8,15 +8,17 @@ import struct
 
 
 class HMI_state(genpy.Message):
-  _md5sum = "d05be62867557efe2359be0b2c4cb496"
+  _md5sum = "12d2ece259040b0ded5a9b3526331ec2"
   _type = "hmi/HMI_state"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """string programstate
 string programtype
-uint8 buttontype
+bool stop
+bool noodstop
+bool stopreset
 """
-  __slots__ = ['programstate','programtype','buttontype']
-  _slot_types = ['string','string','uint8']
+  __slots__ = ['programstate','programtype','stop','noodstop','stopreset']
+  _slot_types = ['string','string','bool','bool','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -26,7 +28,7 @@ uint8 buttontype
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       programstate,programtype,buttontype
+       programstate,programtype,stop,noodstop,stopreset
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -39,12 +41,18 @@ uint8 buttontype
         self.programstate = ''
       if self.programtype is None:
         self.programtype = ''
-      if self.buttontype is None:
-        self.buttontype = 0
+      if self.stop is None:
+        self.stop = False
+      if self.noodstop is None:
+        self.noodstop = False
+      if self.stopreset is None:
+        self.stopreset = False
     else:
       self.programstate = ''
       self.programtype = ''
-      self.buttontype = 0
+      self.stop = False
+      self.noodstop = False
+      self.stopreset = False
 
   def _get_types(self):
     """
@@ -70,8 +78,8 @@ uint8 buttontype
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self.buttontype
-      buff.write(_get_struct_B().pack(_x))
+      _x = self
+      buff.write(_get_struct_3B().pack(_x.stop, _x.noodstop, _x.stopreset))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -102,9 +110,13 @@ uint8 buttontype
         self.programtype = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.programtype = str[start:end]
+      _x = self
       start = end
-      end += 1
-      (self.buttontype,) = _get_struct_B().unpack(str[start:end])
+      end += 3
+      (_x.stop, _x.noodstop, _x.stopreset,) = _get_struct_3B().unpack(str[start:end])
+      self.stop = bool(self.stop)
+      self.noodstop = bool(self.noodstop)
+      self.stopreset = bool(self.stopreset)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -129,8 +141,8 @@ uint8 buttontype
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self.buttontype
-      buff.write(_get_struct_B().pack(_x))
+      _x = self
+      buff.write(_get_struct_3B().pack(_x.stop, _x.noodstop, _x.stopreset))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -162,9 +174,13 @@ uint8 buttontype
         self.programtype = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.programtype = str[start:end]
+      _x = self
       start = end
-      end += 1
-      (self.buttontype,) = _get_struct_B().unpack(str[start:end])
+      end += 3
+      (_x.stop, _x.noodstop, _x.stopreset,) = _get_struct_3B().unpack(str[start:end])
+      self.stop = bool(self.stop)
+      self.noodstop = bool(self.noodstop)
+      self.stopreset = bool(self.stopreset)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -173,9 +189,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_B = None
-def _get_struct_B():
-    global _struct_B
-    if _struct_B is None:
-        _struct_B = struct.Struct("<B")
-    return _struct_B
+_struct_3B = None
+def _get_struct_3B():
+    global _struct_3B
+    if _struct_3B is None:
+        _struct_3B = struct.Struct("<3B")
+    return _struct_3B

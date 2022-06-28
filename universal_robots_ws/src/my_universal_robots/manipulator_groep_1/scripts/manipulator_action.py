@@ -56,14 +56,14 @@ class controlUR5Class():
             reached = False
         elif self._controlPose.position.z > curr_pose.pose.position.z + marge or self._controlPose.position.z < curr_pose.pose.position.z - marge:
             reached = False
-        elif self._controlPose.orientation.x > curr_pose.pose.orientation.x + marge or self._controlPose.orientation.x < curr_pose.pose.orientation.x - marge:
-            reached = False
-        elif self._controlPose.orientation.y > curr_pose.pose.orientation.y + marge or self._controlPose.orientation.y < curr_pose.pose.orientation.y - marge:
-            reached = False
-        elif self._controlPose.orientation.z > curr_pose.pose.orientation.z + marge or self._controlPose.orientation.z < curr_pose.pose.orientation.z - marge:
-            reached = False
-        elif self._controlPose.orientation.w > curr_pose.pose.orientation.w + marge or self._controlPose.orientation.w < curr_pose.pose.orientation.w - marge:
-            reached = False
+        #elif self._controlPose.orientation.x > curr_pose.pose.orientation.x + marge or self._controlPose.orientation.x < curr_pose.pose.orientation.x - marge:
+            #reached = False
+        #elif self._controlPose.orientation.y > curr_pose.pose.orientation.y + marge or self._controlPose.orientation.y < curr_pose.pose.orientation.y - marge:
+            #reached = False
+        #elif self._controlPose.orientation.z > curr_pose.pose.orientation.z + marge or self._controlPose.orientation.z < curr_pose.pose.orientation.z - marge:
+            #reached = False
+        #elif self._controlPose.orientation.w > curr_pose.pose.orientation.w + marge or self._controlPose.orientation.w < curr_pose.pose.orientation.w - marge:
+            #reached = False
 
         if reached == False or self.success == False:
             rospy.logerr("desired position not reached correctly!")

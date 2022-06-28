@@ -14,19 +14,23 @@
 
 (defclass hmi::HMI_state
   :super ros::object
-  :slots (_programstate _programtype _buttontype ))
+  :slots (_programstate _programtype _stop _noodstop _stopreset ))
 
 (defmethod hmi::HMI_state
   (:init
    (&key
     ((:programstate __programstate) "")
     ((:programtype __programtype) "")
-    ((:buttontype __buttontype) 0)
+    ((:stop __stop) nil)
+    ((:noodstop __noodstop) nil)
+    ((:stopreset __stopreset) nil)
     )
    (send-super :init)
    (setq _programstate (string __programstate))
    (setq _programtype (string __programtype))
-   (setq _buttontype (round __buttontype))
+   (setq _stop __stop)
+   (setq _noodstop __noodstop)
+   (setq _stopreset __stopreset)
    self)
   (:programstate
    (&optional __programstate)
@@ -34,9 +38,15 @@
   (:programtype
    (&optional __programtype)
    (if __programtype (setq _programtype __programtype)) _programtype)
-  (:buttontype
-   (&optional __buttontype)
-   (if __buttontype (setq _buttontype __buttontype)) _buttontype)
+  (:stop
+   (&optional __stop)
+   (if __stop (setq _stop __stop)) _stop)
+  (:noodstop
+   (&optional __noodstop)
+   (if __noodstop (setq _noodstop __noodstop)) _noodstop)
+  (:stopreset
+   (&optional __stopreset)
+   (if __stopreset (setq _stopreset __stopreset)) _stopreset)
   (:serialization-length
    ()
    (+
@@ -44,7 +54,11 @@
     4 (length _programstate)
     ;; string _programtype
     4 (length _programtype)
-    ;; uint8 _buttontype
+    ;; bool _stop
+    1
+    ;; bool _noodstop
+    1
+    ;; bool _stopreset
     1
     ))
   (:serialize
@@ -55,8 +69,12 @@
        (write-long (length _programstate) s) (princ _programstate s)
      ;; string _programtype
        (write-long (length _programtype) s) (princ _programtype s)
-     ;; uint8 _buttontype
-       (write-byte _buttontype s)
+     ;; bool _stop
+       (if _stop (write-byte -1 s) (write-byte 0 s))
+     ;; bool _noodstop
+       (if _noodstop (write-byte -1 s) (write-byte 0 s))
+     ;; bool _stopreset
+       (if _stopreset (write-byte -1 s) (write-byte 0 s))
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -65,23 +83,29 @@
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _programstate (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;; string _programtype
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _programtype (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
-   ;; uint8 _buttontype
-     (setq _buttontype (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; bool _stop
+     (setq _stop (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;; bool _noodstop
+     (setq _noodstop (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;; bool _stopreset
+     (setq _stopreset (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
    ;;
    self)
   )
 
-(setf (get hmi::HMI_state :md5sum-) "d05be62867557efe2359be0b2c4cb496")
+(setf (get hmi::HMI_state :md5sum-) "12d2ece259040b0ded5a9b3526331ec2")
 (setf (get hmi::HMI_state :datatype-) "hmi/HMI_state")
 (setf (get hmi::HMI_state :definition-)
       "string programstate
 string programtype
-uint8 buttontype
+bool stop
+bool noodstop
+bool stopreset
 
 ")
 
 
 
-(provide :hmi/HMI_state "d05be62867557efe2359be0b2c4cb496")
+(provide :hmi/HMI_state "12d2ece259040b0ded5a9b3526331ec2")
 
 
